@@ -2,5 +2,6 @@
 
 int main(void)
 {
-    printf("Hello, world\n");
+    pergunta = scanf("Qual o seu nome? \n");
+    printf(pergunta);
 }
