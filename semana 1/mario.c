@@ -17,10 +17,7 @@ int main(void)
 
     for (int j = 0; j < 3; j++)
     {
-        printf("#");
-        if(j < 0)
-        {
-            printf("\n");
-        }
+        printf("###\n");
     }
 }
+
