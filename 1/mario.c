@@ -16,10 +16,10 @@ int main(void)
     //     n = get_int("Tamanho: \n");
     // }while (n < 1);
 
-    const int n = get_int("Tamanho: \n");
+    int n = get_int("Tamanho: \n");
     while (n < 1)
     {
-        return n;
+        n = get_int("Tamanho: \n");
     }
 
     for (int i = 0; i < n; i++)
