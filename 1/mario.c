@@ -11,6 +11,10 @@ int main(void)
     printf("\n");
 
     const int n = get_int("Tamanho: \n");
+    while (n < 1)
+    {
+        const int n = get_int("Tamanho: \n");
+    }
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
