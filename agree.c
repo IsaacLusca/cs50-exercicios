@@ -3,13 +3,13 @@
 
 int main(void)
 {
-    char c = get_chat("Voce aceita os termos? s ou n ");
-    if (c == "s")
+    char c = get_char("Voce aceita os termos? s ou n ");
+    if (c == 's')
     {
-        printf("Aceito.");
+        printf("Aceito.\n");
     }
-    else if (c == "n")
+    else if (c == 'n')
     {
-        printf("Nao aceito");
+        printf("Nao aceito.\n");
     }
 }
