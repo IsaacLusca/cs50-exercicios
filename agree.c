@@ -4,6 +4,7 @@
 int main(void)
 {
     char c = get_char("Voce aceita os termos? s ou n ");
+    
     if (c == 's')
     {
         printf("Aceito.\n");
