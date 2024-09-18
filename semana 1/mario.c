@@ -9,10 +9,12 @@ int main(void)
     //     i++;
     // }
     // printf("\n");
-
+    printf("         ");
     for (int i = 0; i < 4; i++)
     {
         printf("?");
     }
     printf("\n");
+
+    
 }
