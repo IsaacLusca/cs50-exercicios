@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<cs50.h>
 
 int main(void)
 {
@@ -9,7 +10,7 @@ int main(void)
     }
     printf("\n");
 
-    const int n = get;
+    const int n = get_int("Tamanho: \n");
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
