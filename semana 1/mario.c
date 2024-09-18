@@ -15,8 +15,4 @@ int main(void)
     }
     printf("\n");
 
-    for (int j = 0; j < 3; j++)
-    {
-        if ()
-    }
-}
+    
