@@ -17,7 +17,10 @@ int main(void)
 
     for (int j = 0; j < 3; j++)
     {
-        printf("###\n");
+        for (int k = 0; k < 3; k++)
+        {
+            
+        }
     }
 }
 
