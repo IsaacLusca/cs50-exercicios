@@ -4,8 +4,9 @@
 int main(void)
 {
     i = 3;
-    while( 3 > 0)
+    while( i > 0)
     {
         print("meow\n");
+        
     }
 }
