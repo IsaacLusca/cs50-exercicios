@@ -15,4 +15,12 @@ int main(void)
     }
     printf("\n");
 
-    
+    for (int j = 0; j < 3; j++)
+    {
+        printf("#");
+        if(j < 0)
+        {
+            printf("\n");
+        }
+    }
+}
