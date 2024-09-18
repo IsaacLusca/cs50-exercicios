@@ -19,8 +19,9 @@ int main(void)
     {
         for (int k = 0; k < 3; k++)
         {
-            
+            printf("#");
         }
+        printf()
     }
 }
 
