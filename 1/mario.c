@@ -15,9 +15,10 @@ int main(void)
     }
     printf("\n");
 
-    for (int j = 0; j < 3; j++)
+    int n = 3;
+    for (int j = 0; j < n; j++)
     {
-        for (int k = 0; k < 3; k++)
+        for (int k = 0; k < n; k++)
         {
             printf("#");
         }
