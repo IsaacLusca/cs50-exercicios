@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include <stdio.h, cs50.h>
 
 int main(void)
 {
-    pergunta = scanf("Qual o seu nome? \n");
-    printf(pergunta);
+    string pergunta = get_string("Qual o seu nome?");
+    printf("Meu nome e , %s \n", pergunta);
 }
