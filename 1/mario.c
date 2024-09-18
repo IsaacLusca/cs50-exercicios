@@ -13,7 +13,7 @@ int main(void)
     const int n = get_int("Tamanho: \n");
     while (n < 1)
     {
-        const int n = get_int("Tamanho: \n");
+        return n;
     }
     for (int i = 0; i < n; i++)
     {
