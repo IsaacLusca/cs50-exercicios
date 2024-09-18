@@ -9,4 +9,5 @@ int main(void)
         printf("meow\n");
         i++;
     }
+    printf("%i\n", i);
 }
