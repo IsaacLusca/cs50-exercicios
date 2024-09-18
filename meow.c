@@ -3,10 +3,10 @@
 
 int main(void)
 {
-    i = 3;
+    int i = 3;
     while( i > 0)
     {
-        print("meow\n");
-        
+        printf("meow\n");
+        i = i - 1;
     }
 }
