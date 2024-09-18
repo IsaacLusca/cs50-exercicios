@@ -14,8 +14,8 @@ int main(void)
     {
         printf("Nao aceito.\n");
     }
-    if ((c != 'n' || c != 'N') && (c != 's' || c != 'S'))
-    {
-        printf("Resposta invalida.");
-    }
+    // ((c != 'n' || c != 'N') && (c != 's' || c != 'S'))
+    // {
+    //     printf("Resposta invalida.");
+    // }
 }
