@@ -14,5 +14,8 @@ int main(void)
     {
         printf("%i e menor que %i\n", x, y);
     }
-    else printf("%i e %i sao iguais \n", x, y);
+    else
+    {
+        printf("%i e %i sao iguais \n", x, y);
+    }
 }
