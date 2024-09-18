@@ -4,12 +4,13 @@
 int main(void)
 {
     char c = get_char("Voce aceita os termos? s ou n ");
-    
-    if (c == 's')
+
+    if (c == 's' || 'S')
     {
         printf("Aceito.\n");
     }
-    else if (c == 'n')
+
+    else if (c == 'n' || 'N')
     {
         printf("Nao aceito.\n");
     }
