@@ -7,6 +7,6 @@ int main(void)
     while( i > 0)
     {
         printf("meow\n");
-        i = i - 1;
+        i--;
     }
 }
