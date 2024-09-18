@@ -9,9 +9,7 @@ int main(void)
     // }
     // printf("\n");
 
-
-
-int n = 3;
+    int n = 3;
     for (int j = 0; j < n; j++)
     {
         for (int k = 0; k < n; k++)
@@ -21,3 +19,4 @@ int n = 3;
         printf("\n");
     }
 }
+
