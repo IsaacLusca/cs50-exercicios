@@ -14,7 +14,7 @@ int main(void)
     {
         printf("Nao aceito.\n");
     }
-    else (c )
+    else ((c != 'n' || c != 'N') && (c != 's' || c != 'S'))
     {
         printf("Resposta invalida.");
     }
