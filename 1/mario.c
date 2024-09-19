@@ -4,6 +4,7 @@
 int main(void)
 {
 
+    // permitir apenas valores positivos
     int n;
     do
     {
@@ -11,6 +12,7 @@ int main(void)
     }
     while(n < 1);
 
+    //loop para 
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
