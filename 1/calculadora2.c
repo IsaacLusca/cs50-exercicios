@@ -4,13 +4,13 @@
 int div(int a, int b);
 int main(void)
 {
-    float x = get_int("x: ");
-    float y = get_int("y: ");
+    int x = get_int("x: ");
+    int y = get_int("y: ");
 
-    printf("%f \n", div(x, y));
+    printf("%0.3f \n", div(x, y));
 }
 
-int div (float a, float b)
+int div (int a, int b)
 {
     return a / b;
 }
