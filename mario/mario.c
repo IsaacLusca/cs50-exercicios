@@ -3,15 +3,15 @@
 
 int main(void){
 
-// int n;
-// do{
-//     n = get_int("Tamanho: ");
-// } while (n < 1);
+int n;
 
+do {
+    n = get_int("Tamanho: ");
+} while (n < 1)
 
-for (int i = 0; i <= 5; i++)
+for (int i = 0; i <= n; i++)
     {
-        for (int j = 5; j > i ; j--)
+        for (int j = n; j > i ; j--)
         {
             printf(" ");
         }
