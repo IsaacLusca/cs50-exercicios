@@ -15,7 +15,7 @@ int main(void)
     for (int i = 0; i < n; i++)
     {
         // esse laço vai colocar o valor de entrada n no J e,
-        // enquanto j for maior que i, vai ser adicionado um campo vazio e j subtraído
+        // enquanto j for maior que i, vai ser adicionado um campo vazio e subtraído
         for (int j = n; j > i; j--)
         {
             printf(" ");
