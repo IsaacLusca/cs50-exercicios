@@ -12,7 +12,7 @@ int main(void)
     }
     while(n < 1);
 
-    //loop para 
+    //loop para exibir os hashtags n por n
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
