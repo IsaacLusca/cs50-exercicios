@@ -18,7 +18,7 @@ int main(void)
 
     do
     {
-        n = get_int("")
+        n = get_int("Tamanho: ");
     }
 
     for (int i = 0; i < n; i++)
