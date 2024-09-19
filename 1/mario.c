@@ -10,16 +10,15 @@ int main(void)
     }
     printf("\n");
 
-    // int n;
-    // do
+    // int n = get_int("Tamanho: \n");
+    // while (n < 1)
     // {
     //     n = get_int("Tamanho: \n");
-    // }while (n < 1);
+    // }
 
-    int n = get_int("Tamanho: \n");
-    while (n < 1)
+    do
     {
-        n = get_int("Tamanho: \n");
+        n = get_int("")
     }
 
     for (int i = 0; i < n; i++)
