@@ -4,22 +4,12 @@
 int main(void)
 {
 
-    for (int i = 0; i < 4; i++)
-    {
-        printf("?");
-    }
-    printf("\n");
-
-    // int n = get_int("Tamanho: \n");
-    // while (n < 1)
-    // {
-    //     n = get_int("Tamanho: \n");
-    // }
-
+    int n;
     do
     {
         n = get_int("Tamanho: ");
     }
+    while{n < 1};
 
     for (int i = 0; i < n; i++)
     {
@@ -31,3 +21,14 @@ int main(void)
     }
 }
 
+    // for (int i = 0; i < 4; i++)
+    // {
+    //     printf("?");
+    // }
+    // printf("\n");
+
+    // int n = get_int("Tamanho: \n");
+    // while (n < 1)
+    // {
+    //     n = get_int("Tamanho: \n");
+    // }
