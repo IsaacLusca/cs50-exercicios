@@ -7,8 +7,8 @@ int main(void)
     // enquanto n for menor que 1, do será executado indeterminadamente
     do
     {
-        n = get_int("Tamanho: ");
-    }
+        n = ("Tamanho: ");
+    }get_int
     while (n < 1);
 
     // primeiro laço para percorrer toda estrutura e colocar a quebra de linha
