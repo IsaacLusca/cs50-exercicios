@@ -5,26 +5,24 @@ int main(void){
 
 int n;
 
+// enquanto n for menor que 1, do será executado indeterminadamente
 do {
     n = get_int("Tamanho: ");
 } while (n < 1);
 
-for (int i = 0; i <= n; i++)
+// primeiro laço para percorrer toda estrutura e colocar a quebra de linha
+for (int i = 0; i < n; i++)
     {
+        // esse laço vai colocar o valor de entrada n no J e, enquanto j for maior que i, vai ser adicionado um campo vazio e o valor de J será subtraído
         for (int j = n; j > i ; j--)
         {
             printf(" ");
         }
-
-        for (int k = 0; k < i; k++)
+        // nesse laço, k sempre será iniciado a zero e, enquanto k for menor ou igual que a variável i (que está no for inicial), será adicionado # até que k seja maior que i
+        for (int k = 0; k <= i; k++)
         {
             printf("#");
         }
         printf("\n");
     }
 }
-
-//Alguns dos passos seria??
-//Um for para as quebras de linha \n
-//Outro for para as hashtags
-//como vou fazer para adicionar uma hashtag e depois incrementar outra na linha de baixo?
