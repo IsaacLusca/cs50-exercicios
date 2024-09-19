@@ -3,16 +3,20 @@
 
 int main(void){
 
-int n;
-do{
-    n = get_int("Tamanho: ");
-} while (n < 1);
+// int n;
+// do{
+//     n = get_int("Tamanho: ");
+// } while (n < 1);
 
-for (int i = 0; i < n; i++)
+for (int i = 0; i < 5; i++)
     {
-        for (int j = 0; i < j; j++)
+        for (int j = 0; j < 5; j++)
         {
-            printf("#");
+            printf(" ");
+            for (int k = 0; k < j; k++)
+            {
+                printf("#");
+            }
         }
         printf("\n");
     }
