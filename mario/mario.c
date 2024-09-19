@@ -8,13 +8,14 @@ int main(void){
 //     n = get_int("Tamanho: ");
 // } while (n < 1);
 
-for (int i = 0; i < 5; i++)
+for (int i = 0; i <= 5; i++)
     {
-        printf("");
-        for(int j = 0; j < i; j++)
+        printf(" ");
+        for(int j = 0; j <= i; j++)
         {
             printf("#");
         }
+        printf("\n");
     }
 }
 
