@@ -10,7 +10,11 @@ do{
 
 for (int i = 0; i < n; i++)
     {
-        printf("#");
+        for (int j = 0; i < j; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
 }
 
