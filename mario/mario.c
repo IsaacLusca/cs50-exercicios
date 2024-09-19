@@ -7,8 +7,8 @@ int main(void)
     // enquanto n for menor que 1, do será executado indeterminadamente
     do
     {
-        n = ("Tamanho: ");
-    }get_int
+        n = get_int("Tamanho: ");
+    }
     while (n < 1);
 
     // primeiro laço para percorrer toda estrutura e colocar a quebra de linha
@@ -16,10 +16,7 @@ int main(void)
     {
         // esse laço vai colocar o valor de entrada n no J e,
         // enquanto j for maior que i, vai ser adicionado um campo vazio e j será subtraído
-        for (int j = n - 1; j > i; j--)
-        {
-            printf(" ");
-        }
+        printf(" ", n - i);
         // nesse laço, k sempre será iniciado a zero e,
         // enquanto k for menor ou igual que a variável i (que está no for inicial),
         // será adicionado # até que k seja maior que i
