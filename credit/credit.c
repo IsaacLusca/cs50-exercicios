@@ -5,14 +5,17 @@ int main(void)
 {
 
 long int cartao;
+int resto = 0;
 do
 {
     cartao = get_long("Number: ");
 }
 while (cartao < 1);
 
-int resto = (cartao / 10) % 10;
-printf("%i\n", resto);
+
+
+// int resto = (cartao / 10) % 10;
+// printf("%i\n", resto);
 }
 
 // Entrada do usuário
