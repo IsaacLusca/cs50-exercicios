@@ -20,7 +20,7 @@ int main(void)
 
     if (valor > 24)
     {
-        valor = A * n;
+        n = valor / A;
         printf("%i\n", n);
     }
 
