@@ -19,7 +19,7 @@ int main(void)
 
     if (valor > 24)
     {
-        
+        troco = A * n;
     }
 
 }
