@@ -4,6 +4,14 @@
 int main(void)
 {
 
+long int cartao;
+do
+{
+    cartao = get_long("Number: ");
+}
+while (cartao < 1);
+
+printf("%li", cartao);
 }
 
 // Entrada do usuário
