@@ -11,7 +11,7 @@ do
 }
 while (cartao < 1);
 
-int resto = cartao % 100;
+int resto = (cartao / 10) % 10;
 printf("%i\n", resto);
 }
 
