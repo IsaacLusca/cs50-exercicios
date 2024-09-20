@@ -22,7 +22,6 @@ long tempCartao = cartao;
 // função que soma e multiplica por 2os restos dos penúltimos dígitos
 while (tempCartao > 0)
 {
-    tamanho++;
     int resto = (tempCartao / 10) % 10;
     int multResto = resto * 2;
     if (multResto > 9)
@@ -31,13 +30,6 @@ while (tempCartao > 0)
     }
     sumResto += multResto;
     tempCartao /= 100;
-    if (tempCartao == 22 || tempCartao == 37 || tempCartao == 30 ||
-    tempCartao == 60 || tempCartao == 35 || tempCartao == 55 ||
-    tempCartao == 51 || tempCartao == 41 || tempCartao == 40 ||
-    tempCartao == 42 || tempCartao == 49 || tempCartao == 52)
-    {
-        primDigito = tempCartao;
-    }
 }
 
 long tempCartao2 = cartao;
@@ -56,7 +48,10 @@ int lenTotal = tamanho * 2;
 printf("%i", primDigito);
 // Função para calcular o comprimento
 
-
+while ()
+{
+    
+}
 }
 
 
