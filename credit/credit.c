@@ -11,7 +11,8 @@ do
 }
 while (cartao < 1);
 
-printf("%li", cartao);
+int resto = cartao
+printf("%li", resto);
 }
 
 // Entrada do usuário
