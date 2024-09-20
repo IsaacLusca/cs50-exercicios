@@ -38,7 +38,7 @@ int main(void)
         troco = (C + (A * n) + (B * z)) - 29;
         if (troco <= 15)
         {
-            
+            printf("%i\n", troco - 9);
         }
         printf("%i\n", troco);
     }
