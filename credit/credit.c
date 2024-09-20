@@ -17,9 +17,8 @@ while (divisao <= 10)
 {
     long int divisao = (cartao / 10);
     int resto = divisao % 10;
-
-    printf("%li\n%i\n", divisao, resto);
 }
+    printf("%i\n", sumResto);
 
 
 }
