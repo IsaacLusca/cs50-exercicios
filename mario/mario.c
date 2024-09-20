@@ -32,7 +32,7 @@ int main(void)
         // espaço de duas linhas
         printf("  ");
 
-        // lógica do mario
+        // lógica da escada
         for (int l = 0; l <= i; l++)
         {
             printf("#");
