@@ -4,17 +4,21 @@
 int main(void)
 {
 
-long cartao;
-int sumResto = 0;
-int sumResto2 = 0;
-do
-{
-    cartao = get_long("Number: ");
-}
-while (cartao < 1);
+    long cartao;
+    int sumResto = 0;
+    int sumResto2 = 0;
+    do
+    {
+        cartao = get_long("Number: ");
+    }
+    while (cartao < 1);
 
-// Cartão temporário para o while
-long tempCartao = cartao;
+    // Cartão temporário para o while
+    long tempCartao = cartao;
+
+
+}
+
 
 // função que soma e multiplica por 2os restos dos penúltimos dígitos
 while (tempCartao > 0)
@@ -38,11 +42,6 @@ while (tempCartao2 > 0)
     sumResto2 += resto;
     tempCartao2 /= 100;
 }
-    printf("%i\n", sumResto + sumResto2);
-
-}
-
-
 
 
 // Entrada do usuário
