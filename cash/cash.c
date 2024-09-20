@@ -26,25 +26,25 @@ int main(void)
 
     while (valor >= D)
     {
-        valor++;
+        moeda++;
         valor -= D;
     }
 
     while (valor >= C)
     {
-        valor++;
+        moeda++;
         valor -= C;
     }]
 
     while (valor >= B)
     {
-        valor++;
+        moeda++;
         valor -= B;
     }
 
     while (valor >= A)
     {
-        valor++;
+        moeda++;
         valor -= A;
     }
 }
