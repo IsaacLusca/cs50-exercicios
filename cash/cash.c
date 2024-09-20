@@ -17,6 +17,11 @@ int main(void)
     }
     while (valor < 0);
 
+    if (valor > 24)
+    {
+        
+    }
+
 }
 
 //O que devo fazer?
