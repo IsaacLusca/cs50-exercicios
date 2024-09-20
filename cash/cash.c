@@ -47,6 +47,8 @@ int main(void)
         moeda++;
         valor -= A;
     }
+
+    printf("Change owed: %i", moeda);
 }
 
 //O que devo fazer?
