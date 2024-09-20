@@ -46,8 +46,8 @@ long lenCartao = cartao;
 int len = 0;
 while (lenCartao > 0)
 {
-    lenCartao = lenCartao % 10;
     len++;
+    lenCartao = lenCartao % 10;
     lenCartao /= 10;
 }
 printf("%i\n", len);
