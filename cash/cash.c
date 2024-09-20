@@ -17,12 +17,10 @@ int main(void)
     }
     while (valor < 0);
 
-
-
-
 }
 
-
+//O que devo fazer?
+// solicitar o troco
 
 
 
