@@ -43,8 +43,11 @@ while (tempCartao2 > 0)
 }
 printf("%i\n", sumResto + sumResto2);
 
+
+
 // Função para calcular o comprimento
-printf("%i\n",tamanho);
+if (cartao)
+
 }
 
 
