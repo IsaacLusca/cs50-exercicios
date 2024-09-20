@@ -31,7 +31,10 @@ while (tempCartao > 0)
     }
     sumResto += multResto;
     tempCartao /= 100;
-    if (tempCartao == 22 || 37 || 30 || 60 || 35 || 22 || 55 || 51 || 41 || 40 || 42 || )
+    if (tempCartao == 22 || 37 || 30 || 60 || 35 || 22 || 55 || 51 || 41 || 40 || 42 || 49 || 51 || 52)
+    {
+        primDigito = tempCartao;
+    }
 }
 
 long tempCartao2 = cartao;
@@ -47,6 +50,7 @@ printf("%i\n", sumResto + sumResto2);
 
 int lenTotal = tamanho * 2;
 
+printf("%i", primDigito);
 // Função para calcular o comprimento
 
 
