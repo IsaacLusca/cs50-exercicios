@@ -25,10 +25,6 @@ while (cartao > 0)
 }
     printf("%i\n", sumResto);
 
-while (cartao > 0)
-{
-    
-}
 }
 
 
