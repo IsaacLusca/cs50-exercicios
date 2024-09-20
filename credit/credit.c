@@ -14,11 +14,11 @@ do
 }
 while (cartao < 1);
 
-while (cartao < 10)
+while (cartao > 0)
 {
-    divisao = cartao / 10;
-    resto = divisao % 10;
-    resto = resto + resto;
+    resto = cartao % 10;
+    sumResto = sumResto + resto;
+    cartao = cartao / 10;
 }
     printf("%i\n", sumResto);
 
