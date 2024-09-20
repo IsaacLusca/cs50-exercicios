@@ -21,7 +21,11 @@ int main(void)
     {
         n = valor / A;
         troco = A * n;
-        printf("%i", troco);
+        printf("%i\n", troco);
     }
 
+    if (valor < 10)
+    {
+        
+    }
 }
