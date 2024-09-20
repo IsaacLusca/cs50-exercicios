@@ -17,27 +17,41 @@ int main(void)
     }
     while (valor < 0);
 
-    if (valor < 5)
-    {
-        int n = valor / A;
-        valor = A * n;
-        printf("%i\n", n);
-    }
 
-    if (valor >= 5 && valor < 10)
-    {
-        int n = valor / A;
-        int z = valor / B;
-        valor = (B * z) + (A * n);
-        printf("%i\n", z + n);
-    }
 
-    if (valor >= 10 && valor < 25)
-    {
-        int n = valor / A;
-        int z = valor / B;
-        int y = valor / C;
-        valor = (C * y) + (A * n) + (B * z);
-        printf("%i\n", y + n + z);
-    }
+
 }
+
+
+
+
+
+
+
+
+
+
+    // if (valor < 5)
+    // {
+    //     int n = valor / A;
+    //     valor = A * n;
+    //     printf("%i\n", n);
+    // }
+
+    // if (valor >= 5 && valor < 10)
+    // {
+    //     int n = valor / A;
+    //     int z = valor / B;
+    //     valor = (B * z) + (A * n);
+    //     printf("%i\n", z + n);
+    // }
+
+    // if (valor >= 10 && valor < 25)
+    // {
+    //     int n = valor / A;
+    //     int z = valor / B;
+    //     int y = valor / C;
+    //     valor = (C * y) + (A * n) + (B * z);
+    //     printf("%i\n", y + n + z);
+    // }
+
