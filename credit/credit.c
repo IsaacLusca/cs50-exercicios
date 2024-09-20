@@ -8,6 +8,7 @@ long cartao;
 int sumResto = 0;
 int sumResto2 = 0;
 int tamanho = 0;
+int primDigito;
 
 do
 {
@@ -30,6 +31,7 @@ while (tempCartao > 0)
     }
     sumResto += multResto;
     tempCartao /= 100;
+    if (tempCartao ==)
 }
 
 long tempCartao2 = cartao;
@@ -45,7 +47,6 @@ printf("%i\n", sumResto + sumResto2);
 
 int lenTotal = tamanho * 2;
 
-int primDigito = cartao  ;
 // Função para calcular o comprimento
 
 
