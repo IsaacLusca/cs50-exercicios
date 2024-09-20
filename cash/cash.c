@@ -10,7 +10,7 @@ int main(void)
 {
     int valor;
     int troco;
-    int n;
+    int n, z;
     do
     {
         valor = get_int("Change owed: ");
@@ -28,6 +28,14 @@ int main(void)
     {
         n = valor / A;
         troco = (B + (A * n)) - 9;
+        printf("%i\n", troco);
+    }
+
+    if (valor >= 10 && valor < 25)
+    {
+        n = valor / A;
+        z = valor / B;
+        troco = (C + (A * n) + (B * z)) - 29;
         printf("%i\n", troco);
     }
 }
