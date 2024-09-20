@@ -10,9 +10,7 @@ int main(void)
 {
     int valor;
     int troco;
-    int n = valor / A;
-    int z = valor / B;
-    int y = valor / C;
+
     do
     {
         valor = get_int("Change owed: ");
@@ -21,22 +19,24 @@ int main(void)
 
     if (valor < 5)
     {
-        n = valor / A;
+        int n = valor / A;
         troco = A * n;
         printf("%i\n", n);
     }
 
     if (valor >= 5 && valor < 10)
     {
-        n = valor / A;
+        int n = valor / A;
+        int z = valor / B;
         troco = (B * z) + (A * n);
         printf("%i\n", z + n);
     }
 
     if (valor >= 10 && valor < 25)
     {
-        n = valor / A;
-        z = valor / B;
+        int n = valor / A;
+        int z = valor / B;
+        int y = valor / C;
         troco = (C * y) + (A * n) + (B * z);
         printf("%i\n", y + n + z);
     }
