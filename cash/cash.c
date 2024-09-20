@@ -18,11 +18,6 @@ int main(void)
     }
     while (valor < 0);
 
-    int a = valor / A;
-    int b = valor / B;
-    int c = valor / C;
-    int d = valor / D;
-
     // while (valor > D)
     // {
     //     valor++;
@@ -32,25 +27,25 @@ int main(void)
     while (valor >= D)
     {
         valor++;
-        valor = valor - D;
+        valor -= D;
     }
 
     while (valor >= C)
     {
         valor++;
-        valor = valor - C;
+        valor -= C;
     }]
 
     while (valor >= B)
     {
         valor++;
-        valor = valor - B;
+        valor -= B;
     }
 
     while (valor >= A)
     {
         valor++;
-        valor = valor - A;
+        valor -= A;
     }
 }
 
