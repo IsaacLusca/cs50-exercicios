@@ -18,12 +18,12 @@ int main(void)
     }
     while (valor < 0);
 
-    d = valor / D;
-    c = valor / C;
-    b = valor / B;
-    a = valor / A;
+    int d = valor / D;
+    int c = valor / C;
+    int b = valor / B;
+    int a = valor / A;
 
-    if
+    printf("%i,%i,%i,%i", a, b, c, d);
 }
 
 //O que devo fazer?
