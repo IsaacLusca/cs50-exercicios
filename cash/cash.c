@@ -23,7 +23,10 @@ int main(void)
     int c = valor / C;
     int d = valor / D;
 
-    for (i = valor; valor > D; )
+    if (valor >= 25)
+    {
+        troco = (valor / D) + 
+    }
 
 }
 
