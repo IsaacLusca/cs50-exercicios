@@ -31,7 +31,7 @@ while (tempCartao > 0)
     }
     sumResto += multResto;
     tempCartao /= 100;
-    if (tempCartao ==)
+    if (tempCartao == 22 || 22)
 }
 
 long tempCartao2 = cartao;
