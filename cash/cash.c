@@ -29,10 +29,28 @@ int main(void)
     //     valor - D;
     // }
 
-    for (int i = valor; i >= D; i++)
+    while (valor >= D)
     {
-        int trocoD = valor - D;
-        printf("%i",trocoD);
+        valor++;
+        valor = valor - D;
+    }
+
+    while (valor >= C)
+    {
+        valor++;
+        valor = valor - C;
+    }]
+
+    while (valor >= B)
+    {
+        valor++;
+        valor = valor - B;
+    }
+
+    while (valor >= A)
+    {
+        valor++;
+        valor = valor - A;
     }
 }
 
