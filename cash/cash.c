@@ -28,6 +28,6 @@ int main(void)
     {
         n = valor / B;
         troco = B + (A * n);
-        printf("%i", troco);
+        printf("%i\n", troco);
     }
 }
