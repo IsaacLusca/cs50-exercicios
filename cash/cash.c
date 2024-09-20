@@ -23,11 +23,7 @@ int main(void)
     int c = valor / C;
     int d = valor / D;
 
-    if (valor < 5)
-    {
-        moeda = a;
-        printf("%i\n", moeda);
-    }
+    if (valor > 25)
 }
 
 //O que devo fazer?
