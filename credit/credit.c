@@ -31,7 +31,10 @@ while (tempCartao > 0)
     }
     sumResto += multResto;
     tempCartao /= 100;
-    if (tempCartao == 22 || 37 || 30 || 60 || 35 || 22 || 55 || 51 || 41 || 40 || 42 || 49 || 51 || 52)
+    if (tempCartao == 22 || tempCartao == 37 || tempCartao == 30 ||
+    tempCartao == 60 || tempCartao == 35 || tempCartao == 55 ||
+    tempCartao == 51 || tempCartao == 41 || tempCartao == 40 ||
+    tempCartao == 42 || tempCartao == 49 || tempCartao == 52)
     {
         primDigito = tempCartao;
     }
