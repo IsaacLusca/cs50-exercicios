@@ -10,7 +10,7 @@ int main(void)
 {
     int valor;
     int troco;
-    int n = 1;
+    int n;
 
     do
     {
@@ -20,7 +20,7 @@ int main(void)
 
     if (valor > 24)
     {
-        troco = A * n;
+        valor = A * n;
         printf("%i\n", n);
     }
 
