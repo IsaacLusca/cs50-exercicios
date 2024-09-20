@@ -8,7 +8,7 @@ int main(void)
     {
         valor = get_int("Change owed: ");
     }
-    while (valor > 1 || valor <= 100);
+    while (valor < 1 || valor >= 100);
 
     printf("%i", valor);
 }
