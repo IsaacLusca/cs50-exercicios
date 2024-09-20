@@ -10,7 +10,7 @@ int main(void)
 {
     int valor;
     int troco;
-    int n, z;
+    int n, z, y;
     do
     {
         valor = get_int("Change owed: ");
@@ -35,7 +35,8 @@ int main(void)
     {
         n = valor / A;
         z = valor / B;
-        troco = (C + (A * n) + (B * z)) - 29;
+        y = valor / C;
+        troco = (C * y) + (B * z) + (A * n);
         printf("%i\n", troco);
     }
 }
