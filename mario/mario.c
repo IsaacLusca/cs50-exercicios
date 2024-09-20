@@ -20,6 +20,7 @@ int main(void)
         {
             printf(" ");
         }
+
         // nesse laço, k sempre será iniciado a zero e,
         // enquanto k for menor ou igual que a variável i (que está no for inicial),
         // será adicionado # até que k seja maior que i
@@ -27,8 +28,11 @@ int main(void)
         {
             printf("#");
         }
+
+        for (int )
+
         printf("\n");
     }
 
-    
+
 }
