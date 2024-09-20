@@ -25,7 +25,7 @@ int main(void)
 
     if (valor >= 25)
     {
-        troco = (valor / D) + 
+        troco = (valor / D) + (valor - D) / C
     }
 
 }
