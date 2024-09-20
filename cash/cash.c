@@ -29,6 +29,7 @@ int main(void)
 
 
 
+
     // if (valor < 5)
     // {
     //     int n = valor / A;
