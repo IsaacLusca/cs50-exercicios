@@ -23,11 +23,17 @@ int main(void)
     int c = valor / C;
     int d = valor / D;
 
-    if (valor >= 25)
-    {
-        troco = (valor / D) + (valor - D) / C + (valor - C) / B + (valor - B) / A;
-    }
+    // while (valor > D)
+    // {
+    //     valor++;
+    //     valor - D;
+    // }
 
+    for (int i = valor; i >= D; i++)
+    {
+        int trocoD = valor - D;
+        printf("%i",trocoD);
+    }
 }
 
 //O que devo fazer?
