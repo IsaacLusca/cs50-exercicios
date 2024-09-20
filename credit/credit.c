@@ -4,7 +4,7 @@
 int main(void)
 {
 
-long int cartao;
+long cartao;
 int sumResto = 0;
 int sumResto2 = 0;
 do
@@ -13,9 +13,10 @@ do
 }
 while (cartao < 1);
 
-while (cartao > 0)
+long tempCartao = cartao;
+while (tempCartao > 0)
 {
-    int resto = (cartao / 10) % 10;
+    int resto = (tempCartao / 10) % 10;
     int multResto = resto * 2;
     if (multResto > 9)
     {
@@ -25,7 +26,9 @@ while (cartao > 0)
     cartao = cartao / 100;
 }
 printf("%li", cartao);
-while (cartao > 0)
+
+long tempCartao2 = cartao;
+while (tempCartao2 > 0)
 {
     int resto = cartao % 10;
     int multResto = resto * 2;
