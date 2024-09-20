@@ -7,6 +7,8 @@ int main(void)
 long cartao;
 int sumResto = 0;
 int sumResto2 = 0;
+int tamanho = 0;
+
 do
 {
     cartao = get_long("Number: ");
@@ -19,6 +21,7 @@ long tempCartao = cartao;
 // função que soma e multiplica por 2os restos dos penúltimos dígitos
 while (tempCartao > 0)
 {
+    tamanho++;
     int resto = (tempCartao / 10) % 10;
     int multResto = resto * 2;
     if (multResto > 9)
@@ -41,16 +44,7 @@ while (tempCartao2 > 0)
 printf("%i\n", sumResto + sumResto2);
 
 // Função para calcular o comprimento
-
-long lenCartao = cartao;
-int len = 0;
-while (lenCartao > 0)
-{
-    len++;
-    lenCartao = lenCartao % 10;
-    lenCartao /= 10;
-}
-printf("%i\n", len);
+printf("%i\n",tamanho);
 }
 
 
