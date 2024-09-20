@@ -29,8 +29,10 @@ int main(void)
             printf("#");
         }
 
+        // espaço de duas linhas
         printf("  ");
 
+        //lógica do mario
         for (int l = 0; l <= i; l++)
         {
             printf("#");
@@ -38,6 +40,4 @@ int main(void)
 
         printf("\n");
     }
-
-
 }
