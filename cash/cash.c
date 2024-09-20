@@ -10,6 +10,7 @@ int main(void)
 {
     int valor;
     int troco;
+    int n;
     do
     {
         valor = get_int("Change owed: ");
@@ -18,7 +19,9 @@ int main(void)
 
     if (valor < 5)
     {
+        n = valor / A;
         troco = A * n;
+        printf("%i", troco);
     }
 
 }
