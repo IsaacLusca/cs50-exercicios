@@ -18,12 +18,12 @@ int main(void)
     }
     while (valor < 0);
 
-    if (valor > 24)
-    {
-        n = valor / D;
-        printf("%i\n", n);
-    }
+    d = valor / D;
+    c = valor / C;
+    b = valor / B;
+    a = valor / A;
 
+    if
 }
 
 //O que devo fazer?
