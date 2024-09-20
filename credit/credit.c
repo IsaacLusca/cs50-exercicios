@@ -5,7 +5,6 @@ int main(void)
 {
 
 long int cartao;
-int resto;
 int sumResto = 0;
 do
 {
@@ -15,7 +14,7 @@ while (cartao < 1);
 
 while (cartao > 0)
 {
-    resto = (cartao / 10) % 10;
+    int resto = (cartao / 10) % 10;
     int multResto = resto * 2;
     if (multResto > 9)
     {
