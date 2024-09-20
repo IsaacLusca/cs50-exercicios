@@ -9,18 +9,13 @@
 int main(void)
 {
     int valor;
-    int troco = 
+    int troco;
     do
     {
         valor = get_int("Change owed: ");
     }
     while (valor < 0);
 
-    if (valor < 5)
-    {
-        for (i = A; i == valor; i++)
-        {
-            printf()
-        }
-    }
+    if (valor > 100)
+    
 }
