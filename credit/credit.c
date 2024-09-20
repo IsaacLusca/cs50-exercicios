@@ -43,12 +43,14 @@ printf("%i\n", sumResto + sumResto2);
 // Função para calcular o comprimento
 
 long lenCartao = cartao;
-int len;
+int len = 0;
 while (lenCartao > 0)
 {
     lenCartao = lenCartao % 10;
-    
+    len++;
+    lenCartao /= 10;
 }
+printf("%i\n", len);
 }
 
 
