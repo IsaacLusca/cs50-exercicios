@@ -33,12 +33,6 @@ int main(void)
 
     if (valor >= 10 && valor < 25)
     {
-        y = valor / C; // Moedas de 10 centavos
-        valor = valor % C;
-        z = valor / B; // Moedas de 5 centavos
-        valor = valor % B;
-        n = valor / A; // Moedas de 1 centavo
-        troco = (C * y) + (B * z) + (A * n);
-        printf("%i\n", troco);
+        
     }
 }
