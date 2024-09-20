@@ -9,7 +9,7 @@
 int main(void)
 {
     int valor;
-    int moeda;
+    int moeda = 0;
     int n;
 
     do
@@ -34,7 +34,7 @@ int main(void)
     {
         moeda++;
         valor -= C;
-    }]
+    }
 
     while (valor >= B)
     {
