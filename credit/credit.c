@@ -5,8 +5,7 @@ int main(void)
 {
 
 long int cartao;
-int resto = 0;
-int divisao;
+int resto;
 int sumResto = 0;
 do
 {
@@ -18,7 +17,7 @@ while (cartao > 10)
 {
     cartao = cartao / 10;
     resto = cartao % 10;
-    sumResto = sumResto + resto;
+    sumResto = sumResto + resto * 2;
 }
     printf("%i\n", sumResto);
 
