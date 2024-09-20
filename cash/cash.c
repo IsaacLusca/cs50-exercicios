@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+#define A, B, C, D 1, 5, 10, 25
+
 int main(void)
 {
     int valor;
@@ -8,7 +10,9 @@ int main(void)
     {
         valor = get_int("Change owed: ");
     }
-    while (valor < 1 || valor >= 100);
+    while (valor < 0);
 
-    printf("%i", valor);
+    int a, b, c, d;
+
+    if
 }
