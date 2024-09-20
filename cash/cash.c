@@ -18,6 +18,7 @@ int main(void)
     }
     while (valor < 1);
 
+    // Algoritmo guloso, vai verificando do maior valor até o menor.
     while (valor >= D)
     {
         moeda++;
@@ -44,5 +45,3 @@ int main(void)
 
     printf("%i\n", moeda);
 }
-
-
