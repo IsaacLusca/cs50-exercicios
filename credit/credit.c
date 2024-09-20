@@ -13,9 +13,9 @@ do
 }
 while (cartao < 1);
 
-while (cartao <= 10)
+while (cartao < 10)
 {
-    
+
 }
     printf("%i\n", sumResto);
 
