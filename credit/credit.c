@@ -13,10 +13,9 @@ do
 }
 while (cartao < 1);
 
-while (divisao <= 10)
+while (cartao <= 10)
 {
-    long int divisao = (cartao / 10);
-    int resto = divisao % 10;
+
 }
     printf("%i\n", sumResto);
 
