@@ -18,7 +18,7 @@ int main(void)
 
     if (valor < 5)
     {
-        
+        troco = A * n;
     }
 
 }
