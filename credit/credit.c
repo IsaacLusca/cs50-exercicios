@@ -6,6 +6,7 @@ int main(void)
 
 long int cartao;
 int resto = 0;
+int sumResto = 0;
 do
 {
     cartao = get_long("Number: ");
@@ -14,7 +15,8 @@ while (cartao < 1);
 
 while (cartao <= 10)
 {
-    resto += (cartao / 10) % 10;
+    resto = (cartao / 10) % 10;
+    sumResto += resto;
 }
 printf("%i\n", resto);
 
