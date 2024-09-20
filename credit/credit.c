@@ -42,7 +42,13 @@ printf("%i\n", sumResto + sumResto2);
 
 // Função para calcular o comprimento
 
-while ()
+long lenCartao = cartao;
+int len;
+while (lenCartao > 0)
+{
+    lenCartao = lenCartao % 10;
+    
+}
 }
 
 
