@@ -13,7 +13,10 @@ do
 }
 while (cartao < 1);
 
+// Cartão temporário para o while
 long tempCartao = cartao;
+
+// função que somará os restos dos penúltimos dígitos
 while (tempCartao > 0)
 {
     int resto = (tempCartao / 10) % 10;
@@ -25,9 +28,9 @@ while (tempCartao > 0)
     sumResto = sumResto + multResto;
     tempCartao = tempCartao / 100;
 }
-printf("%li", cartao);
 
 long tempCartao2 = cartao;
+
 while (tempCartao2 > 0)
 {
     int resto = tempCartao2 % 10;
