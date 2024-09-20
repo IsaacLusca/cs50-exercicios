@@ -26,6 +26,8 @@ int main(void)
 
     if (valor < 10)
     {
-        
+        n = valor / B;
+        troco = B + (A * n);
+        printf("%i", troco);
     }
 }
