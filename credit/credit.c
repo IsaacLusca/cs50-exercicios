@@ -34,12 +34,7 @@ long tempCartao2 = cartao;
 while (tempCartao2 > 0)
 {
     int resto = tempCartao2 % 10;
-    int multResto = resto * 2;
-    if (multResto > 9)
-    {
-        multResto = (multResto % 10) + 1;
-    }
-    sumResto2 = sumResto2 + multResto;
+    sumResto2 = sumResto2 + resto;
     tempCartao2 = tempCartao2 / 100;
 }
     printf("%i\n", sumResto + sumResto2);
