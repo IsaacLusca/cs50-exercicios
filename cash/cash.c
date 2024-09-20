@@ -9,6 +9,7 @@
 int main(void)
 {
     int valor;
+    int troco = 
     do
     {
         valor = get_int("Change owed: ");
@@ -17,6 +18,9 @@ int main(void)
 
     if (valor < 5)
     {
-        for (i = 0; )
+        for (i = A; i == valor; i++)
+        {
+            printf()
+        }
     }
 }
