@@ -8,7 +8,7 @@ long cartao;
 int sumResto = 0;
 int sumResto2 = 0;
 int tamanho = 0;
-int primDigito;
+int primDigito = 0;
 
 do
 {
@@ -45,14 +45,15 @@ printf("%i\n", sumResto + sumResto2);
 
 int lenTotal = tamanho * 2;
 
-printf("%i", primDigito);
+// printf("%i", primDigito);
 // Função para calcular o comprimento
 
 for(int i = cartao; i > 100; i /= 10)
 {
     tamanho++;
-    
 }
+
+printf("%i",tamanho);
 }
 
 
