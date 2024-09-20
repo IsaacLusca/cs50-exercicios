@@ -17,7 +17,7 @@ while (cartao > 10)
 {
     cartao = cartao / 10;
     resto = cartao % 10;
-    sumResto = sumResto + resto * 2;
+    sumResto = sumResto + resto;
 }
     printf("%i\n", sumResto);
 
