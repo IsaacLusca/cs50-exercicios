@@ -16,7 +16,7 @@ int main(void)
     {
         valor = get_int("Change owed: ");
     }
-    while (valor < 0);
+    while (valor < 1);
 
     while (valor >= D)
     {
