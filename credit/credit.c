@@ -38,10 +38,11 @@ while (tempCartao2 > 0)
     sumResto2 += resto;
     tempCartao2 /= 100;
 }
-    printf("%i\n", sumResto + sumResto2);
+printf("%i\n", sumResto + sumResto2);
 
-    
+// Função para calcular o comprimento
 
+while ()
 }
 
 
