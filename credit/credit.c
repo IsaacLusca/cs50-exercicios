@@ -3,5 +3,8 @@
 
 int main(void)
 {
-    
+
 }
+
+// Entrada do usuário
+// calcular a soma da verificação.
