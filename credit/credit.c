@@ -45,9 +45,9 @@ printf("%i\n", sumResto + sumResto2);
 
 int lenTotal = len * 2;
 
-int primDigito = cartao / (cartao % (lenTotal - 2));
+int primDigito = cartao / ;
 // Função para calcular o comprimento
-if (cartao / cartao )
+if ((cartao / lenTotal - 2) )
 
 }
 
