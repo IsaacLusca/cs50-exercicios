@@ -33,6 +33,9 @@ int main(void)
 
     if (valor >= 10 && valor < 25)
     {
-        
+        n = valor / A;
+        z = valor / B;
+        troco = (C + (A * n) + (B * z)) - 29;
+        printf("%i\n", troco);
     }
 }
