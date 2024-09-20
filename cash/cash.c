@@ -20,7 +20,7 @@ int main(void)
     if (valor < 5)
     {
         int n = valor / A;
-        troco = A * n;
+        valor = A * n;
         printf("%i\n", n);
     }
 
@@ -28,7 +28,7 @@ int main(void)
     {
         int n = valor / A;
         int z = valor / B;
-        troco = (B * z) + (A * n);
+        valor = (B * z) + (A * n);
         printf("%i\n", z + n);
     }
 
@@ -37,7 +37,7 @@ int main(void)
         int n = valor / A;
         int z = valor / B;
         int y = valor / C;
-        troco = (C * y) + (A * n) + (B * z);
+        valor = (C * y) + (A * n) + (B * z);
         printf("%i\n", y + n + z);
     }
 }
