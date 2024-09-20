@@ -18,12 +18,6 @@ int main(void)
     }
     while (valor < 0);
 
-    // while (valor > D)
-    // {
-    //     valor++;
-    //     valor - D;
-    // }
-
     while (valor >= D)
     {
         moeda++;
