@@ -23,7 +23,7 @@ int main(void)
     int c = valor / C;
     int d = valor / D;
 
-    for (i = valor; )
+    for (i = valor; valor > D; )
 
 }
 
