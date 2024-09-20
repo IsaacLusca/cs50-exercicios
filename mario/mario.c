@@ -29,7 +29,12 @@ int main(void)
             printf("#");
         }
 
-        for (int )
+        printf("  ");
+
+        for (int l = 0; l <= i; l++)
+        {
+            printf("#");
+        }
 
         printf("\n");
     }
