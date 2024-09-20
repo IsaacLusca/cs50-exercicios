@@ -9,7 +9,7 @@
 int main(void)
 {
     int valor;
-    int troco;
+    int moeda;
     int n;
 
     do
@@ -18,12 +18,16 @@ int main(void)
     }
     while (valor < 0);
 
-    int d = valor / D;
-    int c = valor / C;
-    int b = valor / B;
     int a = valor / A;
+    int b = valor / B;
+    int c = valor / C;
+    int d = valor / D;
 
-    printf("%i,%i,%i,%i", a, b, c, d);
+    if (valor < 5)
+    {
+        moeda = a;
+        printf("%i\n", moeda);
+    }
 }
 
 //O que devo fazer?
