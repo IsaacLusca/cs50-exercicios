@@ -27,7 +27,7 @@ int main(void)
     if (valor < 10)
     {
         n = valor / A;
-        troco = B + (A * n);
+        troco = (B + (A * n)) - 9;
         printf("%i\n", troco);
     }
 }
