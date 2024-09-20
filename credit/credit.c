@@ -48,7 +48,7 @@ int lenTotal = tamanho * 2;
 printf("%i", primDigito);
 // Função para calcular o comprimento
 
-while ()
+while (cartao > 0)
 {
     
 }
