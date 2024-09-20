@@ -43,6 +43,7 @@ while (tempCartao2 > 0)
 }
 printf("%i\n", sumResto + sumResto2);
 
+lenTotal = len * 2;
 
 
 // Função para calcular o comprimento
