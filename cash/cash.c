@@ -1,7 +1,10 @@
 #include <cs50.h>
 #include <stdio.h>
 
-#define A, B, C, D 1, 5, 10, 25
+#define A 1
+#define B 5
+#define C 10
+#define D 25
 
 int main(void)
 {
@@ -12,7 +15,8 @@ int main(void)
     }
     while (valor < 0);
 
-    int a, b, c, d;
-
-    if
+    if (valor < 5)
+    {
+        for (i = 0; )
+    }
 }
