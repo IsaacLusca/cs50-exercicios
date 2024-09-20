@@ -13,7 +13,7 @@ do
 }
 while (cartao < 1);
 
-while (cartao > 10)
+while (cartao >= 10)
 {
     cartao = cartao / 10;
     resto = cartao % 10;
