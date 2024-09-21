@@ -88,7 +88,10 @@ if ((sum % 10 == 0 || tamanho > 12 || tamanho < 17))
     {
         printf("INVALID\n");
     }
-printf("INVALID\n");
+}
+else
+{
+    printf("INVALID\n");
 }
 
 }
