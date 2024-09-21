@@ -70,11 +70,17 @@ if ((sum % 10 == 0))
     {
         printf("AMEX\n");
     }
-    if (primeirosDigitos == 22||55||51||52)
+    if (primeirosDigitos == 22||
+        primeirosDigitos == 55||
+        primeirosDigitos == 51||
+        primeirosDigitos == 52)
     {
         printf("MASTERCARD\n");
     }
-    if (primeirosDigitos == 41||40||42||49)
+    if (primeirosDigitos == 41||
+        primeirosDigitos == 40||
+        primeirosDigitos == 42||
+        primeirosDigitos == 49)
     {
         printf("VISA\n");
     }
