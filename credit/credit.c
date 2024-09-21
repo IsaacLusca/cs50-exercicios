@@ -66,7 +66,7 @@ printf("%li\n", primeirosDigitos);
 
 if ((sum % 10 == 0))
 {
-    if(primeirosDigitos == )
+    if(primeirosDigitos == 37||)
 }
 
 }
