@@ -1,84 +1,94 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main(void)
+// Função para calcular a soma dos penúltimos dígitos multiplicados por 2
+int soma_mult_resto(long cartao)
 {
-
-    long cartao;
     int sumResto = 0;
-    int sumResto2 = 0;
-    int tamanho = 0;
-    // int primDigito;
-
-    do
+    while (cartao > 0)
     {
-        cartao = get_long("Number: ");
-    }
-    while (cartao < 1);
-
-    // Cartão temporário para o while
-    long tempCartao = cartao;
-
-    // função que soma e multiplica por 2os restos dos penúltimos dígitos
-    while (tempCartao > 0)
-    {
-        int resto = (tempCartao / 10) % 10;
+        int resto = (cartao / 10) % 10;
         int multResto = resto * 2;
         if (multResto > 9)
         {
             multResto = (multResto % 10) + 1;
         }
         sumResto += multResto;
-        tempCartao /= 100;
+        cartao /= 100;
     }
+    return sumResto;
+}
 
-    long tempCartao2 = cartao;
-
-    // função que soma os restos dos ultimos dígitos
-    while (tempCartao2 > 0)
+// Função para calcular a soma dos últimos dígitos
+int soma_resto(long cartao)
+{
+    int sumResto2 = 0;
+    while (cartao > 0)
     {
-        int resto = tempCartao2 % 10;
+        int resto = cartao % 10;
         sumResto2 += resto;
-        tempCartao2 /= 100;
+        cartao /= 100;
     }
+    return sumResto2;
+}
 
-    int sum = sumResto + sumResto2;
-    // printf("SUM: %i\n", sum);
-
-    // Calcular o comprimento
-    long tempCartao3 = cartao;
-    while (tempCartao3 > 0)
+// Função para calcular o tamanho do cartão
+int calcular_tamanho(long cartao)
+{
+    int tamanho = 0;
+    while (cartao > 0)
     {
-        tempCartao3 /= 10;
+        cartao /= 10;
         tamanho++;
     }
-    // printf("TAMANHO: %i\n", tamanho);
+    return tamanho;
+}
+
+// Função para obter os dois primeiros dígitos
+long obter_primeiros_digitos(long cartao)
+{
+    while (cartao >= 100)
+    {
+        cartao /= 10;
+    }
+    return cartao;
+}
+
+// Função principal
+int main(void)
+{
+    long cartao;
+
+    // Solicita um número de cartão válido
+    do
+    {
+        cartao = get_long("Number: ");
+    }
+    while (cartao < 1);
+
+    // Calcula as somas dos dígitos
+    int sumResto = soma_mult_resto(cartao);
+    int sumResto2 = soma_resto(cartao);
+    int sum = sumResto + sumResto2;
+
+    // Calcula o tamanho do cartão
+    int tamanho = calcular_tamanho(cartao);
 
     // Obter os dois primeiros dígitos
-    long primeirosDigitos = cartao;
-    while (primeirosDigitos >= 100)
-    {
-        primeirosDigitos /= 10;
-    }
-    // printf("PRIMEIROS DIGITOS: %li\n", primeirosDigitos);
+    long primeirosDigitos = obter_primeiros_digitos(cartao);
 
+    // Validação do cartão com base nas regras
     if ((sum % 10 == 0 && tamanho > 12 && tamanho < 17))
     {
         if (primeirosDigitos == 37)
         {
             printf("AMEX\n");
         }
-        else if (primeirosDigitos == 22||
-                 primeirosDigitos == 55||
-                 primeirosDigitos == 51||
-                 primeirosDigitos == 52)
+        else if (primeirosDigitos == 22 || primeirosDigitos == 55 || primeirosDigitos == 51 || primeirosDigitos == 52)
         {
             printf("MASTERCARD\n");
         }
-        else if (primeirosDigitos == 41||
-                 primeirosDigitos == 40||
-                 primeirosDigitos == 42||
-                 primeirosDigitos == 49)
+        else if (primeirosDigitos == 41 || primeirosDigitos == 40 || primeirosDigitos == 42 || primeirosDigitos == 49)
         {
             printf("VISA\n");
         }
