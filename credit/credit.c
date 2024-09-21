@@ -43,6 +43,7 @@ int main(void)
     }
 
     int sum = sumResto + sumResto2;
+    // printf("SUM: %i\n", sum);
 
 
     // Calcular o comprimento
@@ -52,6 +53,7 @@ int main(void)
         tempCartao3 /= 10;
         tamanho++;
     }
+    // printf("TAMANHO: %i\n", tamanho);
 
     // Obter os dois primeiros dígitos
     long primeirosDigitos = cartao;
@@ -59,13 +61,7 @@ int main(void)
     {
         primeirosDigitos /= 10;
     }
-
-
-
-    // printf("SUM: %i\n", sum);
-    // printf("TAMANHO: %i\n", tamanho);
     // printf("PRIMEIROS DIGITOS: %li\n", primeirosDigitos);
-    // printf("VALOR DO RESTO %i", teste);
 
     if ((sum % 10 == 0 && tamanho > 12 && tamanho < 17))
     {
