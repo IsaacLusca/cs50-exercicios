@@ -66,7 +66,18 @@ printf("%li\n", primeirosDigitos);
 
 if ((sum % 10 == 0))
 {
-    if(primeirosDigitos == 37||)
+    if (primeirosDigitos == 37)
+    {
+        printf("AMEX\n");
+    }
+    if (primeirosDigitos == )
+    {
+        printf("MASTERCARD\n");
+    }
+    if ()
+    {
+        printf("VISA\n");
+    }
 }
 
 }
