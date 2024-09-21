@@ -58,8 +58,8 @@ while (primeirosDigitos >= 100)
     primeirosDigitos /= 10;
 }
 
-printf("Tamanho: %i\n", tamanho);
-printf("Primeiros dígitos: %li\n", primeirosDigitos);
+printf("%i\n", tamanho);
+printf("%li\n", primeirosDigitos);
 }
 
 
