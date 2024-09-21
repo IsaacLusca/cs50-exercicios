@@ -56,7 +56,8 @@ for (int i = cartao; i > 100; i /= 10)
 }
 
 
-printf("%i",tamanho);
+printf("%i\n",tamanho);
+printf("%i\n", primeirosDigitos);
 }
 
 
