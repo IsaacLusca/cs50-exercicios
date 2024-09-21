@@ -4,7 +4,7 @@
 int soma_mult_resto(long cartao);
 int soma_resto(long cartao);
 int calcular_tamanho(long cartao);
-
+int obter_primeiros_digitos(long cartao);
 
 // Função principal
 int main(void)
@@ -99,7 +99,7 @@ int calcular_tamanho(long cartao)
 }
 
 // Função para obter os dois primeiros dígitos
-long obter_primeiros_digitos(long cartao)
+int obter_primeiros_digitos(long cartao)
 {
     while (cartao >= 100)
     {
