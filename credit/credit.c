@@ -64,7 +64,7 @@ while (primeirosDigitos >= 100)
 // printf("%i\n", tamanho);
 // printf("%li\n", primeirosDigitos);
 
-if ((sum % 10 == 0 || tamanho <))
+if ((sum % 10 == 0 || tamanho < 13 || tamanho >16))
 {
     if (primeirosDigitos == 37)
     {
