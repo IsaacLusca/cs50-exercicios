@@ -4,60 +4,61 @@
 int main(void)
 {
 
-long cartao;
-int sumResto = 0;
-int sumResto2 = 0;
-int tamanho = 0;
-// int primDigito;
+    long cartao;
+    int sumResto = 0;
+    int sumResto2 = 0;
+    int tamanho = 0;
+    // int primDigito;
 
-do
-{
-    cartao = get_long("Number: ");
-}
-while (cartao < 1);
-
-// Cartão temporário para o while
-long tempCartao = cartao;
-
-// função que soma e multiplica por 2os restos dos penúltimos dígitos
-while (tempCartao > 0)
-{
-    int resto = (tempCartao / 10) % 10;
-    int multResto = resto * 2;
-    if (multResto > 9)
+    do
     {
-        multResto = (multResto % 10) + 1;
+        cartao = get_long("Number: ");
     }
-    sumResto += multResto;
-    tempCartao /= 100;
-}
+    while (cartao < 1);
 
-long tempCartao2 = cartao;
+    // Cartão temporário para o while
+    long tempCartao = cartao;
 
-// função que soma os restos dos ultimos dígitos
-while (tempCartao2 > 0)
-{
-    int resto = tempCartao2 % 10;
-    sumResto2 += resto;
-    tempCartao2 /= 100;
-}
-printf("%i\n", sumResto + sumResto2);
+    // função que soma e multiplica por 2os restos dos penúltimos dígitos
+    while (tempCartao > 0)
+    {
+        int resto = (tempCartao / 10) % 10;
+        int multResto = resto * 2;
+        if (multResto > 9)
+        {
+            multResto = (multResto % 10) + 1;
+        }
+        sumResto += multResto;
+        tempCartao /= 100;
+    }
 
-int lenTotal = tamanho * 2;
+    long tempCartao2 = cartao;
 
-// printf("%i", primDigito);
-// Função para calcular o comprimento
+    // função que soma os restos dos ultimos dígitos
+    while (tempCartao2 > 0)
+    {
+        int resto = tempCartao2 % 10;
+        sumResto2 += resto;
+        tempCartao2 /= 100;
+    }
+    printf("%i\n", sumResto + sumResto2);
 
-int primeirosDigitos;
-for (int i = cartao; i > 100; i /= 10)
-{
-    tamanho++;
-    primeirosDigitos = i;
-}
+    int lenTotal = tamanho * 2;
+
+    // printf("%i", primDigito);
+    // Função para calcular o comprimento
+
+    int primeirosDigitos = cartao;
+    while (primeirosDigitos >= 100)
+        {
+            primeirosDigitos /= 10;
+            tamanho++;
+        }
+    tamanho += 2;
 
 
-printf("%i\n",tamanho);
-printf("%i\n", primeirosDigitos);
+    printf("%i\n",tamanho);
+    printf("%i\n", primeirosDigitos);
 }
 
 
