@@ -41,7 +41,10 @@ while (tempCartao2 > 0)
     sumResto2 += resto;
     tempCartao2 /= 100;
 }
-printf("%i\n", sumResto + sumResto2);
+
+int sum = sumResto + sumResto2;
+
+printf("%i\n", sum);
 
   // Calcular o comprimento
 long tempCartao3 = cartao;
@@ -61,7 +64,10 @@ while (primeirosDigitos >= 100)
 printf("%i\n", tamanho);
 printf("%li\n", primeirosDigitos);
 
-if ()
+if ((sum % 10 == 0))
+{
+    
+}
 
 }
 
