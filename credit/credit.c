@@ -60,10 +60,20 @@ while (primeirosDigitos >= 100)
 
 printf("%i\n", tamanho);
 printf("%li\n", primeirosDigitos);
+
+if ()
+
 }
 
 
 
+// if (tempCartao == 22 || tempCartao == 37 || tempCartao == 30 ||
+//     tempCartao == 60 || tempCartao == 35 || tempCartao == 55 ||
+//     tempCartao == 51 || tempCartao == 41 || tempCartao == 40 ||
+//     tempCartao == 42 || tempCartao == 49 || tempCartao == 52)
+//     {
+//         primDigito = tempCartao;
+//     }
 
 // Entrada do usuário
 // calcular a soma da verificação.
