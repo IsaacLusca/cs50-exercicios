@@ -43,21 +43,23 @@ while (tempCartao2 > 0)
 }
 printf("%i\n", sumResto + sumResto2);
 
-int lenTotal = tamanho * 2;
-
-// printf("%i", primDigito);
-// Função para calcular o comprimento
-
-int primeirosDigitos;
-for (int i = cartao; i > 100; i /= 10)
+  // Calcular o comprimento
+long tempCartao3 = cartao;
+while (tempCartao3 > 0)
 {
+    tempCartao3 /= 10;
     tamanho++;
-    primeirosDigitos = i;
 }
 
+// Obter os dois primeiros dígitos
+long primeirosDigitos = cartao;
+while (primeirosDigitos >= 100)
+{
+    primeirosDigitos /= 10;
+}
 
-printf("%i\n",tamanho);
-printf("%i\n", primeirosDigitos);
+printf("Tamanho: %i\n", tamanho);
+printf("Primeiros dígitos: %li\n", primeirosDigitos);
 }
 
 
