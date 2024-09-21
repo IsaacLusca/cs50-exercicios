@@ -68,7 +68,7 @@ int soma_mult_resto(long cartao)
             multResto = (multResto % 10) + 1;
         }
         sumResto += multResto;
-        cartao /= 100;
+        cartao /= 100; 
     }
     return sumResto;
 }
