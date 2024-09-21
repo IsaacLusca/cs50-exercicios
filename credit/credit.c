@@ -45,7 +45,6 @@ int main(void)
     int sum = sumResto + sumResto2;
     // printf("SUM: %i\n", sum);
 
-
     // Calcular o comprimento
     long tempCartao3 = cartao;
     while (tempCartao3 > 0)
@@ -70,16 +69,16 @@ int main(void)
             printf("AMEX\n");
         }
         else if (primeirosDigitos == 22||
-            primeirosDigitos == 55||
-            primeirosDigitos == 51||
-            primeirosDigitos == 52)
+                 primeirosDigitos == 55||
+                 primeirosDigitos == 51||
+                 primeirosDigitos == 52)
         {
             printf("MASTERCARD\n");
         }
         else if (primeirosDigitos == 41||
-            primeirosDigitos == 40||
-            primeirosDigitos == 42||
-            primeirosDigitos == 49)
+                 primeirosDigitos == 40||
+                 primeirosDigitos == 42||
+                 primeirosDigitos == 49)
         {
             printf("VISA\n");
         }
@@ -93,18 +92,3 @@ int main(void)
         printf("INVALID\n");
     }
 }
-
-
-
-// if (tempCartao == 22 || tempCartao == 37 || tempCartao == 30 ||
-//     tempCartao == 60 || tempCartao == 35 || tempCartao == 55 ||
-//     tempCartao == 51 || tempCartao == 41 || tempCartao == 40 ||
-//     tempCartao == 42 || tempCartao == 49 || tempCartao == 52)
-//     {
-//         primDigito = tempCartao;
-//     }
-
-// Entrada do usuário
-// calcular a soma da verificação.
-// Verificar comprimento do cartão para ver se condiz.
-// Printar se é master, visa, amex ou invalido.
