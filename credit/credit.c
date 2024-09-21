@@ -44,7 +44,7 @@ while (tempCartao2 > 0)
 
 int sum = sumResto + sumResto2;
 
-// printf("%i\n", sum);
+printf("%i\n", sum);
 
   // Calcular o comprimento
 long tempCartao3 = cartao;
@@ -61,23 +61,23 @@ while (primeirosDigitos >= 100)
     primeirosDigitos /= 10;
 }
 
-// printf("%i\n", tamanho);
-// printf("%li\n", primeirosDigitos);
+printf("%i\n", tamanho);
+printf("%li\n", primeirosDigitos);
 
-if ((sum % 10 == 0 || tamanho < 13 || tamanho > 16))
+if ((sum % 10 == 0 || tamanho >= 13 || tamanho > 16))
 {
     if (primeirosDigitos == 37)
     {
         printf("AMEX\n");
     }
-    if (primeirosDigitos == 22||
+    else if (primeirosDigitos == 22||
         primeirosDigitos == 55||
         primeirosDigitos == 51||
         primeirosDigitos == 52)
     {
         printf("MASTERCARD\n");
     }
-    if (primeirosDigitos == 41||
+    else if (primeirosDigitos == 41||
         primeirosDigitos == 40||
         primeirosDigitos == 42||
         primeirosDigitos == 49)
@@ -88,11 +88,9 @@ if ((sum % 10 == 0 || tamanho < 13 || tamanho > 16))
     {
         printf("INVALID\n");
     }
+printf("INVALID\n");
 }
-else
-{
-    printf("INVALID\n");
-}
+
 }
 
 
