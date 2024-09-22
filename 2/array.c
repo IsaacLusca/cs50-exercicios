@@ -1,14 +1,14 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int hashTamanho(int tamanho);
+void hashTamanho(int tamanho);
 int main(void)
 {
     int t = get_int("Tamanho: ");
     hashTamanho(t);
 }
 
-int hashTamanho(int tamanho)
+void hashTamanho(int tamanho)
 {
     for(int i = 0; i <= tamanho; i++)
     {
