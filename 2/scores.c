@@ -14,6 +14,7 @@ int main(void)
         scores[i] = get_int("nota: ");
     }
 
+    printf("Media: ¨%.2f\n", media(N, scores));
 }
 
 float media(int tamanho, int array[])
@@ -21,7 +22,7 @@ float media(int tamanho, int array[])
     int sum = 0;
     for (int i = 0; i < N; i++)
     {
-        sum += scores[N];
+        sum += scores[i];
     }
 }
 
