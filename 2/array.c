@@ -5,11 +5,11 @@ int main(void)
 
     for (int i = 0; i < bloco; i++)
     {
-        for (int j = bloco; j > i; j--)
+        for (int j = bloco; j - 1 > i; j--)
         {
             printf(" ");
         }
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j <= i; j++)
         {
             printf("#");
         }
