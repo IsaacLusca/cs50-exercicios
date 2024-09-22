@@ -7,11 +7,11 @@ int main(void)
     int qnt;
     do
     {
-        qnt = get_int("Quantidade: \n");
+        qnt = get_int("Quantidade: ");
 
         for (int i = 1; i <= qnt; i++)
         {
-            notas = get_int("nota %i: \n", i);
+            notas = get_int("nota %i: ", i);
             notas += notas;
         }
     }
