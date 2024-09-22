@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 void hashTamanho(int tamanho);
+
 int main(void)
 {
     int t = get_int("Tamanho: ");
