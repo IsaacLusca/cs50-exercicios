@@ -3,6 +3,8 @@
 
 const int N = 3;
 
+float media(int tamanho, int array[]);
+
 int main(void)
 {
     int scores[N];
@@ -14,10 +16,13 @@ int main(void)
 
 }
 
-float media(int tamanho, int array [])
+float media(int tamanho, int array[])
 {
     int sum = 0;
-    for ()
+    for (int i = 0; i < N; i++)
+    {
+        sum += scores[N];
+    }
 }
 
     // int notas = 0;
