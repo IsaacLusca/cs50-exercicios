@@ -8,17 +8,17 @@ int main(void)
     // scores[1] = get_int("Nota: ");
     // scores[2] = get_int("Nota: ");
 
-    int n = 3;
-    int scores[n];
+    const int N = 3;
+    int scores[N];
 
     // n = get_int("Qnt: ");
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < N; i++)
     {
         scores[i] = get_int("nota: ");
     }
 
-    printf("Media: %.2f\n", (scores[0] + scores[1] + scores[2]) / (float) n);
+    printf("Media: %.2f\n", (scores[0] + scores[1] + scores[2]) / (float) N);
 }
 
     // int notas = 0;
