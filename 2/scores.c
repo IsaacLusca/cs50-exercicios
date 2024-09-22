@@ -18,7 +18,7 @@ int main(void)
         scores[i] = get_int("nota: ");
     }
 
-    printf("Media: %.2f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
+    printf("Media: %i\n", (scores[1]));
 }
 
     // int notas = 0;
