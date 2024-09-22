@@ -10,7 +10,7 @@ int main(void)
 
 int hashTamanho(int tamanho)
 {
-    for(int i = 0; i < tamanho; i++)
+    for(int i = 0; i <= tamanho; i++)
     {
         printf("#\n");
     }
