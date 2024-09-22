@@ -6,7 +6,7 @@ void hashTamanho(int tamanho);
 int main(void)
 {
     int t = get_int("Tamanho: ");
-    hashTamanho(t);
+     hashTamanho(t);
 }
 
 void hashTamanho(int tamanho)
