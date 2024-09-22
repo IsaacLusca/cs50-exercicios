@@ -3,23 +3,10 @@
 
 int main(void)
 {
-    // int scores[3];
-    // scores[0] = get_int("Nota: ");
-    // scores[1] = get_int("Nota: ");
-    // scores[2] = get_int("Nota: ");
-
-    int n = 0;
-    int scores[n];
-    int sumScore = 0;
-
-    n = get_int("Qnt: ");
-
-    for (int i = n; i > 0; i--)
-    {
-        scores[i] = get_int("nota: ");
-    }
-
-    printf("%i", scores[n]);
+    int scores[3];
+    scores[0] = get_int("Nota: ");
+    scores[1] = get_int("Nota: ");
+    scores[2] = get_int("Nota: ");
 
 
     printf("Media: %.2f\n", (scores[0] + scores[1] + scores[2]) / 3.0);
