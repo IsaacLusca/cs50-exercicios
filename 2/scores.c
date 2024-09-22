@@ -19,11 +19,13 @@ int main(void)
 
 float media(int tamanho, int array[])
 {
-    int sum = 0;
-    for (int i = 0; i < N; i++)
+    int sumMedia = 0;
+    for (int i = 0; i < tamanho; i++)
     {
-        sum += scores[i];
+        sumMedia += array[i];
     }
+
+    return sumMedia / (float) tamanho;
 }
 
     // int notas = 0;
