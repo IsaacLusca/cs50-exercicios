@@ -14,7 +14,7 @@ int main(void)
         scores[i] = get_int("nota: ");
     }
 
-    printf("Media: ¨%.2f\n", media(N, scores));
+    printf("Media: %.2f\n", media(N, scores));
 }
 
 float media(int tamanho, int array[])
