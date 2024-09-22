@@ -5,19 +5,20 @@ int main(void)
 {
     int notas = 0;
     int qnt;
+    float sumNotas = 0;
     do
     {
         qnt = get_int("Quantidade: ");
 
         for (int i = 1; i <= qnt; i++)
         {
-10            notas = get_int("nota %i: ", i);
-            notas += notas;
+            notas = get_int("nota %i: ", i);
+            sumNotas = sumNotas + notas;
         }
     }
     while (qnt < 1);
 
-    int media = notas / qnt;
+    float media = sumNotas / qnt;
 
-    printf("%i",media);
+    printf("%.2f",media);
 }
