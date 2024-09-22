@@ -10,11 +10,14 @@ int main(void)
     {
         qnt = get_int("Quantidade: ");
 
-        for (int i = 1; i <= qnt; i++)
+        do
         {
-            notas = get_int("nota %i: ", i);
-            sumNotas = sumNotas + notas;
-        }
+            for (int i = 1; i <= qnt; i++)
+            {
+                notas = get_int("nota %i: ", i);
+                sumNotas = sumNotas + notas;
+            }
+        } while (notas < 0);
     }
     while (qnt < 1);
 
