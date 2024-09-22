@@ -11,7 +11,7 @@ int main(void)
 
         for (int i = 1; i <= qnt; i++)
         {
-            notas = get_int("nota %i: ", i);
+10            notas = get_int("nota %i: ", i);
             notas += notas;
         }
     }
