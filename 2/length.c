@@ -18,7 +18,7 @@ int main(void)
 
     for (int i = n; i != '\0'; i++)
     {
-        n++;
+        nome[i]
     }
 
     printf("O nome %s tem %i caracteres\n", nome, n);
