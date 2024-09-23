@@ -14,7 +14,7 @@ int main(void)
 
     for (int i = 0; nome[i] != '\0'; i++)
     {
-        if (nome[i] == " ")
+        if (nome[i] == ' ')
         {
             n = i - 1;
         }
