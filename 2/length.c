@@ -7,18 +7,18 @@ int main(void)
 
     int n = 0;
     // Enquanto nome for diferente de \0, faça
-    while (nome[n] != '\0')
-    {
-        if (nome[n] == ' ')
-        {
-            n--;
-        }
-        n++;
-    }
+    // while (nome[n] != '\0')
+    // {
+    //     if (nome[n] == ' ')
+    //     {
+    //         n--;
+    //     }
+    //     n++;
+    // }
 
     for (int i = n; i != '\0'; i++)
     {
-        if ()
+        n++;
     }
 
     printf("O nome %s tem %i caracteres\n", nome, n);
