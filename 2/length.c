@@ -13,9 +13,9 @@ int main(void)
     //     n++;
     // }
 
+    int lenght = string_comprimento(nome);
 
-
-    printf("O nome %s tem %i caracteres\n", nome, string_comprimento(n));
+    printf("O nome %s tem %i caracteres\n", nome, lenght);
 
 }
 
