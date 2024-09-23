@@ -3,6 +3,6 @@
 
 int main(int argc, string argv [])
 {
-    string pergunta = get_string("Seu nome? ");
-    printf("Olá, %s\n", pergunta);
+    // string pergunta = get_string("Seu nome? ");
+    printf("Olá, %s\n", argv[1]);
 }
