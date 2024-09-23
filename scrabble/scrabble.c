@@ -5,20 +5,19 @@
 
 int main(int argc, string argv[])
 {
-    int len1 = 0;
-    int len2 = 0;
+    string palavra1 = get_string("Player 1: ");
+    string palavra2 = get_string("Player 2: ");
 
-    string palavra1[len1] = get_string("Player 1: ");
-    string palavra2[len2] = get_string("Player 2: ");
-
-    for (len1, n = strlen(palavra1); len1 < n; i++)
+    for (int i = 0, n = strlen(palavra1); i < n; i++)
     {
-        printf("%c", toupper(palavra1[len1]));
+        if (palavra1[i] == '')
+
+        // printf("%c", toupper(palavra1[i]));
     }
     printf("\n");
-    for (len2, n = strlen(palavra1); len2 < n; i++)
+    for (int i = 0, n = strlen(palavra1); i < n; i++)
     {
-        printf("%c", toupper(palavra2[len2]));
+        // printf("%c", toupper(palavra2[i]));
     }
     printf("\n");
 
