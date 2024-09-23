@@ -16,9 +16,9 @@ int main(void)
     {
         if (nome[i] == ' ')
         {
-            n = i - 1;
+            n--;
         }
-        n = 1 + n;
+        n++;
     }
 
     printf("O nome %s tem %i caracteres\n", nome, n);
