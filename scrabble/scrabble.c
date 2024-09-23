@@ -13,18 +13,36 @@ int main(int argc, string argv[])
     for (int i = 0, n = strlen(palavra1); i < n; i++)
     {
         palavra1[i] = toupper(palavra1[i]);
-        
-        if (palavra1[i] == 'A'||'E'||'L'||'N'||'O'||'R'||'S'||'T'||'U')
+
+        if (palavra1[i] == 'A' || palavra1[i] == 'E' || palavra1[i] == 'I' || palavra1[i] == 'L' ||
+            palavra1[i] == 'N' || palavra1[i] == 'O' || palavra1[i] == 'R' || palavra1[i] == 'S' ||
+            palavra1[i] == 'T' || palavra1[i] == 'U')
         {
-            sum1++;
+            sum1 += 1;
         }
-        else if (palavra1[i] == 'B'||'C'||'M'||'P')
+        else if (palavra1[i] == 'D' || palavra1[i] == 'G')
+        {
+            sum1 += 2;
+        }
+        else if (palavra1[i] == 'B' || palavra1[i] == 'C' || palavra1[i] == 'M' || palavra1[i] == 'P')
         {
             sum1 += 3;
         }
-        else if (palavra1[i] == 'A'||'E'||'L'||'N'||'O'||'R'||'S'||'T'||'U')
+        else if (palavra1[i] == 'F' || palavra1[i] == 'H' || palavra1[i] == 'V' || palavra1[i] == 'W' || palavra1[i] == 'Y')
         {
-            sum += 2;
+            sum1 += 4;
+        }
+        else if (palavra1[i] == 'K')
+        {
+            sum1 += 5;
+        }
+        else if (palavra1[i] == 'J' || palavra1[i] == 'X')
+        {
+            sum1 += 8;
+        }
+        else if (palavra1[i] == 'Q' || palavra1[i] == 'Z')
+        {
+            sum1 += 10;
         }
 
         // printf("%c", toupper(palavra1[i]));
