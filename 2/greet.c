@@ -4,7 +4,7 @@
 int main(int argc, string argv [])
 {
 
-   for (int i = 0; i < argc; i++)
+   for (int i = 1; i < argc; i++)
    {
     printf("%s\n", argv[i]);
    }
