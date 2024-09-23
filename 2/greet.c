@@ -4,5 +4,5 @@
 int main(int argc, string argv [])
 {
     // string pergunta = get_string("Seu nome? ");
-    printf("Olá, %s\n", argv[1]);
+    printf("Olá, %s\n", argv[2]);
 }
