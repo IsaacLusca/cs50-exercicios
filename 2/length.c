@@ -9,11 +9,16 @@ int main(void)
     // Enquanto nome for diferente de \0, faça
     while (nome[n] != '\0')
     {
-        if (name [n] == " ")
+        if (nome[n] == ' ')
         {
             n--;
         }
         n++;
+    }
+
+    for (int i = n; i != '\0'; i++)
+    {
+        if ()
     }
 
     printf("O nome %s tem %i caracteres\n", nome, n);
