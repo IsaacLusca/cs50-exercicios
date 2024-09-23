@@ -18,7 +18,7 @@ int main(void)
         {
             n = i - 1;
         }
-        n = i + n;
+        n = 1 + n;
     }
 
     printf("O nome %s tem %i caracteres\n", nome, n);
