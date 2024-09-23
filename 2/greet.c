@@ -10,6 +10,6 @@ int main(int argc, string argv [])
     }
     else
     {
-        prinft("Deu erro!\n");
+        printf("Deu erro!\n");
     }
 }
