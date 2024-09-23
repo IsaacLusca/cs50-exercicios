@@ -10,7 +10,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(palavra1); i < n; i++)
     {
-        if (palavra1[i] == '')
+        // if (palavra1[i] == '')
 
         // printf("%c", toupper(palavra1[i]));
     }
@@ -21,5 +21,5 @@ int main(int argc, string argv[])
     }
     printf("\n");
 
-
+    return 0;
 }
