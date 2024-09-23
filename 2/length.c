@@ -12,9 +12,13 @@ int main(void)
     //     n++;
     // }
 
-    for (int i = n; i != '\0'; i++)
+    for (int i = 0; nome[i] != '\0'; i++)
     {
-        nome[i] = nome[i++];
+        if (nome[i] == " ")
+        {
+            n = n - 1;
+        }
+        n++;
     }
 
     printf("O nome %s tem %i caracteres\n", nome, n);
