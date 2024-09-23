@@ -10,12 +10,12 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(palavra1); i < n; i++)
     {
-        printf("%c", palavra1[i]);
+        printf("%c", toupper(palavra1[i]));
     }
     printf("\n");
     for (int i = 0, n = strlen(palavra1); i < n; i++)
     {
-        printf("%c", palavra2[i]);
+        printf("%c", toupper(palavra2[i]));
     }
     printf("\n");
 }
