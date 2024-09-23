@@ -9,6 +9,10 @@ int main(void)
     // Enquanto nome for diferente de \0, faça
     while (nome[n] != '\0')
     {
+        if (name [n] == " ")
+        {
+            n--;
+        }
         n++;
     }
 
