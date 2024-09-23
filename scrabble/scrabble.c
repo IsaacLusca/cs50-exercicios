@@ -18,4 +18,6 @@ int main(int argc, string argv[])
         printf("%c", toupper(palavra2[i]));
     }
     printf("\n");
+
+    
 }
