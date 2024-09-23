@@ -5,6 +5,7 @@
 
 int main(int argc, string argv[])
 {
+    n
     string palavra1 = get_string("Player 1: ");
     string palavra2 = get_string("Player 2: ");
 
@@ -19,5 +20,5 @@ int main(int argc, string argv[])
     }
     printf("\n");
 
-    
+
 }
