@@ -35,6 +35,7 @@ int main(int argc, string argv[])
 int calcular_pontuacao(string palavra)
 {
     int sum = 0;
+    // Comparar e atribuir os valoress
     for (int i = 0, n = strlen(palavra); i < n; i++)
     {
         palavra[i] = toupper(palavra[i]);
