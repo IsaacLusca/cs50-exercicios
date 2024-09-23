@@ -16,9 +16,9 @@ int main(void)
     {
         if (nome[i] == " ")
         {
-            n = n - 1;
+            n = i - 1;
         }
-        n++;
+        n = i + n;
     }
 
     printf("O nome %s tem %i caracteres\n", nome, n);
