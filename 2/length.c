@@ -30,4 +30,5 @@ int string_comprimento(string c)
         }
         n++;
     }
+    return n;
 }
