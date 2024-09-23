@@ -7,7 +7,7 @@ int main(void)
 
     int n = 0;
 
-    for(int i = 0; i < nome)
+    for(int i = n; i > )
 
     printf("O nome %s tem %i caracteres\n", nome, n);
 
