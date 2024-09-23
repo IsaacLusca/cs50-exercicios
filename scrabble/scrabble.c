@@ -12,6 +12,8 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(palavra1); i < n; i++)
     {
+        palavra1[i] = toupper(palavra1[i]);
+        
         if (palavra1[i] == 'A'||'E'||'L'||'N'||'O'||'R'||'S'||'T'||'U')
         {
             sum1++;
@@ -19,6 +21,10 @@ int main(int argc, string argv[])
         else if (palavra1[i] == 'B'||'C'||'M'||'P')
         {
             sum1 += 3;
+        }
+        else if (palavra1[i] == 'A'||'E'||'L'||'N'||'O'||'R'||'S'||'T'||'U')
+        {
+            sum += 2;
         }
 
         // printf("%c", toupper(palavra1[i]));
