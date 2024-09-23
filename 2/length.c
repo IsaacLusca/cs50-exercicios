@@ -22,9 +22,9 @@ int main(void)
 int string_comprimento (string c)
 {
     int n = 0;
-    for (int i = 0; nome[i] != '\0'; i++)
+    for (int i = 0; c[i] != '\0'; i++)
     {
-        if (nome[i] == ' ')
+        if (c[i] == ' ')
         {
             n--;
         }
