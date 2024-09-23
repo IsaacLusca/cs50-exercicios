@@ -4,7 +4,7 @@
 int main(int argc, string argv [])
 {
     // string pergunta = get_string("Seu nome? ");
-    if (argc == 3)
+    if (argc == 1)
     {
         printf("Olá, %s\n", argv[1]);
     }
