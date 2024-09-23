@@ -69,6 +69,5 @@ int calcular_pontuacao(string palavra)
         {
             sum += 10;
         }
-
     }
 }
