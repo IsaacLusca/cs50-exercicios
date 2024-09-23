@@ -1,17 +1,27 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int string_comprimento (string c);
+
 int main(void)
 {
     string nome = get_string("Nome: ");
 
-    int n = 0;
     // Enquanto nome for diferente de \0, faça
     // while (nome[n] != '\0')
     // {
     //     n++;
     // }
 
+
+
+    printf("O nome %s tem %i caracteres\n", nome, string_comprimento(n));
+
+}
+
+int string_comprimento (string c)
+{
+    int n = 0;
     for (int i = 0; nome[i] != '\0'; i++)
     {
         if (nome[i] == ' ')
@@ -20,7 +30,4 @@ int main(void)
         }
         n++;
     }
-
-    printf("O nome %s tem %i caracteres\n", nome, n);
-
 }
