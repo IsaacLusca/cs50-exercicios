@@ -84,9 +84,20 @@ int main(int argc, string argv[])
         }
 
         // printf("%c", toupper(palavra1[i]));
-        printf("%i %i \n", sum1, sum2);
     }
 
+    if(sum1 == sum2)
+    {
+        printf("Tie!\n");
+    }
+    if(sum1 > sum2)
+    {
+        printf("Player 1 wins!\n");
+    }
+    if(sum1 < sum2)
+    {
+        printf("Player 2 wins!\n");
+    }
 
 
     return 0;
