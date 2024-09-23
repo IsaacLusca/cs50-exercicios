@@ -16,7 +16,10 @@ int main(int argc, string argv[])
         {
             sum1++;
         }
-        else if (palavra1[i] == 'B'||'E'||'L'||'N'||'O'||'R'||'S'||'T'||'U')
+        else if (palavra1[i] == 'B'||'C'||'M'||'P')
+        {
+            sum1 += 3;
+        }
 
         // printf("%c", toupper(palavra1[i]));
     }
