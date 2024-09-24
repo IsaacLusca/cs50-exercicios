@@ -34,41 +34,16 @@ int main(int argc, string argv[])
 
 int calcular_pontuacao(string palavra)
 {
+    int points[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
     int sum = 0;
     // Comparar e atribuir os valoress
     for (int i = 0, n = strlen(palavra); i < n; i++)
     {
         palavra[i] = toupper(palavra[i]);
 
-        if (palavra[i] == 'A' || palavra[i] == 'E' || palavra[i] == 'I' || palavra[i] == 'L' ||
-            palavra[i] == 'N' || palavra[i] == 'O' || palavra[i] == 'R' || palavra[i] == 'S' ||
-            palavra[i] == 'T' || palavra[i] == 'U')
+        if (palavra[i] >= 'A' && palavra[i] <= 'z')
         {
-            sum += 1;
-        }
-        else if (palavra[i] == 'D' || palavra[i] == 'G')
-        {
-            sum += 2;
-        }
-        else if (palavra[i] == 'B' || palavra[i] == 'C' || palavra[i] == 'M' || palavra[i] == 'P')
-        {
-            sum += 3;
-        }
-        else if (palavra[i] == 'F' || palavra[i] == 'H' || palavra[i] == 'V' || palavra[i] == 'W' || palavra[i] == 'Y')
-        {
-            sum += 4;
-        }
-        else if (palavra[i] == 'K')
-        {
-            sum += 5;
-        }
-        else if (palavra[i] == 'J' || palavra[i] == 'X')
-        {
-            sum += 8;
-        }
-        else if (palavra[i] == 'Q' || palavra[i] == 'Z')
-        {
-            sum += 10;
+            sum += points[palavra[i] - 'A'];
         }
     }
     return sum;
