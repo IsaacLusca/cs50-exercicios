@@ -24,7 +24,7 @@ int main(int argc, string argv[])
     }
 
     int chave = atoi(argv[1]);
-    if (chave <= 0)
+    if (chave < 1)
     {
         printf("Usage: ./caesar key\n");
         return 1;
