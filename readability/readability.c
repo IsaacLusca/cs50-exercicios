@@ -141,6 +141,7 @@ int contador_sentencas(string txt)
     {
         if(txt[i] == '.'||
            txt[i] == '?'||
+           txt[i] == ';'||
            txt[i] == '!')
         {
             sent++;
