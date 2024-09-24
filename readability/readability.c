@@ -22,9 +22,10 @@ int main(void)
 
     float liau = 0.0588 * L - 0.296 * S - 15.8;
 
-    // float arredondando = round(liau * 10)/10;
-    int calculo = round(liau);
+    float arredondando = round(liau * 10)/10;
+    int calculo = round(arredondando);
 
+    // Verificação dos valores
     if (calculo >= 16)
     {
         printf("Grade 16+\n");
@@ -94,9 +95,10 @@ int main(void)
         printf("Grade 15\n");
     }
 
-    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nFinal: %i", letras, palavras, sentencas, liau, calculo);
+    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nFinal: %i", letras, palavras, sentencas, liau, calculo);
 }
 
+// Contar letras
 int contador_letras(string txt)
 {
     int let = 0;
@@ -110,6 +112,7 @@ int contador_letras(string txt)
     return let;
 }
 
+// Contar palavras
 int contador_palavras(string txt)
 {
     int pal = 0;
@@ -118,7 +121,7 @@ int contador_palavras(string txt)
     {
         // se o texto estiver dentro da palavra, pal vai somar 1.
 
-        if (isalpha(txt[i]) && txt[i] == '\'')
+        if (isalpha(txt[i]) || txt[i] == '\'')
         {
             if(!dentro_palavra)
             {
@@ -134,6 +137,7 @@ int contador_palavras(string txt)
     return pal;
 }
 
+// Contar sentanças
 int contador_sentencas(string txt)
 {
     int sent = 0;
