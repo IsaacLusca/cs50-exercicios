@@ -9,11 +9,17 @@ int main(int argc, string argv[])
     string texto = get_string("Text: ");
     bool dentro_palavra = false;
 
+    int num = 0;
+
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
         // isalpha verifica se é uma letra do alfabeto
         if(!isalpha(texto[i]))
         {
+            if (num = texto[i] > 25)
+            {
+                
+            }
             printf("%c", texto[i]);
         }
         else
