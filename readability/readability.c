@@ -17,7 +17,7 @@ int main(void)
     int palavras = contador_palavras(texto);
     int sentenca = contador_sentencas(texto);
 
-    printf("letras: %i\nPalavras: %i\n", letras, palavras);
+    printf("letras: %i\nPalavras: %i\nSentença: %i\n", letras, palavras, sentenca);
 }
 
 int contador_letras(string txt)
