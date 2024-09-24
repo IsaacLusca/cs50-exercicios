@@ -7,3 +7,7 @@ int main(void)
 {
 
 }
+
+// calcular qtd de letra
+// calcular qtd de palavras
+// calcular qtd de sentenças
