@@ -11,7 +11,8 @@ int main(void)
 
     string texto = get_string("Text: ");
 
-    for (int i = let; i < strlen(texto); i++)
+    let = strlen(texto);
+    for (int i = 0; i < let; i++)
     {
         if (texto[i] == ' '||
             texto[i] == '.'||
@@ -19,9 +20,15 @@ int main(void)
             texto[i] == '?'||
             texto[i] == '!'||
             texto[i] == '/'||
-            texto[i] == '''
+            texto[i] == '\''
         )
-        let = strlen(texto);
+        {
+            let--;
+        }
+        else
+        {
+            let++;
+        }
     }
     printf("letras: %i\n",let);
 }
