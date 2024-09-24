@@ -8,7 +8,6 @@ int contador_palavras(string txt);
 
 int main(void)
 {
-    int pal = 0;
     int sent = 0;
 
     string texto = get_string("Text: ");
@@ -39,7 +38,7 @@ int contador_palavras(string txt)
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
         // se o texto estiver dentro da palavra, pal vai somar 1.
-        
+
         if (isalpha(txt[i]))
         {
             if(!dentro_palavra)
@@ -54,6 +53,12 @@ int contador_palavras(string txt)
         }
     }
     return pal;
+}
+
+int contador_sentenca(string txt)
+{
+    int sent = 0;
+    bool 
 }
 
     // if (txt[i] == ' '||
