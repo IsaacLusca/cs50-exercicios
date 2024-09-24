@@ -1,8 +1,8 @@
 #include <cs50.h>
 #include <ctype.h>
-#include <string.h>
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
+#include <string.h>
 
 int contador_letras(string txt);
 int contador_palavras(string txt);
@@ -95,7 +95,8 @@ int main(void)
         printf("Grade 15\n");
     }
 
-    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nFinal: %i\n", letras, palavras, sentencas, liau, calculo);
+    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nFinal: %i\n", letras, palavras,
+    // sentencas, liau, calculo);
 }
 
 // Contar letras
@@ -123,7 +124,7 @@ int contador_palavras(string txt)
 
         if (isalpha(txt[i]) || txt[i] == '\'' || txt[i] == '-')
         {
-            if(!dentro_palavra)
+            if (!dentro_palavra)
             {
                 pal++;
                 dentro_palavra = true;
@@ -143,9 +144,7 @@ int contador_sentencas(string txt)
     int sent = 0;
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
-        if(txt[i] == '.'||
-           txt[i] == '?'||
-           txt[i] == '!')
+        if (txt[i] == '.' || txt[i] == '?' || txt[i] == '!')
         {
             sent++;
         }
@@ -163,8 +162,8 @@ int contador_sentencas(string txt)
     //     txt[i] == '\''
     //     )
     //     {
-    //         pal++;
-    //     }
+//         pal++;
+//     }
 
 // calcular qtd de letra
 // calcular qtd de palavras
