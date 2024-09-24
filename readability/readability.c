@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdio.h>
+#include <math.h>
 
 int contador_letras(string txt);
 int contador_palavras(string txt);
@@ -19,7 +20,9 @@ int main(void)
     float L = (float) letras / palavras * 100;
     float S = (float) sentencas / palavras * 100;
 
-    float calculo = 0.0588 * L - 0.296 * S - 15.8;
+    float liau = 0.0588 * L - 0.296 * S - 15.8;
+
+    int calculo = round(liau);
 
     if (calculo >= 16)
     {
@@ -91,7 +94,7 @@ int main(void)
     }
 
 
-    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentencas, calculo);
+    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %i\n", letras, palavras, sentencas, calculo);
 }
 
 int contador_letras(string txt)
