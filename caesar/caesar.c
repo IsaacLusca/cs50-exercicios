@@ -31,7 +31,6 @@ int main(int argc, string argv[])
     }
 
     string texto = get_string("plaintext: ");
-    bool dentro_palavra = false;
 
     printf("ciphertext: ");
     for (int i = 0, n = strlen(texto); i < n; i++)
