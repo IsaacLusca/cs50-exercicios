@@ -94,7 +94,7 @@ int main(void)
         printf("Grade 15\n");
     }
 
-    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\n", letras, palavras, sentencas, liau);
+    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\n", letras, palavras, sentencas, liau);
 }
 
 int contador_letras(string txt)
