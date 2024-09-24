@@ -43,24 +43,37 @@ int contador_letras(string txt)
 int contador_palavras(string txt)
 {
     int pal = 0;
+    bool dentro_palavra = false;
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
-    if (txt[i] == ' '||
-        txt[i] == '.' && txt[i] ==' '||
-        txt[i] == '!'||
-        txt[i] == '!' && txt[i] ==' '||
-        txt[i] == '?'||
-        txt[i] == '?' && txt[i] ==' '||
-        txt[i] == '/'||
-        txt[i] == '\''
-        )
+        if (isalpha(txt[i]))
         {
-            pal++;
+            if(!dentro_palavra)
+            {
+                pal++;
+                dentro_palavra = true;
+            }
+        }
+        else
+        {
+            dentro_palavra = false;
         }
     }
     return pal;
 }
 
+    // if (txt[i] == ' '||
+    //     txt[i] == '.' && txt[i] ==' '||
+    //     txt[i] == '!'||
+    //     txt[i] == '!' && txt[i] ==' '||
+    //     txt[i] == '?'||
+    //     txt[i] == '?' && txt[i] ==' '||
+    //     txt[i] == '/'||
+    //     txt[i] == '\''
+    //     )
+    //     {
+    //         pal++;
+    //     }
 
 // calcular qtd de letra
 // calcular qtd de palavras
