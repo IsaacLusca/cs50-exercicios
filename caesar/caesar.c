@@ -8,8 +8,6 @@ int main(int argc, string argv[])
 {
     // int chave = get_int("Chave: ");
 
-    int chave = atoi(argv[1]);
-
     if (argc != 2)
     {
         printf("Usage: ./caesar key\n");
