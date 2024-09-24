@@ -9,6 +9,7 @@ int main(void)
     int t = 0;
     int n = 0;
     int palavra[n];
+    
 
     for (int i = 0; i < strlen(texto); i++)
     {
@@ -19,7 +20,7 @@ int main(void)
         n++;
     }
 
-    printf("%i\n", palavra[n]);
+    printf("%i\n", palavra[1]);
 }
 
 // Palavras longas tem um "maior nível"
