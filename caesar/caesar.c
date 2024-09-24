@@ -10,10 +10,26 @@ int main(int argc, string argv[])
 
     int chave = atoi(argv[1]);
 
-    if(chave != int > 0)
+    if (argc != 2)
     {
         printf("Usage: ./caesar key\n");
-        break;
+        return 1;
+    }
+
+    for (int i = 0; argv[1][i] != '\0'; i++)
+    {
+        if (!isdigit(argv[1][i]))
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
+    }
+
+    int chave = atoi(argv[1]);
+    if (chave <= 0)
+    {
+        printf("Usage: ./caesar key\n");
+        return 1;
     }
 
     string texto = get_string("Text: ");
