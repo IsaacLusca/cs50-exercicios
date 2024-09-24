@@ -57,7 +57,6 @@ int contador_palavras(string txt)
             pal++;
         }
     }
-    pal += 1;
     return pal;
 }
 
