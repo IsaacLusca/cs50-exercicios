@@ -13,6 +13,11 @@ int main(void)
 
     for (int i = let; i < strlen(texto); i++)
     {
+        if (texto[i] == ' '||
+            texto[i] == '.'||
+            texto[i] == ','||
+            texto[i] == ''||
+        )
         let = strlen(texto);
     }
     printf("letras: %i\n",let);
