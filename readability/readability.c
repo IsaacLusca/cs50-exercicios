@@ -3,32 +3,38 @@
 #include <string.h>
 #include <stdio.h>
 
+int contador_letras(string txt);
 int main(void)
 {
-    int let = 0;
     int pal = 0;
     int sent = 0;
 
     string texto = get_string("Text: ");
 
-    for (int i = 0, n = strlen(texto); i < n; i++)
+    int letras = contador_letras(texto);
+    printf("letras: %i\n",letras);
+}
+
+int contador_letras(string txt)
+{
+    int let = 0;
+    for (int i = 0, n = strlen(txt); i < n; i++)
     {
-        if (texto[i] == ' '||
-            texto[i] == '.'||
-            texto[i] == ','||
-            texto[i] == '?'||
-            texto[i] == '!'||
-            texto[i] == '/'||
-            texto[i] == '\''
+        if (txt[i] == ' '||
+            txt[i] == '.'||
+            txt[i] == ','||
+            txt[i] == '?'||
+            txt[i] == '!'||
+            txt[i] == '/'||
+            txt[i] == '\''
         )
         {
             let--;
         }
         let++;
     }
-    printf("letras: %i\n",let);
+    return let;
 }
-
 // calcular qtd de letra
 // calcular qtd de palavras
 // calcular qtd de sentenças
