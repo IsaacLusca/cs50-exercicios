@@ -15,14 +15,14 @@ int main(int argc, string argv[])
         {
             if(!dentro_palavra)
             {
-                printf("%i", texto[i]);
-                dentro_palavra = true;
-            }
-            else
-            {
                 printf("%c", texto[i]);
-                dentro_palavra = false;
+                // dentro_palavra = true;
             }
+            // else
+            // {
+            //     printf("%c", texto[i]);
+            //     dentro_palavra = false;
+            // }
         }
     }
     printf("\n");
