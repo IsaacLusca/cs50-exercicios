@@ -3,58 +3,41 @@
 #include <string.h>
 #include <stdio.h>
 
-// int contador_letras(string txt);
+int contador_letras(string txt);
 int main(void)
 {
-    int let = 0;
     int pal = 0;
     int sent = 0;
 
     string texto = get_string("Text: ");
 
-    // int letras = contador_letras(texto);
-    for (int i = 0, n = strlen(texto); i < n; i++)
+    int letras = contador_letras(texto);
+    printf("letras: %i\n",letras);
+}
+
+int contador_letras(string txt)
+{
+    int let = 0;
+    int pal = 0;
+    for (int i = 0, n = strlen(txt); i < n; i++)
     {
-    if (texto[i] == ' '||
-        texto[i] == '.'||
-        texto[i] == ','||
-        texto[i] == '?'||
-        texto[i] == '!'||
-        texto[i] == '/'||
-        texto[i] == '\''
+        if (txt[i] == ' '||
+            txt[i] == '.'||
+            txt[i] == ','||
+            txt[i] == '?'||
+            txt[i] == '!'||
+            txt[i] == '/'||
+            txt[i] == '\''
         )
         {
             let--;
-            pal++;
         }
         let++;
     }
-
-    printf("letras: %i\nPalavras: %i\n",let, pal);
+    return let;
 }
 
-// int contador_letras(string txt)
-// {
-//     int let = 0;
-//     int pal = 0;
-//     for (int i = 0, n = strlen(txt); i < n; i++)
-//     {
-//         if (txt[i] == ' '||
-//             txt[i] == '.'||
-//             txt[i] == ','||
-//             txt[i] == '?'||
-//             txt[i] == '!'||
-//             txt[i] == '/'||
-//             txt[i] == '\''
-//         )
-//         {
-//             let--;
-//             pal++;
-//         }
-//         let++;
-//     }
-//     return let, pal;
-// }
+int contador_palavras(string txt)
 
 
 // calcular qtd de letra
