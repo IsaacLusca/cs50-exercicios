@@ -12,13 +12,9 @@ int main(int argc, string argv[])
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
         // isalpha verifica se é uma letra do alfabeto
-        if(!isalpha(texto[i]))
+        if (isupper(texto[i]))
         {
-            printf("%c", texto[i]);
-        }
-        else
-        {
-            printf("%c", texto[i] + chave);
+            printf("%c", 'A' + texto[i])
         }
     }
     printf("\n");
