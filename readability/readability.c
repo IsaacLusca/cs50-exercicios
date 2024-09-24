@@ -5,16 +5,16 @@
 
 int main(void)
 {
-    int x = 0;
-    string texto[x] = get_string("Text: ");
+    string texto = get_string("Text: ");
+    int t = 0;
 
-    if (texto[x] == ' ')
+    // Ignora os espaços vazios
+    for (int i = 0; i < strlen(texto); i++)
     {
-        total = t - 1;
-    }
-    else
-    {
-        int t = strlen(texto);
+        if (texto [i] != ' ')
+        {
+            t++;
+        }
     }
 
     printf("%i\n", t);
