@@ -8,7 +8,7 @@ int main(void)
     string texto = get_string("Text: ");
     int t = 0;
     int n = 0;
-    int palavra[n];
+    int palavra[100];
 
 
     for (int i = 0; i < strlen(texto); i++)
@@ -17,6 +17,11 @@ int main(void)
         {
             palavra[n] = strlen(texto);
             n++;
+            t = 0;
+        }
+        else
+        {
+
         }
         t--;
     }
