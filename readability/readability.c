@@ -14,11 +14,14 @@ int main(void)
 
     int letras = contador_letras(texto);
     int palavras = contador_palavras(texto);
-    int sentenca = contador_sentencas(texto);
+    int sentencas = contador_sentencas(texto);
 
-    float calculo = 0.0588 * ((float) letras / 100) - 0.296 * ((float) sentenca / 100) - 15.8;
+    float L = (float) letras / palavras * 100;
+    float S = (float) sentencas / palavras * 100;
 
-    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentenca, calculo);
+    float calculo = 0.0588 * L - 0.296 * S - 15.8;
+
+    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentencas, calculo);
 }
 
 int contador_letras(string txt)
