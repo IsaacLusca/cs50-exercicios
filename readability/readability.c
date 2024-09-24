@@ -22,7 +22,7 @@ int main(void)
 
     float liau = 0.0588 * L - 0.296 * S - 15.8;
 
-    int calculo = round(liau);
+    int calculo = ceil(liau);
 
     if (calculo >= 16)
     {
@@ -93,7 +93,7 @@ int main(void)
         printf("Grade 15\n");
     }
 
-    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %i\n", letras, palavras, sentencas, calculo);
+    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %i\n", letras, palavras, sentencas, calculo);
 }
 
 int contador_letras(string txt)
