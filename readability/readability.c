@@ -21,6 +21,8 @@ int main(void)
 
     float calculo = 0.0588 * L - 0.296 * S - 15.8;
 
+    if ()
+
     printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentencas, calculo);
 }
 
