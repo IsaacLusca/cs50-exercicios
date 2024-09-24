@@ -10,19 +10,6 @@ int main(void)
     int n = 0;
     int palavra[100];
 
-    for (int i = 0; i < strlen(texto); i++)
-    {
-        if (texto[i] == ' ')
-        {
-            palavra[n] = t;
-            n++;
-            t = 0; // Reinicia o contador de comprimento da palavra
-        }
-        else
-        {
-            t++; // Incrementa o comprimento da palavra atual
-        }
-    }
 
     // Armazena a última palavra, se houver
     palavra[n] = t;
@@ -41,5 +28,19 @@ int main(void)
     //     if (texto [i] != ' ')
     //     {
     //         t++;
+    //     }
+    // }
+
+    // for (int i = 0; i < strlen(texto); i++)
+    // {
+    //     if (texto[i] == ' ')
+    //     {
+    //         palavra[n] = t;
+    //         n++;
+    //         t = 0; // Reinicia o contador de comprimento da palavra
+    //     }
+    //     else
+    //     {
+    //         t++; // Incrementa o comprimento da palavra atual
     //     }
     // }
