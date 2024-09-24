@@ -22,7 +22,7 @@ int main(void)
 
     float liau = 0.0588 * L - 0.296 * S - 15.8;
 
-    int calculo = round(liau);
+    int calculo = round(round(liau));
 
     if (calculo >= 16)
     {
