@@ -30,10 +30,10 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    string texto = get_string("Text: ");
+    string texto = get_string("plaintext: ");
     bool dentro_palavra = false;
 
-    printf("Pla")
+    printf("ciphertext: ");
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
         // isalpha verifica se é uma letra do alfabeto
