@@ -33,6 +33,6 @@ int main(int argc, string argv[])
     printf("%i\n", 'b');
     printf("%i\n", 'A');
     printf("%i\n", 'B');
-    printf("%i\n", 'a');
-    printf("%i\n", 'a');
+    printf("%i\n", 'A' + 1);
+    printf("%i\n", 'a' + 1);
 }
