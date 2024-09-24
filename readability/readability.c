@@ -10,28 +10,26 @@ int main(void)
     int n = 0;
     int palavra[100];
 
-
     for (int i = 0; i < strlen(texto); i++)
     {
         if (texto[i] == ' ')
         {
-            palavra[n] = strlen(texto);
+            palavra[n] = t;
             n++;
-            t = 0;
+            t = 0; // Reinicia o contador de comprimento da palavra
         }
         else
         {
-            t++;
+            t++; // Incrementa o comprimento da palavra atual
         }
     }
+
+    // Armazena a última palavra, se houver
     palavra[n] = t;
 
     printf("%i\n", palavra[0]);
     printf("%i\n", palavra[1]);
-    printf("%i\n", palavra[2]);
-    printf("%i\n", t);
-    printf("%i\n", n);
-}
+    }
 
 // Palavras longas tem um "maior nível"
 // Frases longas tem um "Maior
