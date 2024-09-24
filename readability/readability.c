@@ -38,6 +38,8 @@ int contador_palavras(string txt)
     bool dentro_palavra = false;
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
+        // se o texto estiver dentro da palavra, pal vai somar 1.
+        
         if (isalpha(txt[i]))
         {
             if(!dentro_palavra)
