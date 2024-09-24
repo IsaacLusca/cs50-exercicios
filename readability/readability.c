@@ -22,7 +22,7 @@ int main(void)
 
     float liau = 0.0588 * L - 0.296 * S - 15.8;
 
-    float arredondando = round(liau * 10)/10;
+    // float arredondando = round(liau * 10)/10;
     int calculo = round(liau);
 
     // Verificação dos valores
