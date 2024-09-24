@@ -3,21 +3,36 @@
 #include <string.h>
 #include <stdio.h>
 
+int string_comprimento(string c);
 int main(void)
 {
-    string texto = get_string("Text: ");
-    int t = 0;
+    string nome = get_string("Nome: ");
+
+    // Enquanto nome for diferente de \0, faça
+    // while (nome[n] != '\0')
+    // {
+    //     n++;
+    // }
+
+    int lenght = string_comprimento(nome);
+
+    printf("O nome %s tem %i caracteres\n", nome, lenght);
+
+}
+
+int string_comprimento(string c)
+{
     int n = 0;
-    int palavra[100];
-
-
-    // Armazena a última palavra, se houver
-    palavra[n] = t;
-
-    printf("%i\n", palavra[0]);
-    printf("%i\n", palavra[1]);
-    printf("%i\n", palavra[2]);
+    for (int i = 0; c[i] != '\0'; i++)
+    {
+        if (c[i] == ' ')
+        {
+            n--;
+        }
+        n++;
     }
+    return n;
+}
 
 // Palavras longas tem um "maior nível"
 // Frases longas tem um "Maior
