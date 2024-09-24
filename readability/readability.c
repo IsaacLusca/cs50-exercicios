@@ -121,7 +121,7 @@ int contador_palavras(string txt)
     {
         // se o texto estiver dentro da palavra, pal vai somar 1.
 
-        if (isalpha(txt[i]) || txt[i] == '\'')
+        if (isalpha(txt[i]) || txt[i] == '\'' || txt[i] == '-')
         {
             if(!dentro_palavra)
             {
