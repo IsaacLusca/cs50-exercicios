@@ -25,6 +25,14 @@ int main(int argc, string argv[])
         }
         else (printf("%c", texto[i]));
 
+
     }
     printf("\n");
+
+    printf("%i\n", 'a');
+    printf("%i\n", 'b');
+    printf("%i\n", 'A');
+    printf("%i\n", 'B');
+    printf("%i\n", 'a');
+    printf("%i\n", 'a');
 }
