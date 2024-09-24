@@ -18,7 +18,6 @@ int main(void)
 int contador_letras(string txt)
 {
     int let = 0;
-    int pal = 0;
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
         if (txt[i] == ' '||
@@ -38,6 +37,13 @@ int contador_letras(string txt)
 }
 
 int contador_palavras(string txt)
+{
+    int pal = 0;
+    for (int i = 0, n = strlen(txt); i < n; i++)
+    {
+        
+    }
+}
 
 
 // calcular qtd de letra
