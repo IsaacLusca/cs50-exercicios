@@ -11,19 +11,8 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
-        if (isalpha(texto[i]))
-        {
-            if(!dentro_palavra)
-            {
-                printf("%c", texto[i]);
-                // dentro_palavra = true;
-            }
-            // else
-            // {
-            //     printf("%c", texto[i]);
-            //     dentro_palavra = false;
-            // }
-        }
+        // isalpha verifica se é uma letra do alfabeto
+        printf("%c", texto[i] + chave);
     }
     printf("\n");
 }
