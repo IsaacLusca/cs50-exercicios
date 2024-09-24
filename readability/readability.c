@@ -29,6 +29,7 @@ int main(void)
 
     printf("%i\n", palavra[0]);
     printf("%i\n", palavra[1]);
+    printf("%i\n", palavra[2]);
     }
 
 // Palavras longas tem um "maior nível"
