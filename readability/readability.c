@@ -95,7 +95,7 @@ int main(void)
         printf("Grade 15\n");
     }
 
-    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nFinal: %i", letras, palavras, sentencas, liau, calculo);
+    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nArredondando: %f\nFinal: %i", letras, palavras, sentencas, liau, arredondando, calculo);
 }
 
 // Contar letras
