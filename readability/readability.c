@@ -22,8 +22,8 @@ int main(void)
 
     float liau = 0.0588 * L - 0.296 * S - 15.8;
 
-    float arredodando = round(liau * 10)/10;
-    int calculo = round();
+    float arredondando = round(liau * 10)/10;
+    int calculo = round(arredondando);
 
     if (calculo >= 16)
     {
