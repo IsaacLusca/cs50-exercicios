@@ -35,6 +35,8 @@ int contador_letras(string txt)
     }
     return let;
 }
+
+
 // calcular qtd de letra
 // calcular qtd de palavras
 // calcular qtd de sentenças
