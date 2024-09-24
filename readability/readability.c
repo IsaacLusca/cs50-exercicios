@@ -16,7 +16,10 @@ int main(void)
         if (texto[i] == ' '||
             texto[i] == '.'||
             texto[i] == ','||
-            texto[i] == ''||
+            texto[i] == '?'||
+            texto[i] == '!'||
+            texto[i] == '/'||
+            texto[i] == '''
         )
         let = strlen(texto);
     }
