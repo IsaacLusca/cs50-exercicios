@@ -24,18 +24,10 @@ int contador_letras(string txt)
     int let = 0;
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
-        if (txt[i] == ' '||
-            txt[i] == '.'||
-            txt[i] == ','||
-            txt[i] == '?'||
-            txt[i] == '!'||
-            txt[i] == '/'||
-            txt[i] == '\''
-        )
+        if (isalpha(txt[i]))
         {
-            let--;
+            let++;
         }
-        let++;
     }
     return let;
 }
