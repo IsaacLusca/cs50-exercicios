@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[])
 {
-    int chave = get_int("Chave: ");
+    // int chave = get_int("Chave: ");
     string texto = get_string("Text: ");
     bool dentro_palavra = false;
 
@@ -16,11 +16,11 @@ int main(int argc, string argv[])
         {
             if (isupper(texto[i]))
             {
-                printf("%c", 'A' + (texto[i] - 'A' + chave) % 26);
+                printf("%c", 'A' + (texto[i] - 'A' + 13) % 26);
             }
             if (islower(texto[i]))
             {
-                printf("%c", 'a' + (texto[i] - 'a' + chave) % 26);
+                printf("%c", 'a' + (texto[i] - 'a' + 13) % 26);
             }
         }
         else (printf("%c", texto[i]));
@@ -29,10 +29,11 @@ int main(int argc, string argv[])
     }
     printf("\n");
 
-    printf("%i\n", 'a');
-    printf("%i\n", 'b');
-    printf("%i\n", 'A');
-    printf("%i\n", 'B');
-    printf("%i\n", 'A' + 1);
-    printf("%i\n", 'a' + 1);
+    printf("a: %i\n", 'a');
+    printf("b: %i\n", 'b');
+    printf("A: %i\n", 'A');
+    printf("B: %i\n", 'B');
+    printf("A+1: %c\n", 65 + 1);
+    printf("a+1: %c\n", 67 + 1);
+
 }
