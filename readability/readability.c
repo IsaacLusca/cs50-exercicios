@@ -41,7 +41,13 @@ int contador_palavras(string txt)
     int pal = 0;
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
-        
+    if (txt[i] == '.'||
+        txt[i] == '?'||
+        txt[i] == '!'||
+        )
+        {
+            pal++;
+        }
     }
 }
 
