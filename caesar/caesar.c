@@ -9,7 +9,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
-        printf("%c", texto[i] + n);
+        printf("%c", texto[i] + n * 32);
     }
     printf("\n");
 }
