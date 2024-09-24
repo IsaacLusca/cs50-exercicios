@@ -7,17 +7,19 @@ int main(void)
 {
     string texto = get_string("Text: ");
     int t = 0;
-    int palavra = 0;
+    int n = 0;
+    int palavra[n];
 
     for (int i = 0; i < strlen(texto); i++)
     {
         if (texto[i] == ' ')
         {
-            palavra[] = strlen(texto);
+            palavra[n] = strlen(texto);
         }
+        n++;
     }
 
-    printf("%i %i %i \n", palavra[]);
+    printf("%i\n", palavra[n]);
 }
 
 // Palavras longas tem um "maior nível"
