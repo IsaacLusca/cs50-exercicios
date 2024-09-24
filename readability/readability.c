@@ -4,6 +4,8 @@
 #include <stdio.h>
 
 int contador_letras(string txt);
+int contador_palavras(string txt);
+
 int main(void)
 {
     int pal = 0;
@@ -12,7 +14,9 @@ int main(void)
     string texto = get_string("Text: ");
 
     int letras = contador_letras(texto);
-    printf("letras: %i\n",letras);
+    int palavras = contador_palavras(texto);
+
+    printf("letras: %i\nPalavras: %i\n", letras, palavras);
 }
 
 int contador_letras(string txt)
@@ -41,14 +45,20 @@ int contador_palavras(string txt)
     int pal = 0;
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
-    if (txt[i] == '.'||
+    if (txt[i] == ' '||
+        txt[i] == '.'||
+        txt[i] == ','||
         txt[i] == '?'||
         txt[i] == '!'||
+        txt[i] == '/'||
+        txt[i] == '\''
         )
         {
             pal++;
         }
     }
+    pal += 1;
+    return pal;
 }
 
 
