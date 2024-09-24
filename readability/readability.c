@@ -23,7 +23,7 @@ int main(void)
     float liau = 0.0588 * L - 0.296 * S - 15.8;
 
     float arredondando = round(liau * 10)/10;
-    int calculo = round(liau);
+    int calculo = round(arredondando);
 
     if (calculo >= 16)
     {
@@ -94,7 +94,7 @@ int main(void)
         printf("Grade 15\n");
     }
 
-    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nArredondando: %f\nFinal: %i", letras, palavras, sentencas, liau, arredondando, calculo);
+    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nArredondando: %f\nFinal: %i", letras, palavras, sentencas, liau, arredondando, calculo);
 }
 
 int contador_letras(string txt)
@@ -142,6 +142,7 @@ int contador_sentencas(string txt)
         if(txt[i] == '.'||
            txt[i] == '?'||
            txt[i] == ';'||
+           txt[i] == ':'||
            txt[i] == '!')
         {
             sent++;
