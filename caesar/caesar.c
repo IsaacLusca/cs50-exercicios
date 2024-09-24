@@ -33,7 +33,7 @@ int main(int argc, string argv[])
     printf("b: %i\n", 'b');
     printf("A: %i\n", 'A');
     printf("B: %i\n", 'B');
-    printf("A+1: %c\n", 65 + 1);
-    printf("a+1: %c\n", 67 + 1);
+    printf("A+1: %c\n", 68 % 26);
+    printf("a+1: %c\n", 111 % 26);
 
 }
