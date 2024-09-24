@@ -16,7 +16,7 @@ int main(void)
     int palavras = contador_palavras(texto);
     int sentenca = contador_sentencas(texto);
 
-    float calculo = 0.0588 * (letras / 100) - 0.296 * (sentenca / 100) - 15.8;
+    float calculo = 0.0588 * ((float) letras / 100) - 0.296 * ((float) sentenca / 100) - 15.8;
 
     printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentenca, calculo);
 }
