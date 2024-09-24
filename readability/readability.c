@@ -5,6 +5,7 @@
 
 int contador_letras(string txt);
 int contador_palavras(string txt);
+int contador_sentencas(string txt);
 
 int main(void)
 {
@@ -14,6 +15,7 @@ int main(void)
 
     int letras = contador_letras(texto);
     int palavras = contador_palavras(texto);
+    int sentenca = contador_sentencas(texto);
 
     printf("letras: %i\nPalavras: %i\n", letras, palavras);
 }
@@ -55,16 +57,19 @@ int contador_palavras(string txt)
     return pal;
 }
 
-int contador_sentenca(string txt)
+int contador_sentencas(string txt)
 {
     int sent = 0;
     for (int i = 0, n = strlen(txt); i < n; i++)
     {
-        if(txt[i] == '.'
-        if(txt[i] == '?'
-        if(txt[i] == '!'
-        )
+        if(txt[i] == '.'||
+           txt[i] == '?'||
+           txt[i] == '!')
+        {
+            sent++;
+        }
     }
+    return sent;
 }
 
     // if (txt[i] == ' '||
