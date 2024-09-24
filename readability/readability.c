@@ -21,7 +21,7 @@ int main(void)
         t++;
     }
 
-    printf("%i\n", palavra[1]);
+    printf("%i\n", palavra[0]);
     printf("%i\n", t);
     printf("%i\n", n);
 }
