@@ -20,6 +20,5 @@ int main(void)
     printf("%i\n", t);
 }
 
-//
-
-//
+// Palavras longas tem um "maior nível"
+// Frases longas tem um "Maior nível"
