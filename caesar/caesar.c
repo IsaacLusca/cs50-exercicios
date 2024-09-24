@@ -18,7 +18,7 @@ int main(int argc, string argv[])
         {
             if (num = texto[i] > 25)
             {
-                
+                num = 0;
             }
             printf("%c", texto[i]);
         }
