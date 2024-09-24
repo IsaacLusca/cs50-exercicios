@@ -29,66 +29,67 @@ int main(void)
     {
         printf("Before Grade 1\n");
     }
-    else if (calculo >= 1 && calculo < 2)
+    else if (calculo >= 1 && calculo <= 2)
     {
         printf("Grade 1\n");
     }
-    else if (calculo >= 2 && calculo < 3)
+    else if (calculo > 2 && calculo <= 3)
     {
         printf("Grade 2\n");
     }
-    else if (calculo >= 3 && calculo < 4)
+    else if (calculo > 3 && calculo <= 4)
     {
         printf("Grade 3\n");
     }
-    else if (calculo >= 4 && calculo < 5)
+    else if (calculo > 4 && calculo <= 5)
     {
         printf("Grade 4\n");
     }
-    else if (calculo >= 5 && calculo < 6)
+    else if (calculo > 5 && calculo <= 6)
     {
         printf("Grade 5\n");
     }
-    else if (calculo >= 6 && calculo < 7)
+    else if (calculo > 6 && calculo <= 7)
     {
         printf("Grade 6\n");
     }
-    else if (calculo >= 7 && calculo < 8)
+    else if (calculo > 7 && calculo <= 8)
     {
         printf("Grade 7\n");
     }
-    else if (calculo >= 8 && calculo < 9)
+    else if (calculo > 8 && calculo <= 9)
     {
         printf("Grade 8\n");
     }
-    else if (calculo >= 9 && calculo < 10)
+    else if (calculo > 9 && calculo <= 10)
     {
         printf("Grade 9\n");
     }
-    else if (calculo >= 10 && calculo < 11)
+    else if (calculo > 10 && calculo <= 11)
     {
         printf("Grade 10\n");
     }
-    else if (calculo >= 11 && calculo < 12)
+    else if (calculo > 11 && calculo <= 12)
     {
         printf("Grade 11\n");
     }
-    else if (calculo >= 12 && calculo < 13)
+    else if (calculo > 12 && calculo <= 13)
     {
         printf("Grade 12\n");
     }
-    else if (calculo >= 13 && calculo < 14)
+    else if (calculo > 13 && calculo <= 14)
     {
         printf("Grade 13\n");
     }
-    else if (calculo >= 14 && calculo < 15)
+    else if (calculo > 14 && calculo <= 15)
     {
         printf("Grade 14\n");
     }
-    else if (calculo >= 15 && calculo < 16)
+    else if (calculo > 15 && calculo < 16)
     {
         printf("Grade 15\n");
     }
+
 
     // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentencas, calculo);
 }
