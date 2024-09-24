@@ -7,12 +7,8 @@
 int main(int argc, string argv[])
 {
     // int chave = get_int("Chave: ");
-    int chave;
-    do
-    {
-        chave = atoi(argv[1]);
-    }
-    while (chave < 1);
+
+    int chave = atoi(argv[1]);
 
     string texto = get_string("Text: ");
     bool dentro_palavra = false;
