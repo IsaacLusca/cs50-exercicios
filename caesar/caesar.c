@@ -17,12 +17,12 @@ int main(int argc, string argv[])
             // Para letras maiusculas
             if (isupper(texto[i]))
             {
-                printf("%c", 'A' + (texto[i] - 'A' + 13) % 26);
+                printf("%c", 'A' + (texto[i] - 'A' + argv[1]) % 26);
             }
             // Para minusculas
             if (islower(texto[i]))
             {
-                printf("%c", 'a' + (texto[i] - 'a' + 13) % 26);
+                printf("%c", 'a' + (texto[i] - 'a' + argv[1]) % 26);
             }
         }
         else (printf("%c", texto[i]));
