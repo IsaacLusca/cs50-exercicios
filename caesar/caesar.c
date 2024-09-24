@@ -33,6 +33,7 @@ int main(int argc, string argv[])
     string texto = get_string("Text: ");
     bool dentro_palavra = false;
 
+    printf("Pla")
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
         // isalpha verifica se é uma letra do alfabeto
