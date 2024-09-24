@@ -58,7 +58,13 @@ int contador_palavras(string txt)
 int contador_sentenca(string txt)
 {
     int sent = 0;
-    bool 
+    for (int i = 0, n = strlen(txt); i < n; i++)
+    {
+        if(txt[i] == '.'
+        if(txt[i] == '?'
+        if(txt[i] == '!'
+        )
+    }
 }
 
     // if (txt[i] == ' '||
