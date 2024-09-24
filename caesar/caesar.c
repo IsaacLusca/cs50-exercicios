@@ -10,6 +10,12 @@ int main(int argc, string argv[])
 
     int chave = atoi(argv[1]);
 
+    if(chave != int > 0)
+    {
+        printf("Usage: ./caesar key\n");
+        break;
+    }
+
     string texto = get_string("Text: ");
     bool dentro_palavra = false;
 
