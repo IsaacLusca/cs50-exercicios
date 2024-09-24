@@ -9,13 +9,14 @@ int contador_sentencas(string txt);
 
 int main(void)
 {
-    int sent = 0;
 
     string texto = get_string("Text: ");
 
     int letras = contador_letras(texto);
     int palavras = contador_palavras(texto);
     int sentenca = contador_sentencas(texto);
+
+    float 
 
     printf("letras: %i\nPalavras: %i\nSentença: %i\n", letras, palavras, sentenca);
 }
