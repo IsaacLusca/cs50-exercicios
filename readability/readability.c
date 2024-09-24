@@ -152,16 +152,16 @@ int contador_sentencas(string txt)
     return sent;
 }
 
-    // if (txt[i] == ' '||
-    //     txt[i] == '.' && txt[i] ==' '||
-    //     txt[i] == '!'||
-    //     txt[i] == '!' && txt[i] ==' '||
-    //     txt[i] == '?'||
-    //     txt[i] == '?' && txt[i] ==' '||
-    //     txt[i] == '/'||
-    //     txt[i] == '\''
-    //     )
-    //     {
+// if (txt[i] == ' '||
+//     txt[i] == '.' && txt[i] ==' '||
+//     txt[i] == '!'||
+//     txt[i] == '!' && txt[i] ==' '||
+//     txt[i] == '?'||
+//     txt[i] == '?' && txt[i] ==' '||
+//     txt[i] == '/'||
+//     txt[i] == '\''
+//     )
+//     {
 //         pal++;
 //     }
 
