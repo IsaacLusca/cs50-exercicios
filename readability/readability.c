@@ -91,7 +91,7 @@ int main(void)
     }
 
 
-    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentencas, calculo);
+    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentencas, calculo);
 }
 
 int contador_letras(string txt)
