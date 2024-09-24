@@ -15,12 +15,13 @@ int main(int argc, string argv[])
         {
             if(!dentro_palavra)
             {
+                printf("%c", texto[i] + 1);
                 dentro_palavra = true;
-                printf("%c", (texto[i] + chave) % 26);
             }
             else
             {
                 printf("%c", texto[i]);
+                dentro_palavra = false;
             }
         }
     }
