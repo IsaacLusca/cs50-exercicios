@@ -7,13 +7,13 @@ int main(void)
 {
     string texto = get_string("Text: ");
     int t = 0;
+    int palavra = 0;
 
-    // Ignora os espaços vazios
     for (int i = 0; i < strlen(texto); i++)
     {
-        if (texto [i] != ' ')
+        if (texto[i] == ' ')
         {
-            t++;
+            palavra[] = strlen(texto);
         }
     }
 
@@ -21,4 +21,13 @@ int main(void)
 }
 
 // Palavras longas tem um "maior nível"
-// Frases longas tem um "Maior nível"
+// Frases longas tem um "Maior
+
+    // Ignora os espaços vazios
+    // for (int i = 0; i < strlen(texto); i++)
+    // {
+    //     if (texto [i] != ' ')
+    //     {
+    //         t++;
+    //     }
+    // }
