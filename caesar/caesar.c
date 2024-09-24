@@ -15,7 +15,7 @@ int main(int argc, string argv[])
         {
             if(!dentro_palavra)
             {
-                printf("%c", (texto[i] + chave));
+                printf("%i", texto[i]);
                 dentro_palavra = true;
             }
             else
