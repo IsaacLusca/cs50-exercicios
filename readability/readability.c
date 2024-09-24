@@ -18,7 +18,7 @@ int main(void)
             palavra[n] = strlen(texto);
             n++;
         }
-        t++;
+        t--;
     }
 
     printf("%i\n", palavra[0]);
