@@ -95,7 +95,7 @@ int main(void)
         printf("Grade 15\n");
     }
 
-    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nArredondando: %f\nFinal: %i\n", letras, palavras, sentencas, liau, arredondando, calculo);
+    // printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %f\nFinal: %i\n", letras, palavras, sentencas, liau, calculo);
 }
 
 // Contar letras
@@ -145,7 +145,6 @@ int contador_sentencas(string txt)
     {
         if(txt[i] == '.'||
            txt[i] == '?'||
-           txt[i] == ';'||
            txt[i] == '!')
         {
             sent++;
