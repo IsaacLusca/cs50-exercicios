@@ -21,10 +21,22 @@ int main(void)
 
     float calculo = 0.0588 * L - 0.296 * S - 15.8;
 
-    if ()
+    if (calculo >= 16)
+    {
+        printf("Grade 16+\n");
+    }
+    else if (calculo < 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    else if (calculo >= 1 && calculo < 2)
+    {
+        printf("Grade 1\n");
+    }
 
-    printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentencas, calculo);
-}
+
+        printf("letras: %i\nPalavras: %i\nSentença: %i\nCalculo: %.2f\n", letras, palavras, sentencas, calculo);
+    }
 
 int contador_letras(string txt)
 {
