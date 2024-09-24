@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[])
 {
-    // int chave = get_int("Chave: ");
+    int chave = get_int("Chave: ");
     string texto = get_string("Text: ");
     bool dentro_palavra = false;
 
