@@ -26,7 +26,12 @@ int main(int argc, string argv[])
     }
 
     string texto = get_string("plaintext: ");
-    char alfabeto[26] = {'a', 'b', };
+    char alfabeto[26];
+
+    for (int i = 0; i < alfabeto; i++)
+    {
+        alfabeto[i] = 'A' + alfabeto[i];
+    }
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
