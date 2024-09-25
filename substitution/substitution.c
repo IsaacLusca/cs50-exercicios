@@ -37,10 +37,11 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
-        if (texto[i])
-        printf("\n");
+        if (texto[i] ==)
+
     }
 
+    printf("\n");
     // printf("Deu bom!\n");
 }
 
