@@ -37,23 +37,25 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
-        if (isalpha(texto[i]))
-        {
-            if (isupper(texto[i]))
-            {
-                printf("%c", argv[1][i]);
-            }
-            if (islower(texto[i]))
-            {
-                printf("%c", argv[1][i]);
-            }
-        }
-        else
-        {
-            printf("%c", texto[i]);
-        }
+        if (texto[i])
         printf("\n");
     }
 
     // printf("Deu bom!\n");
 }
+
+        // if (isalpha(texto[i]))
+        // {
+        //     if (isupper(texto[i]))
+        //     {
+        //         printf("%c", argv[1][i]);
+        //     }
+        //     if (islower(texto[i]))
+        //     {
+        //         printf("%c", argv[1][i]);
+        //     }
+        // }
+        // else
+        // {
+        //     printf("%c", texto[i]);
+        // }
