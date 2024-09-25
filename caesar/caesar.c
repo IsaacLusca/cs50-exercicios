@@ -53,4 +53,5 @@ int main(int argc, string argv[])
     }
 
     printf("\n");
+    printf("%c\n" 'A' + 'H');
 }
