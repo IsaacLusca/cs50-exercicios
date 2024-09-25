@@ -16,6 +16,12 @@ int main(int argc, string argv[])
             printf("Usage: ./substitution key\n");
             return 1;
         }
+
+        if (isalpha(argv[1][i]) < 'A' - 'A' + 26)
+        {
+            printf("Key must contain 26 characters.\n");
+            return 1;
+        }
     }
 
 }
