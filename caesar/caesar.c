@@ -53,5 +53,6 @@ int main(int argc, string argv[])
     }
 
     printf("\n");
-    printf("%c\n" 'A' + 'H');
+    printf("%c\n", 'A' - () );
+    printf("%i", 'A' = 'H');
 }
