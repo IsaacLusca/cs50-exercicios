@@ -29,7 +29,7 @@ int main(int argc, string argv[])
 
         int pos = argv[1][i] - 'A';
 
-        if (check[pos])
+        if (chek[pos])
         {
             printf("Key must not contain repeated characters.\n");
             return 1;
