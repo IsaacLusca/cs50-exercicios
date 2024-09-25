@@ -26,6 +26,7 @@ int main(int argc, string argv[])
     }
 
     string texto = get_string("plaintext: ");
+    
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
