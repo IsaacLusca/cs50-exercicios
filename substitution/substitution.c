@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 int main(int argc, string argv[])
 {
@@ -17,11 +18,12 @@ int main(int argc, string argv[])
             return 1;
         }
 
-        if (isalpha(argv[1][i]) < 'A' - 'A' + 26)
+        if (strlen(argv[1]) != 26)
         {
             printf("Key must contain 26 characters.\n");
             return 1;
         }
     }
 
+    printf("Deu bom!\n");
 }
