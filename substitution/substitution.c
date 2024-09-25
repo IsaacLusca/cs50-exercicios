@@ -25,6 +25,26 @@ int main(int argc, string argv[])
         }
     }
 
-    
+    string texto = get_string("plaintext: \n");
+
+    for (int i = 0, n = strlen(texto); i < n; i++)
+    {
+        if (isalpha(texto[i]))
+        {
+            if (isupper(texto[i]))
+            {
+                printf("%c", argv[i]);
+            }
+            if (islower(texto[i]))
+            {
+                printf("%c", argv[i]);
+            }
+        }
+        else
+        {
+            printf("%c", texto[i]);
+        }
+    }
+
     printf("Deu bom!\n");
 }
