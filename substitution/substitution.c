@@ -8,5 +8,13 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
-    if ()
+    for (int i = 0; argv[1][i] != '\0'; i++)
+    {
+        if (!isdigit(argv[1][i]))
+        {
+            printf("Usage: ./substitution key\n");
+            return 1;
+        }
+    }
+    
 }
