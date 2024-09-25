@@ -40,15 +40,15 @@ int main(int argc, string argv[])
     {
         if (isalpha(texto[i]))
         {
-            if (isupper(texto[i]) != argv[i])
+            if (isupper(texto[i]))
             {
                 int pos = texto[i] - 'A';
-                printf("%c", argv[1][pos]);
+                printf("%c", isupper(argv[1][pos]));
             }
             else if (islower(texto[i]))
             {
                 int pos = texto[i] - 'a';
-                printf("%c", argv[1][pos]);
+                printf("%c", islower(argv[1][pos]));
             }
             else
             {
