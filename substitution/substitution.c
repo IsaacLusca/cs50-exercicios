@@ -16,7 +16,9 @@ int main(int argc, string argv[])
         printf("Key must contain 26 characters.\n");
         return 1;
     }
-    
+
+    bool check[26] = false;
+
     for (int i = 0; argv[1][i] != '\0'; i++)
     {
         if (!isalpha(argv[1][i]))
@@ -25,8 +27,9 @@ int main(int argc, string argv[])
             return 1;
         }
 
+        int pos = argv[1][i] - 'A';
 
-        if (arg[1] )
+        i
     }
 
     string texto = get_string("plaintext: ");
