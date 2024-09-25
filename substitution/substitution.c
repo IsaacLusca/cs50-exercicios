@@ -26,14 +26,14 @@ int main(int argc, string argv[])
     }
 
     string texto = get_string("plaintext: ");
-    char alfabeto_min[26];
-    char alfabeto[26];
+    // char alfabeto_min[26];
+    // char alfabeto[26];
 
-    for (int i = 0; i < 26; i++)
-    {
-        alfabeto_min[i] = 'a' + i;
-        alfabeto[i] = 'A' + i;
-    }
+    // for (int i = 0; i < 26; i++)
+    // {
+    //     alfabeto_min[i] = 'a' + i;
+    //     alfabeto[i] = 'A' + i;
+    // }
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
