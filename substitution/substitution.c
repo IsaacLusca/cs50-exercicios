@@ -11,20 +11,20 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
+    if (strlen(argv[1]) != 26)
+    {
+        printf("Key must contain 26 characters.\n");
+        return 1;
+    }
+    
     for (int i = 0; argv[1][i] != '\0'; i++)
     {
-        check[i] = argv[1][i];
         if (!isalpha(argv[1][i]))
         {
             printf("Usage: ./substitution key\n");
             return 1;
         }
 
-        if (strlen(argv[1]) != 26)
-        {
-            printf("Key must contain 26 characters.\n");
-            return 1;
-        }
 
         if (arg[1] )
     }
