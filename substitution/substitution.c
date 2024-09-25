@@ -43,12 +43,12 @@ int main(int argc, string argv[])
             if (isupper(texto[i]))
             {
                 int pos = texto[i] - 'A';
-                printf("%c", isupper(argv[1][pos]));
+                printf("%c", toupper(argv[1][pos]));
             }
             else if (islower(texto[i]))
             {
                 int pos = texto[i] - 'a';
-                printf("%c", islower(argv[1][pos]));
+                printf("%c", toupper(argv[1][pos]));
             }
             else
             {
