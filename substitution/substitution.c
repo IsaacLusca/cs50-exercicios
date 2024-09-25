@@ -5,34 +5,44 @@
 
 int main(int argc, string argv[])
 {
+// Verifica se o número de argumentos é correto
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
         return 1;
     }
+
+    // Verifica se a chave contém exatamente 26 caracteres
     if (strlen(argv[1]) != 26)
     {
         printf("Key must contain 26 characters.\n");
         return 1;
     }
+    // Array para marcar quais letras já foram usadas
+    bool letras_usadas[26] = {false};
 
-    bool check[26] = {false};
+    // Loop através de cada caractere da chave
     for (int i = 0; argv[1][i] != '\0'; i++)
     {
+        // Verifica se o caractere é uma letra
         if (!isalpha(argv[1][i]))
         {
-            printf("Usage: ./substitution key\n");
+            printf("Key must only contain alphabetic characters.\n");
             return 1;
         }
 
-        int pos = toupper(argv[1][i] - 'A');
+        // Converte o caractere para índice no array, indiferente de maiúsculas/minúsculas
+        int pos = toupper(argv[1][i]) - 'A';
 
-        if (check[pos])
+        // Verifica se a letra já foi usada
+        if (letras_usadas[pos])
         {
             printf("Key must not contain repeated characters.\n");
             return 1;
         }
-        check[pos] = true;
+
+        // Marca a letra como usada
+        letras_usadas[pos] = true;
     }
 
     string texto = get_string("plaintext: ");
