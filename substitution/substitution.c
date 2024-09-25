@@ -37,13 +37,15 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
+        int pos = texto[i] - 'a';
+        int posMai = texto[i] - 'A';
         if (isalpha(texto[i]))
         {
-            if (isupper(texto[i]) == argv[1][i])
+            if (isupper(pos == argv[1][i]))
             {
                 printf("%c", argv[1][i]);
             }
-            if (islower(texto[i]) == argv[1][i])
+            if (islower(posMai == argv[1][i]))
             {
                 printf("%c", argv[1][i]);
             }
