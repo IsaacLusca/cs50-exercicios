@@ -35,6 +35,7 @@ int main(int argc, string argv[])
     //     alfabeto[i] = 'A' + i;
     // }
 
+    printf("")
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
         if (isalpha(texto[i]))
