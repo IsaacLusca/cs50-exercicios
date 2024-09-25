@@ -49,7 +49,10 @@ int main(int argc, string argv[])
                 printf("%c", 'a' + (texto[i] - 'a' + chave) % 26);
             }
         }
-        else (printf("%c", texto[i]));
+        else
+        {
+            printf("%c", texto[i]);
+        }
     }
 
     printf("\n");
