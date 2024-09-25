@@ -5,7 +5,6 @@
 
 int main(int argc, string argv[])
 {
-    bool check[26] = {false};
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
@@ -17,8 +16,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    bool chek[26] = {false};
-
+    bool check[26] = {false};
     for (int i = 0; argv[1][i] != '\0'; i++)
     {
         if (!isalpha(argv[1][i]))
@@ -29,12 +27,12 @@ int main(int argc, string argv[])
 
         int pos = argv[1][i] - 'A';
 
-        if (chek[pos])
+        if (check[pos])
         {
             printf("Key must not contain repeated characters.\n");
             return 1;
         }
-        chek[pos] = true;
+        check[pos] = true;
     }
 
     string texto = get_string("plaintext: ");
