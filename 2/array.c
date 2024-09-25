@@ -1,19 +1,20 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void hashTamanho(int tamanho);
-
 int main(void)
 {
-    int t = get_int("Tamanho: ");
-     hashTamanho(t);
-}
+    int x = 10;
+    int y = 10;
 
-void hashTamanho(int tamanho)
-{
-    for(int i = 0; i < tamanho; i++)
+    char n[x][y];
+
+    for (int i = 0; i < x; i++)
     {
-        printf("#\n");
+        for (int j = 0; j < y; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
 }
 
