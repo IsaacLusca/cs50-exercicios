@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[])
 {
-    bool check = false;
+    bool check[26] = false;
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
@@ -13,6 +13,7 @@ int main(int argc, string argv[])
     }
     for (int i = 0; argv[1][i] != '\0'; i++)
     {
+        check[i] = argv[1][i];
         if (!isalpha(argv[1][i]))
         {
             printf("Usage: ./substitution key\n");
