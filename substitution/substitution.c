@@ -25,7 +25,7 @@ int main(int argc, string argv[])
         }
     }
 
-    string texto = get_string("plaintext: \n");
+    string texto = get_string("plaintext: ");
 
     for (int i = 0, n = strlen(texto); i < n; i++)
     {
@@ -33,18 +33,19 @@ int main(int argc, string argv[])
         {
             if (isupper(texto[i]))
             {
-                printf("%c", argv[i]);
+                printf("%c", argv[1][i]);
             }
             if (islower(texto[i]))
             {
-                printf("%c", argv[i]);
+                printf("%c", argv[1][i]);
             }
         }
         else
         {
             printf("%c", texto[i]);
         }
+        printf("\n");
     }
 
-    printf("Deu bom!\n");
+    // printf("Deu bom!\n");
 }
