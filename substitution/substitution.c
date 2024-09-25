@@ -48,7 +48,7 @@ int main(int argc, string argv[])
             else if (islower(texto[i]))
             {
                 int pos = texto[i] - 'a';
-                printf("%c", toupper(argv[1][pos]));
+                printf("%c", tolower(argv[1][pos]));
             }
             else
             {
