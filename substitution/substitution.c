@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <ctype.h>
 
 int main(int argc, string argv[])
 {
@@ -10,11 +11,11 @@ int main(int argc, string argv[])
     }
     for (int i = 0; argv[1][i] != '\0'; i++)
     {
-        if (!isdigit(argv[1][i]))
+        if (!isalpha(argv[1][i]))
         {
             printf("Usage: ./substitution key\n");
             return 1;
         }
     }
-    
+
 }
