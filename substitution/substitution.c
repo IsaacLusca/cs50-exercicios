@@ -5,6 +5,7 @@
 
 int main(int argc, string argv[])
 {
+    bool check = false;
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
@@ -24,7 +25,7 @@ int main(int argc, string argv[])
             return 1;
         }
 
-        
+        if (arg[1] )
     }
 
     string texto = get_string("plaintext: ");
