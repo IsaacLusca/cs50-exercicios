@@ -11,11 +11,10 @@ int main() {
         if (n == num[i])
         {
             printf("Encontrado\n");
+            return 1;
         }
-        else
-        {
-            printf("Não encontrado\n");
-        }
-    }
 
+    }
+    printf("Não encontrado\n");
+    return 0;
 }
