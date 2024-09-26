@@ -6,9 +6,9 @@ int main() {
     int a;
     int b;
     int s;
-    scanf("a: %i\n", &a);
-    scanf("b: %i\n", &b);
-    scanf("s: %i\n", &s);
+    scanf("a: %i", &a);
+    scanf("b: %i", &b);
+    scanf("s: %i", &s);
 
     int maiorAB = (a + b + abs(a-b))/2;
 
