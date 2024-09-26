@@ -8,10 +8,21 @@ typedef struct
     string numeros;
 }
 person;
+// string nome[] = {"Carter", "David", "John"};
+// string numeros[] = {"438-328-1000", "485-973-1023", "348-129-5748"};
 
 int main(void)
 {
     person pessoa[3];
+    
+    pessoa[0].nome = "Carter";
+    pessoa[0].numeros = "438-328-1000";
+
+    pessoa[1].nome = "David";
+    pessoa[1].numeros = "485-973-1023";
+
+    pessoa[2].nome = "John";
+    pessoa[2].numeros = "348-129-5748";
 
     string s = get_string("Nome: ");
 
