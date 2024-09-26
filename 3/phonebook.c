@@ -14,7 +14,7 @@ person;
 int main(void)
 {
     person pessoa[3];
-    
+
     pessoa[0].nome = "Carter";
     pessoa[0].numeros = "438-328-1000";
 
@@ -28,9 +28,9 @@ int main(void)
 
     for (int i = 0; i < 3; i++)
     {
-        if(strcmp(nome[i], s))
+        if(strcmp(pessoa[i].nome, s))
         {
-            printf("Número: %s\n", numeros[i]);
+            printf("Número: %s\n", pessoa[i].numeros);
             return 0;
         }
     }
