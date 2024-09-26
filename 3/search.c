@@ -2,7 +2,16 @@
 #include <cs50.h>
 
 int main() {
-    
+    string strings[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
+    string s = get_string("Nome: ");
+
+    for (int i = 0; i < 6; i++)
+    {
+        if(s == strings[i])
+        {
+            printf("Encontrado\n");
+        }
+    }
 }
 
     // // Busca linear
