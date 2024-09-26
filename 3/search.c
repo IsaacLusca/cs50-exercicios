@@ -5,11 +5,10 @@
 int main() {
     string strings[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
     string s = get_string("Nome: ");
-    int s_cmp = strcmp(s);
 
-    for (int i = 0; i < s_cmp; i++)
+    for (int i = 0; i < 6; i++)
     {
-        if(s_cmp == strings[i])
+        if(strcmp(s, strings[i]) == 0)
         {
             printf("Encontrado\n");
             return 0;
