@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
 int main() {
     string strings[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
     string s = get_string("Nome: ");
+    int s_cmp = strcmp(s);
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < s_cmp; i++)
     {
-        if(s == strings[i])
+        if(s_cmp == strings[i])
         {
             printf("Encontrado\n");
             return 0;
