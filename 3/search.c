@@ -10,8 +10,11 @@ int main() {
         if(s == strings[i])
         {
             printf("Encontrado\n");
+            return 0;
         }
     }
+    printf("Não encontrado\n");
+    return 1;
 }
 
     // // Busca linear
