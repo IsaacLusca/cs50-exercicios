@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 
@@ -9,9 +10,16 @@ int main() {
     scanf("b: %i\n", &b);
     scanf("s: %i\n", &s);
 
-    int maiorAB = (a + b + a*b*s*(a-b))/2;
+    int maiorAB = (a + b + abs(a-b))/2;
 
-    printf("maior: %i\n", maiorAB);
+    if (maiorAB > s)
+    {
+        printf("%i eh o maior\n", maiorAB);
+    }
+    else
+    {
+        printf("%i eh o maior\n", s);
+    }
 
     return 0;
 }
