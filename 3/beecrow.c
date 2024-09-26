@@ -6,7 +6,7 @@ int main() {
     int x = 100;
     for (int i = 0; i < 26 ; i++)
     {
-        if ( matriz[i] == x)
+        if (x < matriz[26/2])
         {
             printf("%i - O valor está na matriz!\n", i+1);
         }
