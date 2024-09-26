@@ -28,7 +28,7 @@ int main(void)
 
     for (int i = 0; i < 3; i++)
     {
-        if(strcmp(pessoa[i].nome, s))
+        if(strcmp(pessoa[i].nome, s) == 0)
         {
             printf("Número: %s\n", pessoa[i].numeros);
             return 0;
