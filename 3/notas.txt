@@ -1,3 +1,4 @@
 algoritmos
 
--  
+-  melhor caso e pior caso
+- 
