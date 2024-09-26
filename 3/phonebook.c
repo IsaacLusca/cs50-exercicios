@@ -4,12 +4,14 @@
 
 typedef struct
 {
-    string nome[] = {"Carter", "David", "John"};
-    string numeros[] = {"438-328-1000", "485-973-1023", "348-129-5748"};
-}pessoas
+    string nome;
+    string numeros;
+}
+person;
 
 int main(void)
 {
+    person pessoa[3];
 
     string s = get_string("Nome: ");
 
