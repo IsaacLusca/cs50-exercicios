@@ -1,2 +1,2 @@
-// Também é um algoritmo O(n^2)
-// 
+// Também é um algoritmo no pior caso O(n^2)
+// No melhor caso é n
