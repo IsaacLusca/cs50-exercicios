@@ -68,12 +68,14 @@ bool vote(string name)
     // Parametro string chamado nome
     // Chamar o candidato. Se encontrar, retorne o total de votos e retorne verdadeiro
     // Se não encontrar, retornará falso
+
+    
     return false;
 }
 
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    // TODO
+    // imprimir o candidato ou candidatos mais votados.
     return;
 }
