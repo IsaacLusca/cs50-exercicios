@@ -18,5 +18,5 @@ int collatz(int n)
         return 1;
     }
 
-    
+    return collatz
 }
