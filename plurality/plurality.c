@@ -85,7 +85,7 @@ void print_winner(void)
     // imprimir o candidato ou candidatos mais votados.
     for (int i = 0; i < candidate_count; i++)
     {
-        printf("Candidato(a) %s tem %i votos\n", candidates[i].name, candidates[i].votes);
+        if (candidates[i])
     }
 
     return;
