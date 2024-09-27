@@ -72,7 +72,7 @@ bool vote(string name)
     {
         if (strcmp(name, candidates[i].name) == 0)
         {
-            candidates[i].vote++;
+            candidates[i].votes++;
             return true;
         }
     }
@@ -85,7 +85,7 @@ void print_winner(void)
     // imprimir o candidato ou candidatos mais votados.
     for (int i = 0; i < candidate_count; i++)
     {
-
+        printf("Candidato(a) %s tem %i votos\n", candidates[i].name, candidates[i].votes);
     }
 
     return;
