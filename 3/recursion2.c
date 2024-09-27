@@ -24,7 +24,7 @@ int fatorial(int n)
         return 1;
     }
 
-    
+    return n * fatorial (n - 1);
 }
 
 
