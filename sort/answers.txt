@@ -1,20 +1,20 @@
-sort1 uses: Merge
-time 5000: 0.054s      reverse: 0.064s    sorted: 0.022
+sort1 uses: Bubble
+time 5000: 0.054s      reverse: 0.064s    sorted: 0.022s
 time 10000: 0.181s     reverse: 0.22s     sorted: 0.041s
 time 50000: 6.204s     reverse: 5.4s      sorted: 1.03s
 
 How do you know?: Quanto maior a entrada, maior é o tempo para processar, o pior caso seria O(n^2). No melhor caso, o tempo de resposta é curto, possivelmente passa apenas uma vez nos valores, sendo O(n).
 
-sort2 uses: TODO
-time 5000: 0.054s      reverse: 0.064s    sorted: 0.022
-time 10000: 0.181s     reverse: 0.22s     sorted: 0.041s
-time 50000: 6.204s     reverse: 5.4s      sorted: 1.03s
+sort2 uses: Merge
+time 5000: 0.023s      reverse: 0.064s    sorted: 0.025s
+time 10000: 0.052s     reverse: 0.22s     sorted: 0.057s
+time 50000: 1.06s     reverse: 0.99s      sorted: 0.96s
 
-How do you know?: TODO
+How do you know?: O tempo de execução em todos os casos foi bastante curto, e, tanto o melhor quanto o pior caso, o tempo de processamento é bastante semelhante. Possivelmente a complexidade é O(n log n).
 
 sort3 uses: TODO
-time 5000: 0.054s      reverse: 0.064s    sorted: 0.022
-time 10000: 0.181s     reverse: 0.22s     sorted: 0.041s
+time 5000: 0.054s      reverse: 0.022s    sorted: 0.025s
+time 10000: 0.181s     reverse: 0.042s     sorted: 0.041s
 time 50000: 6.204s     reverse: 5.4s      sorted: 1.03s
 
 How do you know?: TODO
