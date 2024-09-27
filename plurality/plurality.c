@@ -68,7 +68,10 @@ bool vote(string name)
     // Parametro string chamado nome
     // Chamar o candidato. Se encontrar, retorne o total de votos e retorne verdadeiro
     // Se não encontrar, retornará falso
-    for(int i = 0; i < candidates[MAX]; i++)
+    for(int i = 0; i < candidate_count; i++)
+    {
+        
+    }
 
     return false;
 }
