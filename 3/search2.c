@@ -1,13 +1,16 @@
 #include <cs50.h>
 #include <stdio.h>
 
-typedef
+typedef struct
 {
-    string candidato;
-    int votos;
-} 
+    string nome;
+    int voto;
+} candidatos;
 
 int main(void)
 {
+    candidatos nome;
+    candidatos voto;
 
+    nome
 }
