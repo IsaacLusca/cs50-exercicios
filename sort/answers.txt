@@ -12,7 +12,7 @@ time 50000: 1.06s     reverse: 0.99s      sorted: 0.96s
 
 How do you know?: O tempo de execução em todos os casos foi bastante curto, e, tanto o melhor quanto o pior caso, o tempo de processamento é bastante semelhante. Possivelmente a complexidade é O(nlog n).
 
-sort3 uses: Sort
+sort3 uses: Selection
 time 5000: 0.039s      reverse: 0.042s    sorted: 0.041s
 time 10000: 0.12s     reverse: 0.12s     sorted: 0.12s
 time 50000: 2.80s     reverse: 3.0s      sorted: 2.82s
