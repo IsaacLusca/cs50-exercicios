@@ -85,7 +85,10 @@ void print_winner(void)
     // imprimir o candidato ou candidatos mais votados.
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i])
+        if (candidates[i].votes > candidates[i+1].votes)
+        {
+            
+        }
     }
 
     return;
