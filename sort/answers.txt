@@ -13,8 +13,8 @@ time 50000: 1.06s     reverse: 0.99s      sorted: 0.96s
 How do you know?: O tempo de execução em todos os casos foi bastante curto, e, tanto o melhor quanto o pior caso, o tempo de processamento é bastante semelhante. Possivelmente a complexidade é O(nlog n).
 
 sort3 uses: Sort
-time 5000: 0.054s      reverse: 0.022s    sorted: 0.025s
-time 10000: 0.181s     reverse: 0.042s     sorted: 0.041s
-time 50000: 6.204s     reverse: 5.4s      sorted: 1.03s
+time 5000: 0.039s      reverse: 0.042s    sorted: 0.041s
+time 10000: 0.12s     reverse: 0.12s     sorted: 0.12s
+time 50000: 2.80s     reverse: 3.0s      sorted: 2.82s
 
-How do you know?: TODO
+How do you know?: O tempo de execução, tanto no melhor e pior caso ficou com valores próximos. Isso indica que a complexidade tanto no melhor quanto no pior é a mesma, e possivelmente O(n^2) pois se comparar com o merge, quanto maior os dados o tempo de processamento aumenta significativamente.
