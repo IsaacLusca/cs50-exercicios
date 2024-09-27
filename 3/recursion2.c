@@ -18,6 +18,12 @@ int main(void)
 
 int fatorial(int n)
 {
+    // Caso base
+    if (n == 1)
+    {
+        return 1;
+    }
+
     
 }
 
