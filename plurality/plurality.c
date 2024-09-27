@@ -65,7 +65,9 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
+    // Parametro string chamado nome
+    // Chamar o candidato. Se encontrar, retorne o total de votos e retorne verdadeiro
+    // Se não encontrar, retornará falso
     return false;
 }
 
