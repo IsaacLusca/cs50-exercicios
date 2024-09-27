@@ -1,7 +1,22 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int fatorial(int n);
+
 int main(void)
+{
+    int n;
+
+    do
+    {
+        n = get_int("n: ");
+    }
+    while (n < 0);
+
+    printf("%i\n", fatorial(n));
+}
+
+int fatorial(int n)
 {
     
 }
