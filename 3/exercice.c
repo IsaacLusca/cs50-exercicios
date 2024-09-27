@@ -15,8 +15,8 @@ int collatz(int n)
     }
     else if (n == 2)
     {
-        return 1;
+        return collatz ;
     }
 
-    return collatz
+    return n;
 }
