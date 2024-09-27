@@ -18,17 +18,15 @@ int main(void)
 
 int fatorial(int n)
 {
-    int result = 0;
     // Caso base
     if (n == 1)
     {
+        printf("%i = ", n);
         return 1;
     }
-    result = n * fatorial(n - 1);
-    printf("%i * " result);
+    printf("%i * ", n);
 
-
-    return result;
+    return n * fatorial(n - 1);
 }
 
 
