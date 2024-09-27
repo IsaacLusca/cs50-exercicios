@@ -1,5 +1,6 @@
 sort1 uses: TODO
-
+time 5000: 0,054s
+time 10000: 0.181s
 How do you know?: TODO
 
 sort2 uses: TODO
