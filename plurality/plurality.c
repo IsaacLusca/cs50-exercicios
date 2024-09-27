@@ -84,5 +84,10 @@ bool vote(string name)
 void print_winner(void)
 {
     // imprimir o candidato ou candidatos mais votados.
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if ()
+    }
+
     return;
 }
