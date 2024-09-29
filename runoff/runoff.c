@@ -143,7 +143,7 @@ void tabulate(void)
 {
     int contagem = 0;
 
-    for (int i = 0; i < preferences[i]; i++)
+    for (int i = 0; i < num_votes; i++)
     {
         for (int j = 0; j < preferences[i][j]; i++)
         {
