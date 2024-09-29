@@ -126,15 +126,19 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
+    int contagem = 0;
     for (int i = 0; i < candidate_count; i++)
     {
         if (strcmp(candidate[i].name, name) == 0)
         {
-            
+            candidate[i].votes++;
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
-
-    return false;
 }
 
 // Tabulate votes for non-eliminated candidates
