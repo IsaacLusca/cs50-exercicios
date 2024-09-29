@@ -129,10 +129,13 @@ bool vote(int voter, int rank, string name)
     int contagem = 0;
     for (int i = 0; i < candidate_count; i++)
     {
-        if (strcmp(candidate[i].name, name) == 0)
+        for (int j = 0; j < candidate_count; j++)
         {
-            preferences[i];
-            return true;
+            if (strcmp(candidates[i].votes, name) == 0)
+            {
+                preference[i][j]++;
+                return true;
+            }
         }
         else
         {
