@@ -141,13 +141,14 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    int contagem = 0;
 
-    for (int i = 0; i < num_votes; i++)
+    for (int i = 0; i < voter_count; i++)
     {
-        for (int j = 0; j < preferences[i][j]; i++)
+        for (int j = 0; j < candidate_count; i++)
         {
-            contagem = contagem + preferences[i][j];
+            candidate[i].votes = preferences[i][j];
+
+            if (active[])
         }
     }
 
