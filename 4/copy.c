@@ -16,10 +16,13 @@ int main(void)
         return 1;
     }
 
-    for (int i = 0, n = strlen(s); i < n + 1; i++)
-    {
-        t[i] = s[i];
-    }
+    strcpy(t, s);
+
+    // Esse for é um trabalho manual. Há funções para fazer isso
+    // for (int i = 0, n = strlen(s); i < n + 1; i++)
+    // {
+    //     t[i] = s[i];
+    // }
 
     if (strlen(t) > 0)
     {
