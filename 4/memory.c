@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Utilizar 
+// Utilizar VALGRIND PARA CHECAR VAZAMENTOS
 int main(void)
 {
     int *x = malloc(3 * sizeof(int));
