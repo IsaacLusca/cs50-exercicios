@@ -1,10 +1,18 @@
 // #include <cs50.h>
 #include <stdio.h>
+#include <strlen.h>
 
 int main(void)
 {
     char *s = "HI!";
-    printf("%s\n", s);
+
+    for (int i = 0; i < strlen(s); i++)
+    {
+        printf("%c", s[i]);
+    }
+
+    // printf("%s\n", s);
+
     // printf("%p\n", &s[0]);
     // printf("%p\n", &s[1]);
     // printf("%p\n", &s[2]);
