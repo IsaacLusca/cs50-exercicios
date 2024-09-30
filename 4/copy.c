@@ -10,6 +10,11 @@ int main(void)
     // Para atribuir o valor de S, não o endereço para t:
     // alocação de memoria-malloc(qtd bytes-(num))
     char *t = malloc(strlen(s) + 1);
+    // Se malloc retornar null, significa que não há espaço
+    if (t == NULL)
+    {
+        return 1;
+    }
 
     for (int i = 0, n = strlen(s); i < n + 1; i++)
     {
