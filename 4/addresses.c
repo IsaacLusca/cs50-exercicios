@@ -3,7 +3,8 @@
 int main(void)
 {
     int n = 50;
-    printf("%p\n", &n);
+    int *p = &n;
+    printf("O num %i está armazenado no endereço %p\n", n, p);
 }
 
-// ponteiro é o endereço de alguma variável 
+// ponteiro é o endereço de alguma variável
