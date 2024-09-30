@@ -8,7 +8,7 @@ int main(void)
 {
     char *s = get_string("S: ");
     // Para atribuir o valor de S, não o endereço para t:
-    // malloc()
+    // alocação de memoria-malloc(qtd bytes-(num))
     char *t = ;
 
     t[0] = toupper(t[0]);
