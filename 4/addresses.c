@@ -8,3 +8,6 @@ int main(void)
 }
 
 // ponteiro é o endereço de alguma variável
+
+// vai para o endereço p e exibe o que está armazenado dentro dele.
+// printf("%i\n", *p);
