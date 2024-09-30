@@ -31,6 +31,10 @@ int main(void)
 
     printf("%s\n", s);
     printf("%s\n", t);
+
+    // Oposto de malloc, libera a memória quando o progorama for executado
+    free(t);
+    return 0;
 }
 
     // string s = get_string("S: ");
