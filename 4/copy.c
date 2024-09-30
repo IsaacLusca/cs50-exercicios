@@ -9,9 +9,17 @@ int main(void)
     char *s = get_string("S: ");
     // Para atribuir o valor de S, não o endereço para t:
     // alocação de memoria-malloc(qtd bytes-(num))
-    char *t = ;
+    char *t = malloc(strlen(s) + 1);
 
-    t[0] = toupper(t[0]);
+    for (int i = 0, n = strlen(s); i < n + 1; i++)
+    {
+        t[i] = s[i];
+    }
+
+    if (strlen(t) > 0)
+    {
+        t[0] = toupper(t[0]);
+    }
 
     printf("%s\n", s);
     printf("%s\n", t);
