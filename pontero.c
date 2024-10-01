@@ -3,7 +3,12 @@
 
 int main()
 {
-    int var = 15;
-    printf("Conteudo var: %i\n", var);
-    printf("Endereço var: %p\n", &var);
+    int temp, a, b;
+    a = 1;
+    b = 2;
+
+    temp = a;
+    a = b;
+    b = temp;
+    printf("a: %i e b: %i\n", a, b);
 }
