@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void swap(int x, int y);
+void swap(int *x, int *y);
 int main()
 {
 
@@ -9,12 +9,12 @@ int main()
     int b = 5;
 
     swap(a, b);
+    printf("a: %i e b: %i\n", a, b);
 }
 
-void swap(int x, int y)
+void swap(int *x, int *y)
 {
-    int temp = x;
-    x = y;
-    y = temp;
-    printf("a: %i e b: %i\n", x, y);
+    int temp = *x;
+    *x = *y;
+    *y = temp;
 }
