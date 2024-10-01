@@ -8,8 +8,8 @@ int main()
     int *a;
     int *b;
 
-    a = 0;
-    b = 0;
+    a = 1;
+    b = 5;
 
     // swap(&a, &b);
     printf("a: %i e b: %i\n", a, b);
