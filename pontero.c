@@ -8,13 +8,13 @@ int main()
     int a = 1;
     int b = 5;
 
-    printf("a: %i e b: %i\n", swap(a, b));
-
+    swap(a, b);
 }
 
 void swap(int x, int y)
 {
-    temp = x;
+    int temp = x;
     x = y;
     y = temp;
+    printf("a: %i e b: %i\n", x, y);
 }
