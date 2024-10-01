@@ -14,5 +14,9 @@ int main(int argc, char *argv[])
     // "&b passa por referência "Como o scanf, é preciso identificar onde serão carragados os bytes na memória, por isso &
     // sizeof pega o tamanho total, byte é apenas 1 mas torna mais dinamico
     // qtd de byte que no caso é 1 será quanto quero copiar por vez
-    // e por fim src que é o nome do arquivo 
+    // e por fim src que é o nome do arquivo
+
+    // QUando não houver mais nada, ele retornará zero que indica que acabou.
+
+    
 }
