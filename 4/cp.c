@@ -10,6 +10,8 @@ int main(int argc, char *argv[])
     FILE *src = fopen(argv[1], "rb");
     FILE *dst = fopen(argv[2], "wb");
 
+    BYTE b;
+
     // fread lê arquivos
     // "&b passa por referência "Como o scanf, é preciso identificar onde serão carragados os bytes na memória, por isso &
     // sizeof pega o tamanho total, byte é apenas 1 mas torna mais dinamico
@@ -18,5 +20,11 @@ int main(int argc, char *argv[])
 
     // QUando não houver mais nada, ele retornará zero que indica que acabou.
 
-    
+    while (fread(&b, sizeof(b), 1, src) != 0)
+    {
+        fwhite(&b, sizeof(b), 1, dst);
+    }
+    fclose(src);
+    fclose(dst);
 }
+// O final copiou uma imagem de um arquivo para outro.
