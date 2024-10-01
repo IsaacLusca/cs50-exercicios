@@ -4,5 +4,5 @@
 
 int main(void)
 {
-    
+    FILE *file = fopen("phonebook.csv", "a");
 }
