@@ -8,7 +8,7 @@ int main()
     int a = 1;
     int b = 5;
 
-    swap(a, b);
+    swap(&a, &b);
     printf("a: %i e b: %i\n", a, b);
 }
 
