@@ -9,6 +9,6 @@ int main(void)
     char *nome = get_string("nome: ");
     char *num = get_string("Num: ");
 
-    fprintf(file, "%s %s\n", nome, num);
+    fprintf(file, "%s,%s\n", nome, num);
     fclose(file);
 }
