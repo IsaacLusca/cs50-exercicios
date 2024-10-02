@@ -15,6 +15,6 @@ int main(int argc, char *argv[])
 
     FILE *f = fopen(filename, "r");
 
-    int buffer[4];
+    BYTE buffer[4];
     fread()
 }
