@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
     }
 
     BYTE buffer[4];
-    fread(buffer, 1, 4, f);
+    fread(buffer, 1, sizeof(buffer), f);
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < sizeof(buffer); i++)
     {
         printf("%i\n", buffer[i]);
     }
