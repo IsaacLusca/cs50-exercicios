@@ -10,7 +10,11 @@ int main(int argc, char *argv[])
     FILE *src = fopen(argv[1], "rb");
     FILE *dst = fopen(argv[2], "wb");
 
-    if (argv[1] ==     
+    if (argv[1] == NULL)
+    {
+        printf("Não foi possível encontrar o arquivo.");
+        return 1;
+    }
 
     BYTE b;
 
