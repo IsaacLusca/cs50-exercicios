@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     if (argv[1] == NULL)
     {
         printf("Entrada inválida.");
-        return 
+        return 1;
     }
     char *filename = argv[1];
 
