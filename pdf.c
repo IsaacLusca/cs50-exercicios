@@ -13,6 +13,6 @@ int main(int argc, char *argv[])
 
     FILE *f = fopen(filename, "r");
 
-    int BYTE[4];
+    int buffer[4];
     fread()
 }
