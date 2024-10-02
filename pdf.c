@@ -6,6 +6,11 @@ typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
+    if (argv[1] == NULL)
+    {
+        printf("Entrada inválida.");
+        return 
+    }
     char *filename = argv[1];
 
     FILE *f = fopen(filename, "r");
