@@ -5,4 +5,9 @@
 int main(int argc, char *argv[])
 {
     
+    if (argv[1] != 1)
+    {
+        printf("Comando inválido.");
+        return 1;
+    }
 }
