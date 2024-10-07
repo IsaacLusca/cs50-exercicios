@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     FILE *f = fopen(argv[1], "r");
 
     BYTE buffer[HEADER_SIZE];
-    fread(&buffer, sizeof(BYTE), HEADER_SIZE, f);
+    int blocos = fread(&buffer, sizeof(BYTE), HEADER_SIZE, f);
 
     while (fread(&buffer, sizeof(BYTE), 4, f) == 0xff||
            fread(&buffer, sizeof(BYTE), 4, f) == 0xd8||
