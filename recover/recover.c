@@ -1,6 +1,6 @@
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
 
 // #define HEADER_SIZE = 512;
 const int HEADER_SIZE = 512;
@@ -27,15 +27,19 @@ int main(int argc, char *argv[])
 
     BYTE buffer[HEADER_SIZE];
 
+    // le os primeiros bytes
     while (fread(buffer, sizeof(BYTE), HEADER_SIZE, f) == HEADER_SIZE)
     {
-        if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
+        // Verifica se os primeiros bytes correspondem a imagens
+        if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff &&
+            (buffer[3] & 0xf0) == 0xe0)
         {
             if (nova_img != NULL)
             {
                 fclose(nova_img);
             }
 
+            // Abre de forma dinamica um novo arquivo
             sprintf(filename, "%03i.jpg", count);
             nova_img = fopen(filename, "w");
             count++;
@@ -55,9 +59,7 @@ int main(int argc, char *argv[])
     }
 }
 
-
 // obrir o card
 // procurar na memoria algum inicio de arquivo jpg
 // se encontrado, deve abrir uma nova jpge
 // gravara blocos de 512 bytes ate encontrar um novo arquivo jpg
-
