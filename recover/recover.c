@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
     BYTE buffer[HEADER_SIZE];
     int blocos = fread(&buffer, sizeof(BYTE), HEADER_SIZE, f);
 
-    while (blocos == 0xff||
-           blocos == 0xd8||
-           blocos == 0xff)
+    while (fread(&buffer, sizeof(BYTE), 4, f) == 0xff||
+           fread(&buffer, sizeof(BYTE), 4, f) == 0xd8||
+           fread(&buffer, sizeof(BYTE), 4, f) == 0xff)
     {
         // logica
     }
