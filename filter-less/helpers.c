@@ -6,22 +6,13 @@
 // rgbtRed;
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
+    float media = 0;
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
-            if
-            {
+            media = (image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed);
 
-            }
-            else if
-            {
-
-            }
-            else
-            {
-                
-            }
         }
     }
     return;
