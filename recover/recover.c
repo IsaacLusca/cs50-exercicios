@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdlib.h>
 
 // #define HEADER_SIZE = 512;
 const int HEADER_SIZE = 512;
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
                 FILE *nova_img = fopen("recover.jpeg", "w");
                 fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
 
-                
+
             }
 
     }
