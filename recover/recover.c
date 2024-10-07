@@ -11,6 +11,8 @@ int main(int argc, char *argv[])
 
     BYTE buffer[HEADER_SIZE];
     fread(&buffer, sizeof(BYTE), HEADER_SIZE, f);
+
+    while (fread(&buffer, sizeof(BYTE), HEADER_SIZE, f) =)
 }
 
 // obrir o card
