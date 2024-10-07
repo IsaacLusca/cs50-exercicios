@@ -10,15 +10,15 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
-        printf("Usage: ./recover file.raw'");
+        printf("Usage: ./recover file.raw\n");
         return 1;
     }
 
     FILE *f = fopen(argv[1], "r");
     if (f == NULL)
     {
-        printf("Could not open file.\n");
-        return 1;
+        printf("CNão foi possível abrir o arquivo.\n");
+        return 2;
     }
 
     FILE *nova_img = NULL;
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
                 fclose(nova_img);
             }
 
-            sprintf(filename, "%03i.jpeg", count);
+            sprintf(filename, "%03i.jpg", count);
             nova_img = fopen(filename, "w");
             count++;
         }
@@ -48,16 +48,11 @@ int main(int argc, char *argv[])
     }
 
     fclose(f);
-    if (nova_img != NULL)
-    {
-        fclose(nova_img);
-    }
 }
 
 
 // obrir o card
-// procurar na memoria algum inicio de arquivo jpeg
-// se encontrado, deve abrir uma nova jpege
-// gravara blocos de 512 bytes ate encontrar um novo arquivo jpeg
-//
+// procurar na memoria algum inicio de arquivo jpg
+// se encontrado, deve abrir uma nova jpge
+// gravara blocos de 512 bytes ate encontrar um novo arquivo jpg
 
