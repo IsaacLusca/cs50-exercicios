@@ -33,6 +33,8 @@ int main(int argc, char *argv[])
             }
 
     }
+    fclose(f);
+    fclose(nova_img);
 }
 
 // obrir o card
