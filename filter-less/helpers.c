@@ -80,8 +80,42 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < height; j++)
         {
             copy[i][j] = image[i][j];
-            
+
         }
     }
+    // Aplicar o desfoque
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            int totalRed = 0, totalGreen = 0, totalBlue = 0;
+            int count = 0;
+
+            // Loop pelos vizinhos (incluindo o próprio pixel)
+            for (int di = -1; di <= 1; di++)
+            {
+                for (int dj = -1; dj <= 1; dj++)
+                {
+                    int ni = i + di;
+                    int nj = j + dj;
+
+                    // Verificar se o vizinho está dentro dos limites da imagem
+                    if (ni >= 0 && ni < height && nj >= 0 && nj < width)
+                    {
+                        totalRed += copy[ni][nj].rgbtRed;
+                        totalGreen += copy[ni][nj].rgbtGreen;
+                        totalBlue += copy[ni][nj].rgbtBlue;
+                        count++;
+                    }
+                }
+            }
+
+            // Calcular a média dos pixels vizinhos
+            image[i][j].rgbtRed = round(totalRed / (float)count);
+            image[i][j].rgbtGreen = round(totalGreen / (float)count);
+            image[i][j].rgbtBlue = round(totalBlue / (float)count);
+        }
+    }
+
     return;
 }
