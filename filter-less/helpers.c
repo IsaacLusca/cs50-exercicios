@@ -21,14 +21,14 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     }
     return;
 }
-
+// Função para checar o limite
+int limit(int value)
+{
+    return (value > 255) ? 255 : value;
+}
 // Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
-    int limit(int value)
-    {
-        return (value > 255) ? 255 : value;
-    }
 
     for (int i = 0; i < height; i++)
     {
@@ -39,22 +39,12 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             int originalRed = image[i][j].rgbtRed;
 
             image[i][j].rgbtBlue = limit(round(.272 * originalRed + .534 * originalGreen + .131 * originalBlue));
-            if (image[i][j].rgbtBlue > 255)
-            {
-                image[i][j].rgbtBlue = 255;
-            }
+
 
             image[i][j].rgbtGreen = limit(round(.349 * originalRed + .686 * originalGreen + .168 * originalBlue));
-            if (image[i][j].rgbtGreen > 255)
-            {
-                image[i][j].rgbtGreen = 255;
-            }
+
 
             image[i][j].rgbtRed = limit(round(.393 * originalRed + .769 * originalGreen + .189 * originalBlue));
-            if (image[i][j].rgbtRed > 255)
-            {
-                image[i][j].rgbtRed = 255;
-            }
 
         }
     }
