@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     FILE *f = fopen(argv[1], "r");
     FILE *nova_img = NULL;
     int count = 0;
-    char filename[8];
+    char filename[9];
 
     BYTE buffer[HEADER_SIZE];
     fread(buffer, sizeof(BYTE), HEADER_SIZE, f);
