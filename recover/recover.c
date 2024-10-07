@@ -25,32 +25,34 @@ int main(int argc, char *argv[])
     while (fread(buffer, sizeof(BYTE), HEADER_SIZE, f) == HEADER_SIZE)
     {
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
+        {
+            if (nova_img != NULL)
             {
-                if (nova_img != NULL)
-                {
-                    fclose(nova_img);
-                }
-
-                sprintf(filename, "%03i.jpeg", count);
-                nova_img = fopen(filename, "w");
-                count++;
-
-                fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
-
-                while (fread(buffer, sizeof(BYTE), HEADER_SIZE, f) != 0)
-                {
-                    if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
-                    {
-                        break;
-                    }
-                    fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
-                }
+                fclose(nova_img);
             }
 
+            sprintf(filename, "%03i.jpeg", count);
+            nova_img = fopen(filename, "w");
+            count++;
+        }
+
+        if (nova_img != NULL)
+        {
+            fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
+        }
+        while (fread(buffer, sizeof(BYTE), HEADER_SIZE, f) != 0)
+        {
+            if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
+            {
+                break;
+            }
+            fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
+        }
     }
     fclose(f);
     fclose(nova_img);
 }
+
 
 // obrir o card
 // procurar na memoria algum inicio de arquivo jpeg
