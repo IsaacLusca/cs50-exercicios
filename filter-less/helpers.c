@@ -25,6 +25,11 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 // Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
+    int limit(int value)
+    {
+        return (value > 255) ? 255 : value;
+    }
+
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
@@ -33,7 +38,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             int originalGreen = image[i][j].rgbtGreen;
             int originalRed = image[i][j].rgbtRed;
 
-            image[i][j].rgbtBlue = round(.272 * originalRed + .534 * originalGreen + .131 * originalBlue);
+            image[i][j].rgbtBlue = limit(round(.272 * originalRed + .534 * originalGreen + .131 * originalBlue);
             if (image[i][j].rgbtBlue > 255)
             {
                 image[i][j].rgbtBlue = 255;
