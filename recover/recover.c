@@ -48,6 +48,11 @@ int main(int argc, char *argv[])
     }
 
     fclose(f);
+
+    if (nova_img == NULL)
+    {
+        fclose(nova_img);
+    }
 }
 
 
