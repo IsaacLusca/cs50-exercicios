@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
 
     FILE *f = fopen(argv[1], "r");
     FILE *nova_img = NULL;
+    int count = 0;
+    char filename[8];
 
     BYTE buffer[HEADER_SIZE];
     fread(buffer, sizeof(BYTE), HEADER_SIZE, f);
@@ -24,10 +26,14 @@ int main(int argc, char *argv[])
     {
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
             {
-                if(nova_img != NULL)
+                if (nova_img != NULL)
                 {
                     fclose(nova_img);
                 }
+
+                sprintf(filename, "%03i.jpeg", count);
+                nova_img = fopen(filename, "w");
+                count++;
 
                 fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
 
