@@ -3,8 +3,9 @@
 
 int main(int argc, char *argv[])
 {
-    FILE *f = fopen(card.raw, "r");
-    
+    FILE *f = fopen(argv[1], "r");
+
+    int buffer;
 }
 
 // obrir o card
