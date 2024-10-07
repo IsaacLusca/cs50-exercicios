@@ -12,7 +12,12 @@ int main(int argc, char *argv[])
     BYTE buffer[HEADER_SIZE];
     fread(&buffer, sizeof(BYTE), HEADER_SIZE, f);
 
-    while (fread(&buffer, sizeof(BYTE), HEADER_SIZE, f) =)
+    while (fread(&buffer, sizeof(BYTE), 4, f) == 0xff||
+           fread(&buffer, sizeof(BYTE), 4, f) == 0xd8||
+           fread(&buffer, sizeof(BYTE), 4, f) == 0xff)
+    {
+        // logica
+    }
 }
 
 // obrir o card
