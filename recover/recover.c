@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// #define HEADER_SIZE = 512;
+const int HEADER_SIZE = 512;
 typedef uint8_t BYTE;
+
 int main(int argc, char *argv[])
 {
     FILE *f = fopen(argv[1], "r");
