@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef uint8_t BYTE;
 int main(int argc, char *argv[])
 {
     FILE *f = fopen(argv[1], "r");
 
-    int buffer;
-    fread(&buffer, sizeof(b), 512);
+    BYTE buffer[];
+    fread(&buffer, sizeof(BYTE), 512, f);
 }
 
 // obrir o card
