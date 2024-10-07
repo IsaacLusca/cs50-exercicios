@@ -26,7 +26,10 @@ int main(int argc, char *argv[])
                 FILE *nova_img = fopen("recover.jpeg", "w");
                 fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
 
-
+                while (fread(buffer, sizeof(BYTE), HEADER_SIZE, f) != 0)
+                {
+                    fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
+                }
             }
 
     }
