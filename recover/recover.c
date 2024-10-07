@@ -6,6 +6,7 @@ int main(int argc, char *argv[])
     FILE *f = fopen(argv[1], "r");
 
     int buffer;
+    fread(&buffer, sizeof(b), 512);
 }
 
 // obrir o card
