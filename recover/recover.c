@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdlib.h>
+#include <stdint.h>
 
 // #define HEADER_SIZE = 512;
 const int HEADER_SIZE = 512;
