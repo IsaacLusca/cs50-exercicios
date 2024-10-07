@@ -9,8 +9,8 @@ int main(int argc, char *argv[])
 {
     FILE *f = fopen(argv[1], "r");
 
-    BYTE buffer[];
-    fread(&buffer, sizeof(BYTE), 512, f);
+    BYTE buffer[HEADER_SIZE];
+    fread(&buffer, sizeof(BYTE), HEADER_SIZE, f);
 }
 
 // obrir o card
