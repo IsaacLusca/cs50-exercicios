@@ -15,12 +15,18 @@ int main(int argc, char *argv[])
     }
 
     FILE *f = fopen(argv[1], "r");
+    if (f == NULL)
+    {
+        printf("Não foi possível abrir o arquivo.\n");
+        return 2;
+    }
+
     FILE *nova_img = NULL;
     int count = 0;
     char filename[9];
 
     BYTE buffer[HEADER_SIZE];
-    fread(buffer, sizeof(BYTE), HEADER_SIZE, f);
+    // fread(buffer, sizeof(BYTE), HEADER_SIZE, f);
 
     while (fread(buffer, sizeof(BYTE), HEADER_SIZE, f) == HEADER_SIZE)
     {
@@ -42,7 +48,6 @@ int main(int argc, char *argv[])
         }
     }
     fclose(f);
-    fclose(nova_img);
 }
 
 
