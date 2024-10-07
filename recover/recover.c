@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
     FILE *f = fopen(argv[1], "r");
     if (f == NULL)
     {
-        printf("Não foi possível abrir o arquivo.\n");
-        return 2;
+        printf("Could not open file.\n");
+        return 1;
     }
 
     FILE *nova_img = NULL;
@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
     char filename[9];
 
     BYTE buffer[HEADER_SIZE];
-    // fread(buffer, sizeof(BYTE), HEADER_SIZE, f);
 
     while (fread(buffer, sizeof(BYTE), HEADER_SIZE, f) == HEADER_SIZE)
     {
@@ -47,6 +46,7 @@ int main(int argc, char *argv[])
             fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
         }
     }
+
     fclose(f);
     if (nova_img != NULL)
     {
