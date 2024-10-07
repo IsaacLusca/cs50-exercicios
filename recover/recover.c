@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     }
 
     FILE *f = fopen(argv[1], "r");
+    FILE *nova_img = NULL;
 
     BYTE buffer[HEADER_SIZE];
     fread(buffer, sizeof(BYTE), HEADER_SIZE, f);
@@ -23,7 +24,11 @@ int main(int argc, char *argv[])
     {
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
             {
-                FILE *nova_img = fopen("recover.jpeg", "w");
+                if(nova_img != NULL)
+                {
+                    fclose(nova_img);
+                }
+
                 fwrite(buffer, sizeof(BYTE), HEADER_SIZE, nova_img);
 
                 while (fread(buffer, sizeof(BYTE), HEADER_SIZE, f) != 0)
