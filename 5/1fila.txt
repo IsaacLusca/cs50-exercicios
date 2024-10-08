@@ -13,5 +13,8 @@ typedef struct
     int size;
 } queue;
 
-- pilha
+- pilha suporta o LIFO
+Last in, first out
+
+Ultimo a entrar, primeiro a sair.
 
