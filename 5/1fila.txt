@@ -19,3 +19,10 @@ typedef struct
 - Last in, first out
 - Ultimo a entrar, primeiro a sair.
 - push e pop.
+
+typedef struct
+{
+    person people[CAPACITY];
+    int size;
+}
+
