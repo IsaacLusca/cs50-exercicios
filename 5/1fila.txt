@@ -52,3 +52,7 @@ node *list = NULL;
 
 //forma de alocar espaço para o nó
 node *n = malloc(sizeof(node));
+
+(*n).number = 1;
+ou
+n->number = 1;
