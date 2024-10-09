@@ -34,4 +34,9 @@ int main(int argc, char *argv[])
 
     // imprimir a lista
     node *ptr = list;
+
+    while (ptr != NULL)
+    {
+        printf("%i", ptr->number);
+    }
 }
