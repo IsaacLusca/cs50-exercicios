@@ -24,6 +24,10 @@ int main(int argc, char *argv[])
             // libere memoria
             return 1;
         }
+        // a struct int number recebe o numero digitado
         n->number = number;
+
+        //
+        n->next;
     }
 }
