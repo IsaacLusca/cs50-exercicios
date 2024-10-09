@@ -19,7 +19,7 @@ int main(void)
     if (tmp == NULL)
     {
         free(list);
-        return 2;
+        return 1;
     }
 
     tmp[3] = 4;
@@ -27,9 +27,9 @@ int main(void)
     for (int i = 0; i < 4; i++)
     {
         tmp[i] = list[i];
-        printf("Array %i: %i\n", i + 1, tmp[i]);
     }
 
+    printf("Array %i: %i\n", i + 1, tmp[i]);
     free(list);
     free(tmp);
 }
