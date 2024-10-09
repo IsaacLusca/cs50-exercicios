@@ -19,9 +19,14 @@ int main(void)
         return 2;
     }
 
-    for (int i = 0; i < 3; i++)
+    tmp[3] = 4;
+
+    for (int i = 0; i < 4; i++)
     {
-        printf("Array %i: %i\n", i + 1, list[i]);
+        tmp[i] = list[i];
+        printf("Array %i: %i\n", i + 1, tmp[i]);
     }
+
     free(list);
+    free(tmp);
 }
