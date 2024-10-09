@@ -30,7 +30,7 @@ typedef struct
 
 - array sem nenhum tratamento tem um problema, pois ela em seu estado normal é uma forma de armazenar dados de maneira contígua
 isso impede que seja possível alocar memórias dinamicamente
-para resolver, utilizar estruturas especificas como uma LISTA VINCULADA
+para resolver, utilizar estruturas especificas como uma LISTA VINCULADA (não é um array)
 
          1,  2,  3
 p1      p2, p3, pnul
