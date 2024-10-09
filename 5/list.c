@@ -31,12 +31,12 @@ int main(void)
     tmp[3] = 4;
 
     free(list);
-
+    list = tmp;
     for (int i = 0; i < 4; i++)
     {
-        printf("Array %i: %i\n", i + 1, tmp[i]);
+        printf("Array %i: %i\n", i + 1, list[i]);
     }
 
 
-    free(tmp);
+    free(list);
 }
