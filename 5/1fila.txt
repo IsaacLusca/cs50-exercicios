@@ -28,5 +28,7 @@ typedef struct
 
 - usar -> substitui um ponteiro e o ponto de uma struct. * .
 
-
+- array sem nenhum tratamento tem um problema, pois ela em seu estado normal é uma forma de armazenar dados de maneira contígua
+isso impede que seja possível alocar memórias dinamicamente
+para resolver, utilizar estruturas especificas como uma LISTA VINCULADA
 
