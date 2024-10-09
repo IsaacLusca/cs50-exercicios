@@ -46,3 +46,9 @@ typedef struct node
     int number;
     struct node *next;
 } node;
+
+//forma de criar uma lista de tamanho 0
+node *list = NULL;
+
+//forma de alocar espaço para o nó
+node *n = malloc(sizeof(node));
