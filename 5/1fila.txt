@@ -37,8 +37,12 @@ p1      p2, p3, pnul
  p1 é o ponteiro de 1, p2 é de 2 e assim sucessivamente
 
 node = nó
+
+-- define um tipo de dado chamado node
+-- cada node contem um inteiro e um ponteiro
+-- o ponteiro aponta para o proximo node
 typedef struct node
 {
     int number;
-    node *next;
+    struct node *next;
 } node;
