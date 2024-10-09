@@ -27,7 +27,8 @@ int main(int argc, char *argv[])
         // a struct int number recebe o numero digitado
         n->number = number;
 
-        //
-        n->next;
+        //inicializar um novo no para apontar para lista existente
+        n->next = list;
+        list = n;
     }
 }
