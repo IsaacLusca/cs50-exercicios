@@ -14,8 +14,11 @@ int main(void)
     list[2] = 3;
 
     int *tmp = malloc(4 * sizeof(int));
+    // como list ja executou quando o programa é encerrado,
+    // é preciso liberar a memória
     if (tmp == NULL)
     {
+        free(list);
         return 2;
     }
 
