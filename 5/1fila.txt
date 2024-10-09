@@ -36,4 +36,8 @@ para resolver, utilizar estruturas especificas como uma LISTA VINCULADA
 p1      p2, p3, pnul
  p1 é o ponteiro de 1, p2 é de 2 e assim sucessivamente
 
+node = nó
+typedef struct
+{
 
+} node;
