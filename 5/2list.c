@@ -19,5 +19,11 @@ int main(int argc, char *argv[])
 
         // criando o nó temporario
         node *n = malloc(sizeof(node));
+        if (n == NULL)
+        {
+            // libere memoria
+            return 1;
+        }
+        n->number = number;
     }
 }
