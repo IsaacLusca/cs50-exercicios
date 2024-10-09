@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
     node *list = NULL;
 
-    for (int i = 0; i < argc; i++)
+    for (int i = 1; i < argc; i++)
     {
         // converter letra para numero int
         int number = atoi(argv[i]);
@@ -37,6 +37,7 @@ int main(int argc, char *argv[])
 
     while (ptr != NULL)
     {
-        printf("%i", ptr->number);
+        printf("%i\n", ptr->number);
+        ptr = ptr->next;
     }
 }
