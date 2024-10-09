@@ -8,7 +8,8 @@ typedef struct node
     struct node *next;
 } node;
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
-
+    node *list = NULL;
+    
 }
