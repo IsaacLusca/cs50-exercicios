@@ -22,14 +22,21 @@ int main(void)
         return 1;
     }
 
-    tmp[3] = 4;
 
     for (int i = 0; i < 4; i++)
     {
         tmp[i] = list[i];
     }
+    // com o novo array criado, pode liberar o array list
+    tmp[3] = 4;
 
-    printf("Array %i: %i\n", i + 1, tmp[i]);
     free(list);
+
+    for (int i = 0; i < 4; i++)
+    {
+        printf("Array %i: %i\n", i + 1, tmp[i]);
+    }
+
+
     free(tmp);
 }
