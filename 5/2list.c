@@ -4,10 +4,11 @@
 typedef struct node
 {
     int number;
-    struct node next;
+    // aponta para o next
+    struct node *next;
 } node;
 
 int main(void)
 {
-
+    
 }
