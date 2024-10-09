@@ -26,3 +26,7 @@ typedef struct
     int size;
 } stack;
 
+- usar -> substitui um ponteiro e o ponto de uma struct. * .
+
+
+
