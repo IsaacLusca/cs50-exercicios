@@ -31,4 +31,7 @@ int main(int argc, char *argv[])
         n->next = list;
         list = n;
     }
+
+    // imprimir a lista
+    node *ptr = list;
 }
