@@ -11,5 +11,13 @@ typedef struct node
 int main(int argc, char *argv[])
 {
     node *list = NULL;
-    
+
+    for (int i = 0; i < argc; i++)
+    {
+        // converter letra para numero int
+        int number = atoi(argv[i]);
+
+        // criando o nó temporario
+        node *n = malloc(sizeof(node));
+    }
 }
