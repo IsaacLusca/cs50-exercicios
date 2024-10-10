@@ -44,3 +44,4 @@ unsigned int hash(const char *word)
     // retorna o valor númerico de A.
     return toupper(word[0]) - 'A';
 }
+mesmo assim hash é O(n). PORRA.
