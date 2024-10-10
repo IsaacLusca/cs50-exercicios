@@ -35,17 +35,17 @@ int main(int argc, char *argv[])
     // }
 
     for (no *i = list; i != NULL; i = i->proximo)
-{
-    no *menor = i;
-    for (no *j = i->proximo; j != NULL; j = j->proximo)
     {
-        if (j->numero < menor->numero)
+        no *menor = i;
+        for (no *j = i->proximo; j != NULL; j = j->proximo)
         {
-            menor = j;
+            if (j->numero < menor->numero)
+            {
+                menor = j;
+            }
         }
+        // Troca os valores de i e menor
     }
-    // Troca os valores de i e menor
-}
 
     for (no *tmp = list; tmp != NULL; tmp = tmp->proximo)
     {
