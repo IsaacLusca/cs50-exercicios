@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlin.h>
+#include <stdlib.h>
 
 typedef struct no
 {
@@ -9,12 +9,12 @@ typedef struct no
 
 int main(int argc, char *argv[])
 {
-    node *list = NULL;
+    no *list = NULL;
 
     for (int i = 1; i < argc; i++)
     {
         int valor = atoi(argv[i]);
-        node *n = malloc(sizeof(node));
+        no *n = malloc(sizeof(no));
 
         if (n == NULL)
         {
@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
         }
 
         n->numero = valor;
-        
+        n->proximo = list;
+        list = n;
     }
 }
