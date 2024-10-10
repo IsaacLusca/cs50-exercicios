@@ -26,13 +26,6 @@ int main(int argc, char *argv[])
         list = n;
     }
 
-    // no *tmp = list;
-
-    // while (tmp != NULL)
-    // {
-    //     printf("%i\n", tmp->numero);
-    //     tmp = tmp->proximo;
-    // }
 
     for (no *i = list; i != NULL; i = i->proximo)
     {
@@ -45,12 +38,20 @@ int main(int argc, char *argv[])
             }
         }
         // Troca os valores de i e menor
-    if (menor != i)
-    {
-        int temp = i->numero;
-        i->numero = menor->numero;
-        menor->numero = temp;
+        if (menor != i)
+        {
+            int temp = i->numero;
+            i->numero = menor->numero;
+            menor->numero = temp;
+        }
+
+
     }
 
-}
+    no *tmp = list;
+    while (tmp != NULL)
+    {
+        printf("%i\n", tmp->numero);
+        tmp = tmp->proximo;
+    }
 }
