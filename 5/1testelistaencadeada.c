@@ -9,16 +9,19 @@ typedef struct no
 
 int main(int argc, char *argv[])
 {
-    int *list = NULL;
+    node *list = NULL;
 
     for (int i = 1; i < argc; i++)
     {
+        int valor = atoi(argv[i]);
         node *n = malloc(sizeof(node));
+
         if (n == NULL)
         {
             return 1;
         }
 
-        n->numero = 
+        n->numero = valor;
+        
     }
 }
