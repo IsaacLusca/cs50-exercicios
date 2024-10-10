@@ -28,3 +28,6 @@ typedef struct no
     int numero;
     struct no *proximo;
 }
+o no que nos dara o que é preciso para as listas vinculadas:
+
+no *tabela[26];
