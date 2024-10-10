@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     //     tmp = tmp->proximo;
     // }
 
-    for (no *tmp = list; tmp != NULL; tmp->proximo)
+    for (no *tmp = list; tmp != NULL; tmp = tmp->proximo)
     {
         printf("%i\n", tmp->numero);
     }
