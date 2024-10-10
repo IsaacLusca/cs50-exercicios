@@ -34,4 +34,11 @@ no *tabela[26];
 
 hash mario nos daria 12 pois é seu valor em ordem alfabetica
 
+implementação simples
 
+#include <ctype.h>
+int hash(char *word)
+{
+    // retorna o valor númerico de A.
+    return toupper(word[0]) - 'A';
+}
