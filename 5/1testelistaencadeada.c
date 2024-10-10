@@ -52,9 +52,5 @@ int main(int argc, char *argv[])
         menor->numero = temp;
     }
 
-    for (no *tmp = list; tmp != NULL; tmp = tmp->proximo)
-    {
-        printf("%i\n", tmp->numero);
-    }
 }
 }
