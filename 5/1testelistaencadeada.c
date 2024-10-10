@@ -31,6 +31,6 @@ int main(int argc, char *argv[])
     while (tmp != NULL)
     {
         printf("%i\n", tmp->numero);
-        tmp = tmp->next;
+        tmp = tmp->proximo;
     }
 }
