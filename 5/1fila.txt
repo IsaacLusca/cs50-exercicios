@@ -60,3 +60,10 @@ n->number = 1;
 n->next = NULL;
 
 list = n;
+
+- a forma de armazenar dados acima tem uma vantagem que é possível ordenar tranquilamente
+mas ela ocupa espaço demais, pois precisa de memória duplicada, para o dado e o ponteiro.
+a forma para evitar esse problema é por meio de
+ARVORES
+
+
