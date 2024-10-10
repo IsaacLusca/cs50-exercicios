@@ -37,7 +37,9 @@ hash mario nos daria 12 pois é seu valor em ordem alfabetica
 implementação simples
 
 #include <ctype.h>
-int hash(char *word)
+// const para evitar que altere o valor da palavra.
+// unsigned serve para evitar valores negativos
+unsigned int hash(const char *word)
 {
     // retorna o valor númerico de A.
     return toupper(word[0]) - 'A';
