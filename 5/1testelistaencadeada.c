@@ -26,11 +26,16 @@ int main(int argc, char *argv[])
         list = n;
     }
 
-    no *tmp = list;
+    // no *tmp = list;
 
-    while (tmp != NULL)
+    // while (tmp != NULL)
+    // {
+    //     printf("%i\n", tmp->numero);
+    //     tmp = tmp->proximo;
+    // }
+
+    for (no *tmp = list; tmp != NULL; tmp->proximo)
     {
         printf("%i\n", tmp->numero);
-        tmp = tmp->proximo;
     }
 }
