@@ -44,4 +44,5 @@ unsigned int hash(const char *word)
     // retorna o valor númerico de A.
     return toupper(word[0]) - 'A';
 }
+seria O(n/k = 26), mas de forma prática, 26 mais rápido é bastante coisa
 mesmo assim hash é O(n). PORRA.
