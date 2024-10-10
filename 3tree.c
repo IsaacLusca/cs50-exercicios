@@ -31,3 +31,7 @@ typedef struct no
 o no que nos dara o que é preciso para as listas vinculadas:
 
 no *tabela[26];
+
+hash mario nos daria 12 pois é seu valor em ordem alfabetica
+
+
