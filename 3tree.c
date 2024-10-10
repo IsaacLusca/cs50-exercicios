@@ -10,3 +10,5 @@ typedef struct no
     struct no *left;
     struct no *right;
 } no;
+
+usando dicionario que é uma estrutura de dados que armazena chaves e valores
