@@ -45,10 +45,16 @@ int main(int argc, char *argv[])
             }
         }
         // Troca os valores de i e menor
+    if (menor != i)
+    {
+        int temp = i->numero;
+        i->numero = menor->numero;
+        menor->numero = temp;
     }
 
     for (no *tmp = list; tmp != NULL; tmp = tmp->proximo)
     {
         printf("%i\n", tmp->numero);
     }
+}
 }
