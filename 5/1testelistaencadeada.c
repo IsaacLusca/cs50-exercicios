@@ -34,6 +34,19 @@ int main(int argc, char *argv[])
     //     tmp = tmp->proximo;
     // }
 
+    for (no *i = list; i != NULL; i = i->proximo)
+{
+    no *menor = i;
+    for (no *j = i->proximo; j != NULL; j = j->proximo)
+    {
+        if (j->numero < menor->numero)
+        {
+            menor = j;
+        }
+    }
+    // Troca os valores de i e menor
+}
+
     for (no *tmp = list; tmp != NULL; tmp = tmp->proximo)
     {
         printf("%i\n", tmp->numero);
