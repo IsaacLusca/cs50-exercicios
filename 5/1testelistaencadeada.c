@@ -9,5 +9,7 @@ typedef struct no
 
 int main(int argc, char *argv[])
 {
-    int numero = null;
+    int *list = NULL;
+
+    
 }
