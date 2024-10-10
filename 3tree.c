@@ -46,3 +46,5 @@ unsigned int hash(const char *word)
 }
 seria O(n/k = 26), mas de forma prática, 26 mais rápido é bastante coisa
 mesmo assim hash é O(n). PORRA.
+hash é uma estrutura ótima, consegue se aproximar de algo como O(1);
+
