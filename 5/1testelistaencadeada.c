@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
 
         if (n == NULL)
         {
+            free(n);
             return 1;
         }
 
