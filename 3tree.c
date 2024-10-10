@@ -19,3 +19,12 @@ typedef struct no
 Consiste em pegar um valor de entrada e separar em segmentos para resolver os problemas menores
 
 de forma simples, o hash é uma mistura de array e lista vinculada
+
+um exemplo da estrutura hash:
+
+typedef struct no
+{
+    char *nome;
+    int numero;
+    struct no *proximo;
+}
