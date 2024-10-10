@@ -18,4 +18,4 @@ typedef struct no
 - hash é uma função de intervalo finito e valores específicos
 Consiste em pegar um valor de entrada e separar em segmentos para resolver os problemas menores
 
-
+de forma simples, o hash é uma mistura de array e lista vinculada
