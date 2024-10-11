@@ -26,6 +26,7 @@ int main(void)
         // TODO: add phrase to new node in list
         node *n = malloc(sizeof(node));
         n->phrase = phrase;
+        list = n;
 
         // Visualize list after adding a node.
         visualizer(list);
