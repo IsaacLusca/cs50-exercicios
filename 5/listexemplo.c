@@ -31,7 +31,7 @@ int main(void)
         }
 
         n->phrase = phrase;
-        n = n->next;
+        n->next = list;
         list = n;
 
         // Visualize list after adding a node.
