@@ -31,5 +31,5 @@ int main(void)
 // TODO: return the correct bucket for a given phrase
 int hash(string phrase)
 {
-    return 0;
+    return toupper(phrase[0] - 'A');
 }
