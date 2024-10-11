@@ -53,6 +53,7 @@ int main(void)
 
 bool unload(node *list)
 {
+    node *ptr = malloc(sizeof(node));
     // TODO: Free all allocated nodes
     while(list != NULL)
     {
