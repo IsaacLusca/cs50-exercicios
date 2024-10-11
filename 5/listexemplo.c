@@ -32,7 +32,7 @@ int main(void)
 
         n->phrase = phrase;
         n->next = NULL;
-        
+
         n->next = list;
         list = n;
 
@@ -54,6 +54,10 @@ int main(void)
 bool unload(node *list)
 {
     // TODO: Free all allocated nodes
+    while(list != NULL)
+    {
+        list->next
+    }
     return false;
 }
 
