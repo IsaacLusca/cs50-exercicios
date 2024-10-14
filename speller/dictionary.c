@@ -127,9 +127,24 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    
+    node *ptr = table;
+
     return false;
 }
+
+bool unload(node *list)
+{
+    node *ptr = list;
+    // TODO: Free all allocated nodes
+    while(ptr != NULL)
+    {
+        ptr = list->next;
+        free(list);
+        list = ptr;
+    }
+    return true;
+}
+
 
 // load: ler as palavras de um dicionário específico, talvez com hash.
 // hash: pegar a letra e voltar seu valor numérico correspondente
