@@ -46,6 +46,18 @@ bool load(const char *dictionary)
         return false;
     }
 
+    // ler cada string:
+    int i = 0;
+    while (dictionary != NULL)
+    {
+        fscanf(dictionary, "%s", word[i]);
+        i++;
+    }
+    for (int i = 0; i < strlen(dictionary); i++)
+    {
+        
+    }
+
     return true;
 }
 
