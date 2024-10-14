@@ -60,7 +60,7 @@ bool load(const char *dictionary)
         }
         // e preciso armazenar em cada hash - node *table[N];
         strcpy(n->word, word);
-        n->next = 
+        n->next = table[N];
     }
 
     // hash = toupper(word[0]) - 'A';
