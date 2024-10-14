@@ -31,6 +31,15 @@ bool check(const char *word)
     int valor_hash = hash(word);
     node *acess = table[valor_hash];
 
+    while(acess != NULL)
+    {
+        if (strcasecmp(acess->word, word) == 0)
+        {
+            return true;
+        }
+        acess = acess->next;
+    }
+
     return false;
 }
 
