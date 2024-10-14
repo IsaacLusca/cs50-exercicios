@@ -70,7 +70,8 @@ bool load(const char *dictionary)
     //     }
     // }
 
-    // w
+    // char word[LENGHT + 1];
+    while (fscanf(arquivo, "%s", word))
 
     return true;
 }
