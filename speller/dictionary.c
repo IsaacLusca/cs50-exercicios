@@ -49,8 +49,8 @@ bool load(const char *dictionary)
 
     // ler cada string
     //não se pode usar strlen para ler arquivos. ANOTADO
-    // char word[LENGHT + 1];
 
+    char word[LENGHT + 1];
     while (fscanf(arquivo, "%s", word) != EOF)
     {
         node *n = malloc(sizeof(node));
@@ -59,7 +59,7 @@ bool load(const char *dictionary)
             fclose(arquivo);
             return false;
         }
-        
+
         // e preciso armazenar em cada hash - node *table[N];
         strcpy(n->word, word);
         int contagem_hash = hash(word);
