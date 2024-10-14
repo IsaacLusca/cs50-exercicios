@@ -46,36 +46,15 @@ bool load(const char *dictionary)
         return false;
     }
 
-    // ler cada string:
-    // int i = 0;
-    // while (dictionary != NULL)
-    // {
-    //     fscanf(dictionary, "%s", word[i]);
-    //     i++;
-    // }
-
-//não se pode usar strlen para ler arquivos. ANOTADO
-    // for (int i = 0, n = strlen(arquivo); i < n; i++)
-    // {
-    //     if (arquivo != NULL)
-    //     {
-    //         if (isalpha(arquivo))
-    //         {
-    //             fscanf(arquivo, "%s", word[i]);
-    //         }
-    //     }
-    //     else
-    //     {
-    //         retun EOF;
-    //     }
-    // }
-
+    // ler cada string
+    //não se pode usar strlen para ler arquivos. ANOTADO
     // char word[LENGHT + 1];
+    
     while (fscanf(arquivo, "%s", word) != EOF)
     {
         node *n = malloc(sizeof(node));
 
-        n->word = 
+        n->word =
     }
 
     return true;
