@@ -28,6 +28,8 @@ unsigned int total_words = 0;
 bool check(const char *word)
 {
     // TODO
+    int valor_hash = hash(word);
+    node *acess = table[valor_hash];
 
     return false;
 }
