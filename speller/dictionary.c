@@ -44,9 +44,8 @@ bool load(const char *dictionary)
     }
     // node *table[N];
     // cada indice de table deve ser uma letra
-
-    int buffer;
-    fread(buffer, 1, 1, arquivo);
+    node *n = malloc(sizeof(node));
+    
 
     return true;
 }
