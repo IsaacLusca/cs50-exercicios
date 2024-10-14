@@ -120,8 +120,7 @@ bool load(const char *dictionary)
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    printf("Qtd palavras: %i\n", total_words);
-    return 0;
+    return total_words;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
