@@ -37,7 +37,7 @@ bool load(const char *dictionary)
 {
     // TODO
     FILE *arquivo = fopen(dictionary, "r");
-    if (arquivo == NULL)
+    if (!arquivo == NULL)
     {
         printf("Não foi possível abrir o arquivo %s\n", dictionary);
         return false;
