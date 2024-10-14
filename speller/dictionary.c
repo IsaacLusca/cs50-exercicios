@@ -21,6 +21,9 @@ const unsigned int N = 10000;
 // Hash table
 node *table[N];
 
+// Contagem palavras
+unsigned int total_words = 0;
+
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
@@ -104,6 +107,7 @@ bool load(const char *dictionary)
         int contagem_hash = hash(word);
         n->next = table[contagem_hash];
         table[contagem_hash] = n;
+        total_words++;
 
         // printf("Palavra: %s, Hash: %i\n", word, contagem_hash);
     }
@@ -116,7 +120,7 @@ bool load(const char *dictionary)
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-
+    printf("Qtd palavras: %i", total_words);
     return 0;
 }
 
