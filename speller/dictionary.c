@@ -55,9 +55,16 @@ bool load(const char *dictionary)
     // }
     for (int i = 0, n = strlen(dictionary); i < n; i++)
     {
-        if (isalpha(dictionary))
+        if (dictionary != NULL)
         {
-            scanf(dictionary, "%s", word[i]);
+            if (isalpha(dictionary))
+            {
+                scanf(dictionary, "%s", word[i]);
+            }
+        }
+        else
+        {
+            retun EOF;
         }
     }
 
