@@ -53,8 +53,12 @@ bool load(const char *dictionary)
     while (fscanf(arquivo, "%s", word) != EOF)
     {
         node *n = malloc(sizeof(node));
-
+        if (n == NULL)
+        {
+            return 1;
+        }
         n->word = word;
+
     }
 
     return true;
