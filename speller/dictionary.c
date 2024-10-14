@@ -59,7 +59,7 @@ bool load(const char *dictionary)
             return 1;
         }
         // e preciso armazenar em cada hash - node *table[N];
-        
+        if (word[0])
     }
 
     return true;
