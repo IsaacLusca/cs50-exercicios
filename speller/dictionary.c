@@ -58,6 +58,8 @@ bool load(const char *dictionary)
             return 1;
         }
         n->word = word;
+        n->next = NULL;
+        
 
     }
 
