@@ -127,23 +127,33 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    node *ptr = table;
-
-    return false;
-}
-
-bool unload(node *list)
-{
-    node *ptr = list;
-    // TODO: Free all allocated nodes
-    while(ptr != NULL)
+    node *ptr = table[N];
+    int i = 0;
     {
-        ptr = list->next;
-        free(list);
-        list = ptr;
+        while (ptr != NULL)
+        {
+            ptr = table[i]->next;
+            free(table);
+            table = ptr;
+            i++;
+        }
     }
+
     return true;
 }
+
+// bool unload(node *list)
+// {
+//     node *ptr = list;
+//     // TODO: Free all allocated nodes
+//     while(ptr != NULL)
+//     {
+//         ptr = list->next;
+//         free(list);
+//         list = ptr;
+//     }
+//     return true;
+// }
 
 
 // load: ler as palavras de um dicionário específico, talvez com hash.
