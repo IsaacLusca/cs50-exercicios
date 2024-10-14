@@ -6,6 +6,8 @@
 #include "dictionary.h"
 #include <string.h>
 #include <stdlib.h>
+
+#define NUM_BUCKETS = 26;
 // Represents a node in a hash table
 typedef struct node
 {
@@ -40,6 +42,33 @@ unsigned int hash(const char *word)
         sum_hash += (toupper(word[i]) * (i + 1)) * 31;
     }
     return sum_hash % N;
+}
+
+void contar_palavras_no_bucket(const char *palavras[], int total_palavras)
+{
+    int contadores[NUM_BUCKETS] = {0}; // Inicializa todos os contadores com 0
+
+    // Percorrer todas as palavras
+    for (int i = 0; i < total_palavras; i++)
+    {
+        const char *palavra = palavras[i];
+
+        // Calcula o hash da palavra
+        unsigned int bucket = hash(palavra);
+
+        // Verifica se o bucket está dentro dos limites (0 a 25)
+        if (bucket < NUM_BUCKETS)
+        {
+            // Incrementa o contador no bucket correspondente
+            contadores[bucket]++;
+        }
+    }
+
+    // Exibe os resultados
+    for (int i = 0; i < NUM_BUCKETS; i++)
+    {
+        printf("Bucket %c: %d palavras\n", 'A' + i, contadores[i]);
+    }
 }
 
 // Loads dictionary into memory, returning true if successful, else false
