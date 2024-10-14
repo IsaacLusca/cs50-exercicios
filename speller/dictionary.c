@@ -37,8 +37,12 @@ bool load(const char *dictionary)
 {
     // TODO
     FILE *arquivo = fopen(dictionary, "r");
-    
-    return false;
+    if (arquivo == NULL)
+    {
+        printf("Não foi possível abrir o arquivo %s\n", dictionary);
+        return false;
+    }
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
