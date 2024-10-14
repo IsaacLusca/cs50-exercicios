@@ -35,6 +35,9 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
+    // Objetivos: Ler o dicionario, ler cada string, criar um nó para cada palavra
+    // fazer o hash dessa palavra, e colocar o nó de acordo com a função hash.
+
     // TODO
     FILE *arquivo = fopen(dictionary, "r");
     if (arquivo == NULL)
@@ -42,11 +45,6 @@ bool load(const char *dictionary)
         printf("Não foi possível abrir o arquivo %s\n", dictionary);
         return false;
     }
-    // node *table[N];
-    // cada indice de table deve ser uma letra
-    node *n = malloc(sizeof(node));
-    strcpy(n->word, dictionary);
-
 
     return true;
 }
