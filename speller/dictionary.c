@@ -44,7 +44,32 @@ unsigned int hash(const char *word)
     return sum_hash % N;
 }
 
+void contar_palavras_no_bucket(const char *palavras[], int total_palavras)
+{
+    int contadores[NUM_BUCKETS] = {0}; // Array de contadores inicializado com zeros
 
+    // Percorrer todas as palavras
+    for (int i = 0; i < total_palavras; i++)
+    {
+        const char *palavra = palavras[i];
+
+        // Calcula o hash da palavra
+        unsigned int bucket = hash(palavra);
+
+        // Verifica se o bucket está dentro dos limites (0 a 25)
+        if (bucket < NUM_BUCKETS)
+        {
+            // Incrementa o contador no bucket correspondente
+            contadores[bucket]++;
+        }
+    }
+
+    // Exibe quantas palavras caíram em cada bucket
+    for (int i = 0; i < NUM_BUCKETS; i++)
+    {
+        printf("Bucket %c: %d palavras\n", 'A' + i, contadores[i]);
+    }
+}
 
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
