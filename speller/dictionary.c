@@ -42,7 +42,11 @@ bool load(const char *dictionary)
         printf("Não foi possível abrir o arquivo %s\n", dictionary);
         return false;
     }
-    
+    // node *table[N];
+    // cada indice de table deve ser uma letra
+
+    int buffer;
+    fread(buffer, 1, 1, arquivo);
 
     return true;
 }
