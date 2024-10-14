@@ -31,16 +31,15 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     // Receberá uma entrada
-    int primeira_letra = 0, segunda_letra = 0, mat_letra = 0, hash_final = 0;
+    int sum_hash = 0;
 
-    primeira_letra = toupper(word[0]) - 'A';
-    segunda_letra = (toupper(word[0]) - 'A') * 26 + (toupper(word[1]) - 'A');
+    sum_hash += toupper(word[0]) - 'A';
+    sum_hash += (toupper(word[0]) - 'A') * 26 + (toupper(word[1]) - 'A');
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        mat_letra += (toupper(word[i]) * (i + 1)) * 31;
+        sum_hash += (toupper(word[i]) * (i + 1)) * 31;
     }
-    hash_final = primeira_letra + segunda_letra + mat_letra;
-    return hash_final % N;
+    return sum_hash % N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
