@@ -31,11 +31,16 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     // Receberá uma entrada
-    if (strlen(word) < 2)
+    int primeira_letra, segunda_letra, mat_letra, hash_final = 0;
+
+    primeira_letra = toupper(word[0]) - 'A';
+    segunda_letra = (toupper(word[0]) - 'A') * 26 + (toupper(word[1]) - 'A');
+    for (int i = 0, n = strlen(word); i < n; i++)
     {
-        return toupper(word[0]) - 'A';
+        mat_letra += (toupper(word[i]) * (i + 1)) * 31;
     }
-    return (toupper(word[0]) - 'A') * 26 + (toupper(word[1]) - 'A');
+    hash_final = primeira_letra + segunda_letra + mat_letra;
+    return hash_final;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -72,7 +77,7 @@ bool load(const char *dictionary)
         n->next = table[contagem_hash];
         table[contagem_hash] = n;
 
-        printf("Palavra: %s, Hash: %i\n", word, contagem_hash);
+        // printf("Palavra: %s, Hash: %i\n", word, contagem_hash);
     }
 
     // hash = toupper(word[0]) - 'A';
