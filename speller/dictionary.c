@@ -66,6 +66,7 @@ bool load(const char *dictionary)
     }
 
     // hash = toupper(word[0]) - 'A';
+    fclose(arquivo);
     return true;
 }
 
