@@ -7,7 +7,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define NUM_BUCKETS = 26;
+#define NUM_BUCKETS 26
 // Represents a node in a hash table
 typedef struct node
 {
