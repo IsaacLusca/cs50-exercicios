@@ -109,7 +109,7 @@ bool load(const char *dictionary)
         table[contagem_hash] = n;
         total_words++;
 
-        // printf("Palavra: %s, Hash: %i\n", word, contagem_hash);
+        printf("Palavra: %s, Hash: %i\n", word, contagem_hash);
     }
 
     // hash = toupper(word[0]) - 'A';
@@ -120,7 +120,7 @@ bool load(const char *dictionary)
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    printf("Qtd palavras: %i", total_words);
+    printf("Qtd palavras: %i\n", total_words);
     return 0;
 }
 
