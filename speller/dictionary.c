@@ -56,7 +56,7 @@ bool load(const char *dictionary)
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
-            return 1;
+            return false;
         }
         // e preciso armazenar em cada hash - node *table[N];
         if (word[0] == hash(word))
