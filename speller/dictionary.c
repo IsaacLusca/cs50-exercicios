@@ -57,7 +57,7 @@ bool load(const char *dictionary)
     {
         if (isalpha(dictionary))
         {
-            scanf()
+            scanf(dictionary, "%s", word[i]);
         }
     }
 
