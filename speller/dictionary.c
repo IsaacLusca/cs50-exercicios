@@ -56,8 +56,10 @@ bool load(const char *dictionary)
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
+            fclose(arquivo);
             return false;
         }
+        
         // e preciso armazenar em cada hash - node *table[N];
         strcpy(n->word, word);
         int contagem_hash = hash(word);
