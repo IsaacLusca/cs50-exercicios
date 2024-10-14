@@ -36,6 +36,8 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    FILE *arquivo = fopen(dictionary, "r");
+    
     return false;
 }
 
@@ -50,7 +52,6 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    fopen()
     return false;
 }
 
