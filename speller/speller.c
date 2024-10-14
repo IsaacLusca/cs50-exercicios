@@ -174,6 +174,9 @@ int main(int argc, char *argv[])
     printf("TIME IN TOTAL:        %.2f\n\n",
            time_load + time_check + time_size + time_unload);
 
+
+    
+
     // Success
     return 0;
 }
