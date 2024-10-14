@@ -130,8 +130,11 @@ bool unload(void)
 
     for (int i = 0; i < N; i++)
     {
+        if (table[i] == NULL)
+        {
+            continue;
+        }
         node *ptr = table[i];
-
         while (ptr != NULL)
         {
             node *temp = ptr->next;
