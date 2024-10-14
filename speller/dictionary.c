@@ -53,20 +53,24 @@ bool load(const char *dictionary)
     //     fscanf(dictionary, "%s", word[i]);
     //     i++;
     // }
-    for (int i = 0, n = strlen(arquivo); i < n; i++)
-    {
-        if (arquivo != NULL)
-        {
-            if (isalpha(arquivo))
-            {
-                fscanf(arquivo, "%s", word[i]);
-            }
-        }
-        else
-        {
-            retun EOF;
-        }
-    }
+
+//não se pode usar strlen para ler arquivos. ANOTADO
+    // for (int i = 0, n = strlen(arquivo); i < n; i++)
+    // {
+    //     if (arquivo != NULL)
+    //     {
+    //         if (isalpha(arquivo))
+    //         {
+    //             fscanf(arquivo, "%s", word[i]);
+    //         }
+    //     }
+    //     else
+    //     {
+    //         retun EOF;
+    //     }
+    // }
+
+    // w
 
     return true;
 }
