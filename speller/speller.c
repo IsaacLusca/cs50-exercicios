@@ -175,7 +175,10 @@ int main(int argc, char *argv[])
            time_load + time_check + time_size + time_unload);
 
 
-    
+    int total_palavras = sizeof(word) / sizeof(word[0]);
+
+    // Chama a função para contar palavras nos buckets
+    contar_palavras_no_bucket(word, total_palavras);
 
     // Success
     return 0;
