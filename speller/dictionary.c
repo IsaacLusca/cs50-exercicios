@@ -128,11 +128,10 @@ bool unload(void)
 {
     // TODO
     node *ptr = table;
-    int i = 0;
     {
         while (ptr != NULL)
         {
-            ptr = table[i]->next;
+            ptr = table->next;
             free(table);
             table = ptr;
         }
