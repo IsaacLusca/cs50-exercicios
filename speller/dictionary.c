@@ -71,6 +71,8 @@ bool load(const char *dictionary)
         int contagem_hash = hash(word);
         n->next = table[contagem_hash];
         table[contagem_hash] = n;
+
+        printf("Palavra: %s, Hash: %i\n", word, contagem_hash);
     }
 
     // hash = toupper(word[0]) - 'A';
