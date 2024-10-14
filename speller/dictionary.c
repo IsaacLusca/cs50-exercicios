@@ -1,12 +1,12 @@
 // Implements a dictionary's functionality
 
+#include "dictionary.h"
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include "dictionary.h"
-#include <strings.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
+#include <strings.h>
 
 #define NUM_BUCKETS 26
 // Represents a node in a hash table
@@ -32,7 +32,7 @@ bool check(const char *word)
     int valor_hash = hash(word);
     node *acess = table[valor_hash];
 
-    while(acess != NULL)
+    while (acess != NULL)
     {
         if (strcasecmp(acess->word, word) == 0)
         {
@@ -103,7 +103,7 @@ bool load(const char *dictionary)
     }
 
     // ler cada string
-    //não se pode usar strlen para ler arquivos. ANOTADO
+    // não se pode usar strlen para ler arquivos. ANOTADO
 
     char word[LENGTH + 1];
     while (fscanf(arquivo, "%s", word) != EOF)
@@ -172,10 +172,8 @@ bool unload(void)
 //     return true;
 // }
 
-
 // load: ler as palavras de um dicionário específico, talvez com hash.
 // hash: pegar a letra e voltar seu valor numérico correspondente
 // size: que reporta a quantidade de palavras que existem no dicionário
 // check: checar se uma palavra está ou não no dicionário
 // unload: desalocar memórias que possam estar.
-
