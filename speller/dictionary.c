@@ -53,13 +53,13 @@ bool load(const char *dictionary)
     //     fscanf(dictionary, "%s", word[i]);
     //     i++;
     // }
-    for (int i = 0, n = strlen(dictionary); i < n; i++)
+    for (int i = 0, n = strlen(arquivo); i < n; i++)
     {
-        if (dictionary != NULL)
+        if (arquivo != NULL)
         {
-            if (isalpha(dictionary))
+            if (isalpha(arquivo))
             {
-                scanf(dictionary, "%s", word[i]);
+                fscanf(arquivo, "%s", word[i]);
             }
         }
         else
