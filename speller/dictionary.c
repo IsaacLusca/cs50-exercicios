@@ -49,12 +49,12 @@ bool load(const char *dictionary)
     // ler cada string
     //não se pode usar strlen para ler arquivos. ANOTADO
     // char word[LENGHT + 1];
-    
+
     while (fscanf(arquivo, "%s", word) != EOF)
     {
         node *n = malloc(sizeof(node));
 
-        n->word =
+        n->word = word;
     }
 
     return true;
