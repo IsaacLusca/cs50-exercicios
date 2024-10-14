@@ -45,7 +45,8 @@ bool load(const char *dictionary)
     // node *table[N];
     // cada indice de table deve ser uma letra
     node *n = malloc(sizeof(node));
-    
+    strcpy(n->word, dictionary);
+
 
     return true;
 }
