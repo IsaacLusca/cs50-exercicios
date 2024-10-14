@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "dictionary.h"
+#include <strings.h>
 #include <string.h>
 #include <stdlib.h>
 
