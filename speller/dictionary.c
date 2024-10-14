@@ -39,7 +39,6 @@ bool load(const char *dictionary)
     // fazer o hash dessa palavra, e colocar o nó de acordo com a função hash.
 
     // TODO
-    node *list = NULL;
 
     FILE *arquivo = fopen(dictionary, "r");
     if (arquivo == NULL)
@@ -59,9 +58,8 @@ bool load(const char *dictionary)
         {
             return 1;
         }
-        n->word = word;
-        n->next = list;
-        list = n;
+        // e preciso armazenar em cada hash - node *table[N];
+        
     }
 
     return true;
