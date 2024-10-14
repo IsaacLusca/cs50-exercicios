@@ -31,7 +31,7 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     // Receberá uma entrada
-    int primeira_letra, segunda_letra, mat_letra, hash_final = 0;
+    int primeira_letra = 0, segunda_letra = 0, mat_letra = 0, hash_final = 0;
 
     primeira_letra = toupper(word[0]) - 'A';
     segunda_letra = (toupper(word[0]) - 'A') * 26 + (toupper(word[1]) - 'A');
