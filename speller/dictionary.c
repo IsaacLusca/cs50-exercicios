@@ -28,7 +28,6 @@ unsigned int total_words = 0;
 bool check(const char *word)
 {
     // TODO
-    if ()
 
     return false;
 }
