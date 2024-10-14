@@ -52,3 +52,11 @@ bool unload(void)
     // TODO
     return false;
 }
+
+
+// load: ler as palavras de um dicionário específico, talvez com hash.
+// hash: pegar a letra e voltar seu valor numérico correspondente
+// size: que reporta a quantidade de palavras que existem no dicionário
+// check: checar se uma palavra está ou não no dicionário
+// unload: desalocar memórias que possam estar.
+
