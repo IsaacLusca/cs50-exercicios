@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include "dictionary.h"
 #include <string.h>
+#include <stdlib.h>
 // Represents a node in a hash table
 typedef struct node
 {
@@ -50,7 +51,7 @@ bool load(const char *dictionary)
     // ler cada string
     //não se pode usar strlen para ler arquivos. ANOTADO
 
-    char word[LENGHT + 1];
+    char word[LENGTH + 1];
     while (fscanf(arquivo, "%s", word) != EOF)
     {
         node *n = malloc(sizeof(node));
