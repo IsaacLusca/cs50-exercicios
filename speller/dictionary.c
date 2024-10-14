@@ -50,6 +50,7 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+    fread()
     return false;
 }
 
