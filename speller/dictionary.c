@@ -135,7 +135,7 @@ bool unload(void)
         while (ptr != NULL)
         {
             node *temp = ptr;
-            ptr = ptr->next;
+            temp = ptr->next;
             free(ptr);
             ptr = temp;
         }
