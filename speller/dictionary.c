@@ -117,7 +117,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    node *list = ;
+    node *list = NULL;
     int count = 0;
     while (list != NULL)
     {
