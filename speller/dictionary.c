@@ -109,7 +109,7 @@ bool load(const char *dictionary)
         table[contagem_hash] = n;
         total_words++;
 
-        printf("Palavra: %s, Hash: %i\n", word, contagem_hash);
+        // printf("Palavra: %s, Hash: %i\n", word, contagem_hash);
     }
 
     // hash = toupper(word[0]) - 'A';
