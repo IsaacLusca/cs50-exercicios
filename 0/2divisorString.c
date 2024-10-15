@@ -32,14 +32,30 @@ char* gcdOfStrings(char* str1, char* str2)
 
     while (i < len1)
     {
-        if (strncmp())
+        if (strncmp(divisor, str1, mdc) != 0)
+        {
+            free(divisor);
+            return "";
+        }
+        i += mdc;
     }
+
+    while (i < len2)
+    {
+        if(strncmp(divisor, str2, mdc) != 0)
+        {
+            free(divisor);
+            return "";
+        }
+        i += mdc;
+    }
+    return divisor;
 }
 
 int main()
 {
-    char palavra1[] = "ABCABC";
-    char palavra2[] = "ABC";
+    char palavra1[] = "LEET";
+    char palavra2[] = "CODE";
 
     char *divisor_comum = gcdOfStrings(palavra1, palavra2);
     printf("Divisor comum: %s\n", divisor_comum);
