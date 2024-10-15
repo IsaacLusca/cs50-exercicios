@@ -26,9 +26,12 @@ char* gcdOfStrings(char* str1, char* str2)
     int i = 0, j = 0;
     char *temp;
 
-    while (comp1[i] != '\0' || comp2[j] != '\0')
+    while (comp1[i] != '\0' || comp2[i] != '\0')
     {
-        if ()
+        if (strcmp(comp1[i], comp2[i]) == 0)
+        {
+            
+        }
     }
 
 }
