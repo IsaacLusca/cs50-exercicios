@@ -11,14 +11,22 @@ char * mergeAlternately(char * word1, char * word2)
 
     while(word1[i] != '\0' || word2[j] != '\0')
     {
-        if(word[i] != '\0')
+        if(word1[i] != '\0')
         {
-            merged[k] = word[i];
+            merged[k] = word1[i];
+            k++;
+            i++;
+        }
+        if(word2[j] != '\0')
+        {
+            merged[k] = word2[j];
+            k++;
+            j++;
         }
     }
 }
 
-int main(void)
+int main()
 {
     char *palavra1 = "abc";
     char *palavra2 = "pqr";
