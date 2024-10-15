@@ -6,7 +6,7 @@ char * mergeAlternately(char * word1, char * word2)
 {
     char word1[100];
     char word2[100];
-    char *merged = malloc((strlen(word1) + strlen(word2) + 1) * sizeof)
+    char *merged = malloc((strlen(word1) + strlen(word2) + 1) * sizeof(char));
     int i = 0, j = 0, k = 0;
 
     while (word1[i] != '\0' || word2[j] != '\0')
@@ -24,6 +24,7 @@ char * mergeAlternately(char * word1, char * word2)
             j++;
         }
     }
+    merged[k] = 
     printf("%s\n", merged);
-    return 0;
+    return ;
 }
