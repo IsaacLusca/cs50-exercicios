@@ -8,7 +8,6 @@ int main(void)
     char word2[100];
     char merged[200];
     int i = 0, j = 0, k = 0;
-
     scanf("%s", word1);
     scanf("%s", word2);
 
