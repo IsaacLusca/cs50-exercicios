@@ -21,7 +21,6 @@ char* gcdOfStrings(char* str1, char* str2)
     // 2 - armazenando o mdc
     int mdc = gcd(len1, len2);
 
-
 }
 
 int main()
