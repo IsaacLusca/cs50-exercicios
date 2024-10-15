@@ -16,13 +16,23 @@ int main()
     crianca[0] = 2;
     crianca[1] = 3;
     crianca[2] = 5;
+
+
     const int x = 10;
     bool check[n];
     for (int i = 0; i < crianca[i]; i++)
     {
         crianca[i] += x;
-        if (crian)
-        printf("Criança %i: %i \n ", i + 1, crianca[i]);
+        if ((crianca[i] += x) >= 13)
+        {
+            check[i] = true;
+            printf("Criança %i: %i true\n ", i + 1, crianca[i]);
+        }
+        else
+        {
+            check[i] = false;
+            printf("Criança %i: %i false\n ", i + 1, crianca[i]);
+        }
     }
 
 
