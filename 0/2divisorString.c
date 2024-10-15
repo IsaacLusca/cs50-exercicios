@@ -6,15 +6,18 @@ char* gcdOfStrings(char* str1, char* str2)
 {
     int comp1 = strlen(str1);
     int comp2 = strlen(str2);
-
-    if (comp1 >= comp2)
+    int menor;
+    if (comp1 < comp2)
     {
-        char *divisor = malloc((comp1 + 1) * sizeof(char));
+        menor = comp1;
     }
     else
     {
-        char *divisor = malloc((comp2 + 1) * sizeof(char));
+        menor = comp2;
     }
+
+    char *divisor = malloc((menor + 1) * sizeof(char));
+
 }
 
 int main()
