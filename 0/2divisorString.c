@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+// função auxiliar para calcular gcd do comprimento.
 int gcd(int a, int b)
 {
     if (b == 0)
@@ -13,6 +14,10 @@ int gcd(int a, int b)
 
 char* gcdOfStrings(char* str1, char* str2)
 {
+    // 1 - armazenar o comprimento.
+    int len1 = strlen(str1);
+    int len2 = strlen(str2);
+
     
 }
 
