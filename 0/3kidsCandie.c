@@ -3,6 +3,6 @@
  */
 bool* kidsWithCandies(int* candies, int candiesSize, int extraCandies, int* returnSize) {
     // tera um array de candies que cada criança possui
-
+    // tera um extraCandie que sera somado para cada criança
     for (int i = 0; i < )
 }
