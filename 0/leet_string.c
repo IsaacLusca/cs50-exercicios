@@ -12,7 +12,7 @@ int main(void)
 
     for (int i = 0, n = strlen(word1), x = strlen(word2); i < n || i < x; i++)
     {
-        for (int j)
+        
     }
 
     printf("%s", merged);
