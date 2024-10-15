@@ -34,7 +34,7 @@ char* gcdOfStrings(char* str1, char* str2)
 
     while (i < len1)
     {
-        if (strncmp(divisor, str1, mdc) != 0)
+        if (strncmp(divisor, &str1[i], mdc) != 0)
         {
             free(divisor);
             return "";
@@ -44,7 +44,7 @@ char* gcdOfStrings(char* str1, char* str2)
 
     while (i < len2)
     {
-        if(strncmp(divisor, str2, mdc) != 0)
+        if(strncmp(divisor, &str2[i], mdc) != 0)
         {
             free(divisor);
             return "";
