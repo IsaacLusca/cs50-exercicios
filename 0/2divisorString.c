@@ -23,7 +23,10 @@ char* gcdOfStrings(char* str1, char* str2)
         return NULL;
     }
 
-    
+    while (comp1[i] != '\0' || comp2[j] != '\0')
+    {
+        if
+    }
 
 }
 
