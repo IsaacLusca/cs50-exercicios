@@ -3,55 +3,51 @@
 #include <stdlib.h>
 
 // função auxiliar para calcular gcd do comprimento.
+// Função auxiliar para calcular o gcd do comprimento
 int gcd(int a, int b)
 {
-    while (b != 0)
+    if (b == 0)
     {
-        int temp = b;
-        b = a % b;
-        a = temp;
+        return a;
     }
-    return a;
+    return gcd(b, a % b);
 }
 
 char* gcdOfStrings(char* str1, char* str2)
 {
-    // 1 - armazenar o comprimento.
+    // 1 - Armazenar o comprimento
     int len1 = strlen(str1);
     int len2 = strlen(str2);
 
-    // 2 - armazenando o mdc
+    // 2 - Armazenando o mdc
     int mdc = gcd(len1, len2);
 
-    // strings conjuntas que podems er as divisoras
-    // e armazenando-as dinamicamente e checando a parte que seria a candidada a ser a divisora
-    char *divisor = malloc((mdc + 1) * sizeof(char));
+    // 3 - Candidata a divisor
+    char* divisor = (char*)malloc((mdc + 1) * sizeof(char)); // +1 para o terminador nulo
     strncpy(divisor, str1, mdc);
-    divisor[mdc] = '\0';
+    divisor[mdc] = '\0'; // Garantindo que a string é terminada corretamente
 
-    // verificar a divisibilidade de str1
+    // 4 - Verificar a divisibilidade para str1
     int i = 0;
-
-    while (i < len1)
-    {
-        if (strncmp(divisor, &str1[i], mdc) != 0)
-        {
-            free(divisor);
-            return "";
+    while (i < len1) {
+        if (strncmp(divisor, str1 + i, mdc) != 0) {
+            free(divisor); // Liberar a memória alocada
+            return ""; // Retornar string vazia
         }
-        i += mdc;
+        i += mdc; // Incrementar i em mdc manualmente
     }
 
-    while (i < len2)
-    {
-        if(strncmp(divisor, &str2[i], mdc) != 0)
-        {
-            free(divisor);
-            return "";
+    // 5 - Verificar a divisibilidade para str2
+    i = 0; // Reiniciar i para str2
+    while (i < len2) {
+        if (strncmp(divisor, str2 + i, mdc) != 0) {
+            free(divisor); // Liberar a memória alocada
+            return ""; // Retornar string vazia
         }
-        i += mdc;
+        i += mdc; // Incrementar i em mdc manualmente
     }
-    return divisor;
+
+    return divisor; // Retornar o divisor
 }
 
 int main()
