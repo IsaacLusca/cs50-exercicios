@@ -6,15 +6,7 @@ char* gcdOfStrings(char* str1, char* str2)
 {
     int comp1 = strlen(str1);
     int comp2 = strlen(str2);
-// forma de comparar raiz
-    // if (comp1 < comp2)
-    // {
-    //     menor = comp1;
-    // }
-    // else
-    // {
-    //     menor = comp2;
-    // }
+
     int menor = (comp1 < comp2) ? comp1 : comp2;
     char *divisor = malloc((menor + 1) * sizeof(char));
     if (divisor == NULL)
@@ -30,7 +22,9 @@ char* gcdOfStrings(char* str1, char* str2)
     {
         if (strcmp(toupper(comp1[i]), toupper(comp2[i])) == 0)
         {
-            temp = toupper(comp1[i]);
+            temp[k] = toupper(comp1[i]);
+            k++;
+            i++;
         }
     }
 
