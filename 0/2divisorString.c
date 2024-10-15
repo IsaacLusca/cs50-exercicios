@@ -22,8 +22,12 @@ char* gcdOfStrings(char* str1, char* str2)
     int mdc = gcd(len1, len2);
 
     // strings conjuntas que podems er as divisoras
-    // e armazenando-as dinamicamente
+    // e armazenando-as dinamicamente e checando a parte que seria a candidada a ser a divisora
     char *divisor = malloc((mdc + 1) * sizeof(char));
+    strncpy(divisor, str1, mdc);
+    divisor[mdc] = '\0';
+
+    
 }
 
 int main()
