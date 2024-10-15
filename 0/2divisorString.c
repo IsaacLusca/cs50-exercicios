@@ -57,8 +57,8 @@ char *gcdOfStrings(char* str1, char* str2)
 
 int main()
 {
-    char palavra1[] = "ABCABC";
-    char palavra2[] = "AB";
+    char palavra1[] = "AAAAAA";
+    char palavra2[] = "AA";
 
     char *divisor_comum = gcdOfStrings(palavra1, palavra2);
     printf("Divisor comum: %s\n", divisor_comum);
