@@ -27,7 +27,7 @@ char* gcdOfStrings(char* str1, char* str2)
     strncpy(divisor, str1, mdc);
     divisor[mdc] = '\0';
 
-    
+
 }
 
 int main()
