@@ -17,10 +17,12 @@ int main()
     crianca[1] = 3;
     crianca[2] = 5;
     const int x = 10;
+    bool check[n];
     for (int i = 0; i < crianca[i]; i++)
     {
         crianca[i] += x;
-        printf("Criança %i: %i\n", i + 1, crianca[i]);
+        if (crian)
+        printf("Criança %i: %i \n ", i + 1, crianca[i]);
     }
 
 
