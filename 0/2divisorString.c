@@ -28,9 +28,9 @@ char* gcdOfStrings(char* str1, char* str2)
 
     while (comp1[i] != '\0' || comp2[i] != '\0')
     {
-        if (strcmp(comp1[i], comp2[i]) == 0)
+        if (strcmp(toupper(comp1[i]), toupper(comp2[i])) == 0)
         {
-            temp = [comp1[i]];
+            temp = toupper(comp1[i]);
         }
     }
 
