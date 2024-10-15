@@ -11,8 +11,8 @@ int main(void)
     scanf("%s", word1);
     scanf("%s", word2);
 
-    while (word1[i] != '\0' || word2[j] != '\0')
-    {
+    for (int i = )
+
         if (word1[i] != '\0')
         {
             merged[k++] = word1[i++];
@@ -21,7 +21,6 @@ int main(void)
         {
             merged[k++] = word2[j++];
         }
-    }
 
     printf("%s\n", merged);
     return 0;
