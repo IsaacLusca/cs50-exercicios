@@ -7,13 +7,23 @@ int main(void)
     char word1[100];
     char word2[100];
     char merged[200];
+    int i = 0, j = 0, k = 0;
+
     scanf("%s", word1);
     scanf("%s", word2);
 
-    for (int i = 0, n = strlen(word1), x = strlen(word2); i < n || i < x; i++)
+    while (word1[i] != '\0' || word2[j] != '\0')
     {
-        merged[i] = word1[i] + word2[i];
+        if (word1[i] != '\0')
+        {
+            merged[k++] = word1[i++];
+        }
+        if (word2[j] != '\0')
+        {
+            merged[k++] = word2[j++];
+        }
     }
+
     printf("%s\n", merged);
     return 0;
 }
