@@ -21,6 +21,9 @@ char* gcdOfStrings(char* str1, char* str2)
     // 2 - armazenando o mdc
     int mdc = gcd(len1, len2);
 
+    // strings conjuntas que podems er as divisoras
+    // e armazenando-as dinamicamente
+    char *divisor = malloc((mdc + 1) * sizeof(char));
 }
 
 int main()
