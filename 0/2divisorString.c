@@ -18,7 +18,10 @@ char* gcdOfStrings(char* str1, char* str2)
     int len1 = strlen(str1);
     int len2 = strlen(str2);
 
-    
+    // 2 - armazenando o mdc
+    int mdc = gcd(len1, len2);
+
+
 }
 
 int main()
