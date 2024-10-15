@@ -26,6 +26,10 @@ char *gcdOfStrings(char* str1, char* str2)
     // strings conjuntas que podems er as divisoras
     // e armazenando-as dinamicamente e checando a parte que seria a candidada a ser a divisora
     char *divisor = malloc((mdc + 1) * sizeof(char));
+    if(divisor == NULL)
+    {
+        return NULL;
+    }
     strncpy(divisor, str1, mdc);
 
     // verificar a divisibilidade de str1
