@@ -42,6 +42,7 @@ char *gcdOfStrings(char* str1, char* str2)
         i += mdc;
     }
 
+    i = 0;
     while (i < len2)
     {
         if(strncmp(divisor, &str2[i], mdc) != 0)
