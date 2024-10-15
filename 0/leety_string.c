@@ -24,7 +24,7 @@ char * mergeAlternately(char * word1, char * word2)
             j++;
         }
     }
-    merged[k] = 
+    merged[k] = '\0';
     printf("%s\n", merged);
     return ;
 }
