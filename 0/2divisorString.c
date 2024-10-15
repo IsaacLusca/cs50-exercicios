@@ -27,7 +27,13 @@ char* gcdOfStrings(char* str1, char* str2)
     strncpy(divisor, str1, mdc);
     divisor[mdc] = '\0';
 
-    for (int i = 0; i < len1; i++)
+    // verificar a divisibilidade de str1
+    int i = 0;
+
+    while (i < len1)
+    {
+        if (strncmp())
+    }
 }
 
 int main()
