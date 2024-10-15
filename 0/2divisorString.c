@@ -30,7 +30,7 @@ char* gcdOfStrings(char* str1, char* str2)
     {
         if (strcmp(comp1[i], comp2[i]) == 0)
         {
-            
+            temp = [comp1[i]];
         }
     }
 
