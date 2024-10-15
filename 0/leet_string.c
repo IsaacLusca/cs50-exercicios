@@ -13,6 +13,7 @@ int main(void)
     for (int i = 0, n = strlen(word1), x = strlen(word2); i < n || i < x; i++)
     {
         merged[i] = word1[i];
+        merged[i + 1] = word2[i];
     }
     printf("%s", merged);
     return 0;
