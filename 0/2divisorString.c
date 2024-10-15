@@ -6,17 +6,24 @@ char* gcdOfStrings(char* str1, char* str2)
 {
     int comp1 = strlen(str1);
     int comp2 = strlen(str2);
-    int menor;
-    if (comp1 < comp2)
+// forma de comparar raiz
+    // if (comp1 < comp2)
+    // {
+    //     menor = comp1;
+    // }
+    // else
+    // {
+    //     menor = comp2;
+    // }
+    int menor = (comp1 < comp2) ? comp1 : comp2;
+    char *divisor = malloc((menor + 1) * sizeof(char));
+    if (divisor == NULL)
     {
-        menor = comp1;
-    }
-    else
-    {
-        menor = comp2;
+        printf("Erro ao alocar\n");
+        return NULL;
     }
 
-    char *divisor = malloc((menor + 1) * sizeof(char));
+    
 
 }
 
