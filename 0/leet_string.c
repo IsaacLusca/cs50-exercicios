@@ -15,6 +15,6 @@ int main(void)
         merged[i] = word1[i];
         merged[i + 1] = word2[i];
     }
-    printf("%s", merged);
+    printf("%s\n", merged);
     return 0;
 }
