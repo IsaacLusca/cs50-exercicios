@@ -24,6 +24,7 @@ char * mergeAlternately(char * word1, char * word2)
             j++;
         }
     }
+    return merged;
 }
 
 int main()
