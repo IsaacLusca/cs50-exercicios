@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+bool *checarvogal(char *s)
+{
+    if ()
+}
+
 char *reverseVowels(char *s)
 {
     int n = strlen(s);
