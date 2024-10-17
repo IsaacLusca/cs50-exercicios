@@ -14,7 +14,8 @@ char *reverseVowels(char *s)
             s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'
             )
         {
-            vogal[count++] = s[i];
+            vogal[count] = s[i];
+            count++;
         }
     }
     for (int i = 0; i < n; i++)
@@ -23,7 +24,8 @@ char *reverseVowels(char *s)
         s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'
         )
         {
-            s[i] = vogal[--count];
+            s[i] = vogal[count];
+            --count;
         }
     }
     free(vogal);
