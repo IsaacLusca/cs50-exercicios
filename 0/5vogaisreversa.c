@@ -4,14 +4,18 @@
 char *reverseVowels(char *s)
 {
     char *result = malloc(s * sizeof(char));
+    char *vogais;
 
     for (int i = 0, n = strlen(s); i < n; i++)
     {
-        if (s[i] == 'a' ||
-            s[i] == 'e' ||
-            s[i] == 'i' ||
-            s[i] == 'o' ||
-            s[i] == 'u')
+        if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')
+        {
+            vogais[i] = s[i];
+        }
+        for (int j = strlen(vogais); j < 0; j--)
+        {
+            
+        }
     }
 }
 
