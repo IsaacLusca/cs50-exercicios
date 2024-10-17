@@ -5,6 +5,7 @@ char *reverseVowels(char *s)
 {
     char *result = malloc(s * sizeof(char));
     char *vogais;
+    char *consoante;
 
     for (int i = 0, n = strlen(s); i < n; i++)
     {
@@ -12,12 +13,17 @@ char *reverseVowels(char *s)
         {
             vogais[i] = s[i];
         }
+        else
+        {
+            consoante[i] = s[i];
+        }
         for (int j = strlen(vogais); j > 0; j--)
         {
             char *temp;
             temp[j] = vogais[j];
         }
-        
+
+        result
     }
 }
 
