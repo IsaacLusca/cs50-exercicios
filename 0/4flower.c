@@ -7,7 +7,7 @@ bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
         // Verifica se a posição atual está vazia
         if (flowerbed[i] == 0) {
             // Verifica se pode plantar na posição atual
-            if ((i == 0 || flowerbed[i - 1] == 0) && (i == flowerbedSize - 1) || flowerbed[i + 1] == 0) {
+            if ((i == 0 || flowerbed[i - 1] == 0) && (i == flowerbedSize - 1 || flowerbed[i + 1] == 0)) {
                 // Planta a flor
                 flowerbed[i] = 1;
                 n--;
@@ -20,4 +20,15 @@ bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
         }
     }
     return false;
+}
+
+int main()
+{
+    // Caso de teste 1
+    int flowerbed1[] = {1,0,0,0,0,1};
+    int n1 = 2;
+    int size1 = sizeof(flowerbed1) / sizeof(flowerbed1[0]);
+    bool result1 = canPlaceFlowers(flowerbed1, size1, n1);
+    printf("Test 1: %s\n", result1 ? "true" : "false"); // Esperado: true
+
 }
