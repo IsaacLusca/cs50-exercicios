@@ -11,7 +11,15 @@ char *reverseVowels(char *s)
             s[i] == 'e' ||
             s[i] == 'i' ||
             s[i] == 'o' ||
-            s[i] == 'u'
-        )
+            s[i] == 'u')
     }
+}
+
+int main()
+{
+    char *palavra = "IceCream";
+
+    char *troca = reverseWowels(palavra);
+
+    printf("%s",troca);
 }
