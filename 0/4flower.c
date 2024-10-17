@@ -25,8 +25,8 @@ bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
 int main()
 {
     // Caso de teste 1
-    int flowerbed1[] = {1,0,0,0,0,1};
-    int n1 = 2;
+    int flowerbed1[] = {1,0,1,0,1,0,1};
+    int n1 = 0;
     int size1 = sizeof(flowerbed1) / sizeof(flowerbed1[0]);
     bool result1 = canPlaceFlowers(flowerbed1, size1, n1);
     printf("Test 1: %s\n", result1 ? "true" : "false"); // Esperado: true
