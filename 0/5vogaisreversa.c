@@ -12,10 +12,12 @@ char *reverseVowels(char *s)
         {
             vogais[i] = s[i];
         }
-        for (int j = strlen(vogais); j < 0; j--)
+        for (int j = strlen(vogais); j > 0; j--)
         {
-            
+            char *temp;
+            temp[j] = vogais[j];
         }
+        
     }
 }
 
