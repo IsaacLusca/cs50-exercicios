@@ -33,5 +33,9 @@ int main()
 
     char *troca = reverseVowels(palavra);
 
-    printf("%s",troca);
+    for (int i = 0; i < strlen(palavra); i++)
+    {
+        printf("%c", troca);
+    }
+    printf("%c",troca);
 }
