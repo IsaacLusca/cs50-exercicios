@@ -24,7 +24,7 @@ char *reverseVowels(char *s)
             vogais[i] = vogais[j];
         }
 
-        result = 
+        result = vogais[]
     }
 }
 
