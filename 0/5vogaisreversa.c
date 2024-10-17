@@ -3,12 +3,13 @@
 #include <string.h>
 #include <stdbool.h>
 
-bool *checarvogal( char c)
+bool checarvogal(char c)
 {
     if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
     {
         return true;
     }
+    return false;
 }
 
 char *reverseVowels(char *s)
