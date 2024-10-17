@@ -28,12 +28,13 @@ char *reverseVowels(char *s)
             --count;
         }
     }
+    free(vogal);
     return s;
 }
 
 int main()
 {
-    char *palavra = "IceCream";
+    char palavra[] = "IceCream";
 
     char *troca = reverseVowels(palavra);
 
