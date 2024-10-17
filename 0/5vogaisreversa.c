@@ -34,7 +34,7 @@ char *reverseVowels(char *s)
 
 int main()
 {
-    char palavra[] = "IceCream";
+    char palavra[] = "Ace";
 
     char *troca = reverseVowels(palavra);
 
