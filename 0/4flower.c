@@ -7,8 +7,9 @@ bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
 
     for (int i = 0; i < flowerbedSize; i++)
     {
-        if (flowerbed + i == 0)
+        if ((flowerbed + i) == 0)
         {
+            if (i)
             // Irei implementar aqui.
         }
     }
