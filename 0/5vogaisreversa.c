@@ -21,7 +21,7 @@ char *reverseVowels(char *s)
         if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')
         {
             s[i] = vogal[count];
-            count--;
+            --count;
         }
     }
     return s;
@@ -33,9 +33,8 @@ int main()
 
     char *troca = reverseVowels(palavra);
 
-    for (int i = 0; i < strlen(palavra); i++)
+    for (int i = 0; i < strlen(troca); i++)
     {
-        printf("%c", troca);
+        printf("%c", *troca);
     }
-    printf("%c",troca);
 }
