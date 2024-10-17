@@ -5,5 +5,8 @@ char *reverseVowels(char *s)
 {
     char *result = malloc(s * sizeof(char));
 
-    
+    for (int i = 0, n = strlen(s); i < n; i++)
+    {
+        if (s[i])
+    }
 }
