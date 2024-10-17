@@ -4,7 +4,6 @@
 
 bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
 
-    bool *result = malloc(flowerbedSize * sizeof(bool));
     int checar[n];
     for (int i = 0; i < flowerbedSize; i++)
     {
