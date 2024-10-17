@@ -4,9 +4,8 @@
 char *reverseVowels(char *s)
 {
     int n = strlen(s)
-    char *result = malloc(n * sizeof(char));
-    char *vogais;
-    char *consoante;
+    char *vogal = malloc(n * sizeof(char));
+    c
 
     for (int i = 0, n = strlen(s); i < n; i++)
     {
