@@ -7,7 +7,7 @@ bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
         // Verifica se a posição atual está vazia
         if (flowerbed[i] == 0) {
             // Verifica se pode plantar na posição atual
-            if ((i == 0 || flowerbed[i - 1] == 0) && (i == flowerbedSize - 1 || flowerbed[i + 1] == 0)) {
+            if ((i == 0 || flowerbed[i - 1] == 0) && (i == flowerbedSize - 1) || flowerbed[i + 1] == 0) {
                 // Planta a flor
                 flowerbed[i] = 1;
                 n--;
