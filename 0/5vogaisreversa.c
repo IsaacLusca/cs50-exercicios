@@ -19,11 +19,12 @@ char *reverseVowels(char *s)
         }
         for (int j = strlen(vogais); j > 0; j--)
         {
-            char *temp;
-            temp[j] = vogais[j];
+            // char *temp;
+            // temp[j] = vogais[j];
+            vogais[i] = vogais[j];
         }
 
-        result
+        result = 
     }
 }
 
