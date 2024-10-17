@@ -7,7 +7,7 @@ bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
     {
         if (flowerbed[i - 1] == 0 && flowerbed[i + 1] == 0)
         {
-            flowerbed[i] == 1;
+            flowerbed[i] = 1;
             n--;
 
             if (n == 0)
