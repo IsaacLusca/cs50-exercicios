@@ -3,7 +3,8 @@
 
 char *reverseVowels(char *s)
 {
-    char *result = malloc(s * sizeof(char));
+    int n = strlen(s)
+    char *result = malloc(n * sizeof(char));
     char *vogais;
     char *consoante;
 
