@@ -24,8 +24,8 @@ char *reverseVowels(char *s)
         s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'
         )
         {
-            s[i] = vogal[count];
             --count;
+            s[i] = vogal[count];
         }
     }
     free(vogal);
@@ -34,7 +34,7 @@ char *reverseVowels(char *s)
 
 int main()
 {
-    char palavra[] = "Ace";
+    char palavra[] = "IceCreAm";
 
     char *troca = reverseVowels(palavra);
 
