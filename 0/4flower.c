@@ -13,12 +13,16 @@ bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
                 flowerbed[i] = 1;
                 n--;
                 return true;
+
+                if (n == 0)
+                {
+                    return true;
+                }
             }
         }
-        else
-        {
-            return false;
-        }
     }
-
+    if (n != 0)
+    {
+        return false;
+    }
 }
