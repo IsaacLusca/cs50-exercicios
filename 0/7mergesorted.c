@@ -17,7 +17,15 @@ int main() {
 
     int total = i + j;
 
-    while (j <=)
+    while (i >= 0 && j >= 0)
+    {
+        if (nums2[j] < nums1[i])
+        {
+            nums[total] = nums2[j];
+            j++;
+            total++;
+        }
+    }
 
     // merge(nums1, 6, m, nums2, 3, n);
 
