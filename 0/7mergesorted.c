@@ -14,7 +14,7 @@ int main() {
 
     int size = m + n;
 
-    while
+    while ()
 
     merge(nums1, 6, m, nums2, 3, n);
 
