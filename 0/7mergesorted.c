@@ -15,14 +15,7 @@ int main() {
     int size = m + n;
     for (int i = 0; i < size; i++)
     {
-        if (nums1[i] != 0)
-        {
-            continue;
-        }
-        else
-        {
-            for (int j = 0;)
-        }
+
     }
 
     merge(nums1, 6, m, nums2, 3, n);
