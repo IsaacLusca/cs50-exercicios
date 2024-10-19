@@ -19,9 +19,9 @@ int main() {
     while (i < size && j < n)
     {
         int temp = 0;
-        if (nums2[j] > nums1[i])
+        if (nums2[j] < nums1[i])
         {
-            
+            nums1[i] = nums2[j];
         }
     }
     merge(nums1, 6, m, nums2, 3, n);
