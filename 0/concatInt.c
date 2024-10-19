@@ -16,9 +16,9 @@ int main() {
             digits[z] = 0;
             z--;
 
-            if (digits[0] == 9)
+            if (z == 0)
             {
-                
+                int *novo = malloc()
             }
         }
 
