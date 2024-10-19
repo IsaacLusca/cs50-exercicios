@@ -3,7 +3,7 @@
 
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int num = 0;
-    int *result = malloc(digitsSize * sizeof(int));
+    int *result = malloc((digitsSize + 1) * sizeof(int));
     int count = 0;
 
     for (int i = 0; i < digitsSize; i++)
@@ -13,7 +13,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     }
     num = num + 1;
 
-    while (num > 0)
+    while (num > 0 &&  num < count)
     {
         int temp = 0;
         temp = num % 10;
