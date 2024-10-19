@@ -12,32 +12,7 @@ int main() {
     int m = 3;
     int n = 3;
 
-    int size = m + n;
-    int k = 0;
 
-    int i = 0, j = 0;
-
-    while (i < size && j < size)
-    {
-        int temp = 0;
-        if (nums2[j] < nums1[i])
-        {
-            nums1[k] = nums2[j];
-            j++;
-            k++;
-        }
-        else
-        {
-            nums1[k] = nums1[i];
-            i++;
-            k++;
-        }
-    }
-        while (nums1[i] == nums2[j])
-        {
-            j++;
-            k++;
-        }
 
     // merge(nums1, 6, m, nums2, 3, n);
 
