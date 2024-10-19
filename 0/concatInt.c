@@ -3,25 +3,32 @@
 
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int num = 0;
-    int *result = malloc((digitsSize + 1) * sizeof(int));
-    int count = 0;
 
     for (int i = 0; i < digitsSize; i++)
     {
         num = num * 10 + digits[i];
-        count++;
     }
     num = num + 1;
 
-    count = count - 1;
-    while (num > 0)
-    {
-        int temp = 0;
-        temp = num % 10;
-        num = num / 10;
+    int tempNum = num;
+    int digitCount = 0;
+
+    while (tempNum > 0) {
+        tempNum /= 10;
+        digitCount++;
+    }
+
+    int* result = (int*)malloc(digitCount * sizeof(int));
+    int count = digitCount - 1; // Inicializa o count corretamente
+
+    while (num > 0) {
+        int temp = num % 10;
+        num /= 10;
         result[count] = temp;
         count--;
     }
+
+    *returnSize = digitCount;
     return result;
 }
 
