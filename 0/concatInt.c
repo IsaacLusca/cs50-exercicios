@@ -6,7 +6,7 @@
 // }
 int main() {
     const int n = 3;
-    int digits[n] = {1, 9, 9};
+    int digits[n] = {1, 8, 9};
     for (int i = n; i > 0; i--)
     {
         if (digits[i] == 9)
