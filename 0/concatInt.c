@@ -16,7 +16,7 @@ int main() {
             digits[z] = 0;
             z--;
 
-            if (z == 0)
+            if (z == 0 && digits[z] == 9)
             {
                 int *novo = malloc((n + 1) * sizeof(int));
                 digits[0] = 1;
@@ -24,6 +24,8 @@ int main() {
                 for (int i = 1; i < n; i++)
                 {
                     novo[i + 1] = digits[i];
+                    printf("Novo: %i", novo[i]);
+                    return 1;
                 }
             }
         }
