@@ -12,23 +12,28 @@ int main() {
     int m = 3;
     int n = 3;
 
-    int size = m + n;
+    int k = m + n;
 
     int i = 0, j = 0;
 
-    while (i < size && j < n)
+    while (i < k && j < n)
     {
         int temp = 0;
         if (nums2[j] < nums1[i])
         {
-            nums1[i] = nums2[j];
+            nums1[k] = nums2[j];
+            j++;
+        }
+        else
+        {
+            nums1[k] = nums1[i];
         }
     }
-    merge(nums1, 6, m, nums2, 3, n);
+    // merge(nums1, 6, m, nums2, 3, n);
 
     printf("Array mesclado: ");
-    for (int i = 0; i < m + n; i++) {
-        printf("%d ", nums1[i]);
+    for (int c = 0; c < m + n; c++) {
+        printf("%d ", nums1[c]);
     }
     printf("\n");
 
