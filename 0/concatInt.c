@@ -18,6 +18,11 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     }
 
     int* result = (int*)malloc(digitCount * sizeof(int));
+    if (result == NULL)
+    {
+        return NULL;
+    }
+    
     int count = digitCount - 1; // Inicializa o count corretamente
 
     while (num > 0) {
