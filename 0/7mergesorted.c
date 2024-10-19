@@ -12,7 +12,12 @@ int main() {
     int m = 3;
     int n = 3;
 
+    int i = m - 1;
+    int j = n - 1;
 
+    int total = i + j;
+
+    while (j <=)
 
     // merge(nums1, 6, m, nums2, 3, n);
 
