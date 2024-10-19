@@ -1,28 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* plusOne(int* digits, int digitsSize, int* returnSize) {
+// int* plusOne(int* digits, int digitsSize, int* returnSize) {
+
+// }
+int main() {
+    int digits[] = {1};
     for (int i = digitsSize; i > 0; i--)
     {
-        if (digits[i] == 9)
+        if (digits[digitsSize] == 9)
         {
             digits[i - 1] += 1;
         }
     }
+
+
 }
 
-int main() {
-    int digits[] = {7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6};
-    int returnSize = 0;
-    int* result = plusOne(digits, 39, &returnSize);
-    printf("Resultado: ");
-    for (int i = 0; i < returnSize; i++) {
-        printf("%d ", result[i]);
-    }
-    printf("\n");
-    free(result);
-    return 0;
-}
+
+
+
+    // int digits[] = {7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6};
+    // int returnSize = 0;
+    // int* result = plusOne(digits, 39, &returnSize);
+    // printf("Resultado: ");
+    // for (int i = 0; i < returnSize; i++) {
+    //     printf("%d ", result[i]);
+    // }
+    // printf("\n");
+    // free(result);
+    // return 0;
+
+
+
 
     // unsigned long long num = 0;
 
