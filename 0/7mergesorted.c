@@ -12,8 +12,21 @@ int main() {
     int m = 3;
     int n = 3;
 
-    int count;
-    for (int i = )
+    int size = m + n;
+    for (int i = 0; i < size; i++)
+    {
+        if (nums1[i] != 0)
+        {
+            continue;
+        }
+        else
+        {
+            for (int j = 0; j < n; j++)
+            {
+                nums[i]
+            }
+        }
+    }
 
     merge(nums1, 6, m, nums2, 3, n);
 
