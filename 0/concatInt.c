@@ -9,37 +9,39 @@ int main() {
     int digits[n] = {9};
     int z = n - 1;
     int count = z;
-    
-    while (digits[z] == 9)
+    if (digits[z] == 9)
     {
-        digits[z] = 0;
-        z--;
-        count --;
-
-        if (count == -1)
+        while (digits[z] == 9)
         {
-            int *novo = malloc(n * sizeof(int));
-            novo[0] = 1;
-            for (int i = 1; i < n; i++)
+            digits[z] = 0;
+            z--;
+            count --;
+
+            if (count == -1)
             {
-                novo[i] = 0;
+                int *novo = malloc(n * sizeof(int));
+                novo[0] = 1;
+                for (int i = 1; i < n; i++)
+                {
+                    novo[i] = 0;
+                }
+                // Exibir o novo array para verificação
+                for (int i = 0; i < n; i++)
+                {
+                    printf("%i ", novo[i]);
+                }
+                return *novo; // Certifique-se de que a função retorne um ponteiro, se necessário
             }
-            // Exibir o novo array para verificação
-            for (int i = 0; i < n; i++)
-            {
-                printf("%i ", novo[i]);
-            }
-            return *novo; // Certifique-se de que a função retorne um ponteiro, se necessário
         }
+
+
+
+        if (digits[z] != 9)
+        {
+            digits[z] += 1;
+        }
+
     }
-
-
-
-    if (digits[z] != 9)
-    {
-        digits[z] += 1;
-    }
-
     else
     {
         digits[z] += 1;
