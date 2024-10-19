@@ -12,31 +12,24 @@ int main() {
     int m = 3;
     int n = 3;
 
-        int i = m - 1;
+    int i = m - 1;
     int j = n - 1;
-    int k = m + n - 1;
+
+    int total = i + j + 1;
 
     while (i >= 0 && j >= 0)
     {
-        if (nums1[i] > nums2[j])
+        if (nums2[j] > nums1[i])
         {
-            nums1[k] = nums1[i];
-            i--;
-            k--;
+            nums1[total] = nums2[j];
+            j--;
         }
         else
         {
-            nums1[k] = nums2[j];
-            j--;
-            k--;
+            nums1[total] = nums1[i];
+            i--;
         }
-    }
-
-    while (j >= 0)
-    {
-        nums1[k] = nums2[j];
-        j--;
-        k--;
+        total--;
     }
 
     // merge(nums1, 6, m, nums2, 3, n);
