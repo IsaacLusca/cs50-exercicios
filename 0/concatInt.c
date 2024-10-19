@@ -20,11 +20,11 @@ int main() {
             if (count == -1)
             {
                 int *novo = malloc((n + 1) * sizeof(int));
-                digits[0] = 1;
-                for (int i = 2; i < n; i++)
+                novo[0] = 1;
+                for (int i = 1; i < n; i++)
                 {
-                    novo[i] = digits[i];
-                    printf("Novo: %i", novo[i]);
+                    novo[i] = 0;
+                    printf("Novo:%i", novo[i]);
                     return *novo;
                 }
             }
