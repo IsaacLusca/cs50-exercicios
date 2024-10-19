@@ -21,10 +21,7 @@ int main() {
         }
         else
         {
-            for (int j = 0; j < n; j++)
-            {
-                nums[i]
-            }
+            for (int j = 0;)
         }
     }
 
