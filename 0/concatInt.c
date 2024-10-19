@@ -10,7 +10,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     }
     num = num + 1;
 
-    int tempNum = num;
+    long int tempNum = num;
     int digitCount = 0;
     while (tempNum > 0) {
         tempNum /= 10;
