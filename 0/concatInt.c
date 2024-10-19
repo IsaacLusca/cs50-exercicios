@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
-    long int num = 0;
+    unsigned long long num = 0;
 
     for (int i = 0; i < digitsSize; i++)
     {
@@ -10,7 +10,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     }
     num = num + 1;
 
-    long int tempNum = num;
+    unsigned long long int tempNum = num;
     int digitCount = 0;
     while (tempNum > 0) {
         tempNum /= 10;
@@ -23,7 +23,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
         return NULL;
     }
 
-    int count = digitCount - 1; 
+    int count = digitCount - 1;
 
     while (num > 0) {
         int temp = num % 10;
@@ -37,9 +37,9 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
 }
 
 int main() {
-    int digits[] = {9,8,7,6,5,4,3,2,1,0};
+    int digits[] = {7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6};
     int returnSize = 0;
-    int* result = plusOne(digits, 3, &returnSize);
+    int* result = plusOne(digits, 39, &returnSize);
     printf("Resultado: ");
     for (int i = 0; i < returnSize; i++) {
         printf("%d ", result[i]);
