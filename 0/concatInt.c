@@ -19,9 +19,10 @@ int main() {
 
             if (count == -1)
             {
-                int *novo = malloc((n + 1) * sizeof(int));
+                int size = n + 1;
+                int *novo = malloc((size) * sizeof(int));
                 novo[0] = 1;
-                for (int i = 1; i < n; i++)
+                for (int i = 1; i < size; i++)
                 {
                     novo[i] = 0;
                     printf("Novo:%i", novo[i]);
