@@ -15,16 +15,21 @@ int main() {
     int i = m - 1;
     int j = n - 1;
 
-    int total = i + j;
+    int total = i + j + 1;
 
     while (i >= 0 && j >= 0)
     {
-        if (nums2[j] < nums1[i])
+        if (nums2[j] > nums1[i])
         {
-            nums[total] = nums2[j];
-            j++;
-            total++;
+            nums1[total] = nums2[j];
+            j--;
         }
+        else
+        {
+            nums1[total] = nums1[i];
+            i--;
+        }
+        total--;
     }
 
     // merge(nums1, 6, m, nums2, 3, n);
@@ -34,6 +39,8 @@ int main() {
         printf("%d ", nums1[c]);
     }
     printf("\n");
+    printf("%i\n", i);
+    printf("%i\n", j);
 
     return 0;
 }
