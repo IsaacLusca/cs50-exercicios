@@ -22,8 +22,8 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     {
         return NULL;
     }
-    
-    int count = digitCount - 1; // Inicializa o count corretamente
+
+    int count = digitCount - 1; 
 
     while (num > 0) {
         int temp = num % 10;
