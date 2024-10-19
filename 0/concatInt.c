@@ -13,7 +13,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     }
     num = num + 1;
 
-    while (num > 0 &&  num < count)
+    while (num > 0)
     {
         int temp = 0;
         temp = num % 10;
