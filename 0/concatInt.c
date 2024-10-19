@@ -8,9 +8,13 @@ int main() {
     const int n = 3;
     int digits[n] = {1, 8, 9};
 
-    if (digits[n] == 9)
+    int z = n - 1;
+    if (digits[z] == 9)
     {
-
+        while (digits[z] == 9)
+        {
+            
+        }
     }
     else
     {
