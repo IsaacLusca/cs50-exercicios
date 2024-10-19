@@ -14,8 +14,16 @@ int main() {
 
     int size = m + n;
 
-    while ()
+    int i = 0, j = 0;
 
+    while (i < size && j < n)
+    {
+        int temp = 0;
+        if (nums2[j] > nums1[i])
+        {
+            
+        }
+    }
     merge(nums1, 6, m, nums2, 3, n);
 
     printf("Array mesclado: ");
