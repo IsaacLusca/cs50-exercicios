@@ -6,13 +6,14 @@
 // }
 int main() {
     const int n = 3;
-    int digits[n] = {1, 9, 9};
-    for (int i = n - 1; i > 0; i--)
+    int digits[n] = {1, 8, 9};
+
+    if (digits[n - 1] == 9)
     {
-        if (digits[i] == 9)
+        digits[n - 1] = 0;
+        for (int i = n - 2; i > 0; i--)
         {
-            digits[i] = 0;
-            if (digits[i - 1] == 9)
+            if (digits[i] == 9)
             {
                 digits[i - 1] = 0;
             }
@@ -22,6 +23,11 @@ int main() {
             }
         }
     }
+    else
+    {
+        digits[n - 1] += 1;
+    }
+
 
     for (int i = 0; i < n; i++)
     {
