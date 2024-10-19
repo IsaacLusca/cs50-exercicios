@@ -2,38 +2,13 @@
 #include <stdlib.h>
 
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
-    unsigned long long num = 0;
-
-    for (int i = 0; i < digitsSize; i++)
+    for (int i = digitsSize; i > 0; i--)
     {
-        num = num * 10 + digits[i];
+        if (digits[i] == 9)
+        {
+            
+        }
     }
-    num = num + 1;
-
-    unsigned long long int tempNum = num;
-    int digitCount = 0;
-    while (tempNum > 0) {
-        tempNum /= 10;
-        digitCount++;
-    }
-
-    int* result = (int*)malloc(digitCount * sizeof(int));
-    if (result == NULL)
-    {
-        return NULL;
-    }
-
-    int count = digitCount - 1;
-
-    while (num > 0) {
-        int temp = num % 10;
-        num /= 10;
-        result[count] = temp;
-        count--;
-    }
-
-    *returnSize = digitCount;
-    return result;
 }
 
 int main() {
@@ -48,3 +23,36 @@ int main() {
     free(result);
     return 0;
 }
+
+    // unsigned long long num = 0;
+
+    // for (int i = 0; i < digitsSize; i++)
+    // {
+    //     num = num * 10 + digits[i];
+    // }
+    // num = num + 1;
+
+    // unsigned long long int tempNum = num;
+    // int digitCount = 0;
+    // while (tempNum > 0) {
+    //     tempNum /= 10;
+    //     digitCount++;
+    // }
+
+    // int* result = (int*)malloc(digitCount * sizeof(int));
+    // if (result == NULL)
+    // {
+    //     return NULL;
+    // }
+
+    // int count = digitCount - 1;
+
+    // while (num > 0) {
+    //     int temp = num % 10;
+    //     num /= 10;
+    //     result[count] = temp;
+    //     count--;
+    // }
+
+    // *returnSize = digitCount;
+    // return result;
