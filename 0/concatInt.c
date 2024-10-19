@@ -5,16 +5,20 @@
 
 // }
 int main() {
-    int digits[] = {1};
-    for (int i = digitsSize; i > 0; i--)
+    int n = 3;
+    int digits[n] = {1, 2, 9};
+    for (int i = n; i > 0; i--)
     {
-        if (digits[digitsSize] == 9)
+        if (digits[n] == 9)
         {
             digits[i - 1] += 1;
         }
     }
 
-
+    for (int i = 0; i < digitsSize; i++)
+    {
+        printf("%i",digits[i]);
+    }
 }
 
 
