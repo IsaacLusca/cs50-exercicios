@@ -8,20 +8,9 @@ int main() {
     const int n = 3;
     int digits[n] = {1, 8, 9};
 
-    if (digits[n - 1] == 9)
+    if (digits[n] == 9)
     {
-        digits[n - 1] = 0;
-        for (int i = n - 2; i > 0; i--)
-        {
-            if (digits[i] == 9)
-            {
-                digits[i - 1] = 0;
-            }
-            else
-            {
-                digits[i - 1] += 1;
-            }
-        }
+
     }
     else
     {
