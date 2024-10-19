@@ -15,7 +15,14 @@ int main() {
         {
             digits[z] = 0;
             z--;
+
+            if (digits[0] == 9)
+            {
+                
+            }
         }
+
+
 
         if (digits[z] != 9)
         {
