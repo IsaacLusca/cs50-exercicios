@@ -5,8 +5,8 @@
 
 // }
 int main() {
-    const int n = 3;
-    int digits[n] = {5, 9, 8};
+    const int n = 6;
+    int digits[n] = {5, 9, 9, 9, 9, 9};
 
     int z = n - 1;
     if (digits[z] == 9)
