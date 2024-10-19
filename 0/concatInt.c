@@ -6,7 +6,7 @@
 // }
 int main() {
     const int n = 3;
-    int digits[n] = {1, 8, 9};
+    int digits[n] = {4, 8, 9};
 
     int z = n - 1;
     if (digits[z] == 9)
@@ -16,6 +16,12 @@ int main() {
             digits[z] = 0;
             z--;
         }
+
+        if (digits[z] != 9)
+        {
+            digits[z] += 1;
+        }
+
     }
     else
     {
