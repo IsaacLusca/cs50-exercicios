@@ -5,8 +5,8 @@
 
 // }
 int main() {
-    const int n = 6;
-    int digits[n] = {9, 9, 9, 9, 9, 9};
+    const int n = 3;
+    int digits[n] = {9, 9, 9};
     int z = n - 1;
     int count = z;
     if (digits[z] == 9)
@@ -19,17 +19,16 @@ int main() {
 
             if (count == -1)
             {
-                int size = n + 1;
-                int *novo = malloc(size * sizeof(int));
+                int *novo = malloc(n * sizeof(int));
                 novo[0] = 1;
-                for (int i = 1; i < size; i++)
+                for (int i = 1; i < n; i++)
                 {
                     novo[i] = 0;
                 }
                 // Exibir o novo array para verificação
-                for (int i = 0; i < size; i++)
+                for (int i = 0; i < n; i++)
                 {
-                    printf("Novo: %i\n", novo[i]);
+                    printf("%i ", novo[i]);
                 }
                 return *novo; // Certifique-se de que a função retorne um ponteiro, se necessário
             }
