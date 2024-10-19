@@ -6,7 +6,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     {
         if (digits[i] == 9)
         {
-            
+            digits[i - 1] = digits[i - 1] + 1;
         }
     }
 }
