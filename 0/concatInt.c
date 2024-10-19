@@ -13,12 +13,13 @@ int main() {
     {
         while (digits[z] == 9)
         {
-            
+            digits[z] = 0;
+            z--;
         }
     }
     else
     {
-        digits[n - 1] += 1;
+        digits[z] += 1;
     }
 
 
