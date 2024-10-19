@@ -5,20 +5,22 @@
 
 // }
 int main() {
-    int n = 3;
-    int digits[n] = {1, 2, 9};
+    const int n = 3;
+    int digits[n] = {1, 9, 9};
     for (int i = n; i > 0; i--)
     {
-        if (digits[n] == 9)
+        if (digits[i] == 9)
         {
+            digits[i] = 0;
             digits[i - 1] += 1;
         }
     }
 
-    for (int i = 0; i < digitsSize; i++)
+    for (int i = 0; i < n; i++)
     {
-        printf("%i",digits[i]);
+        printf("%i", digits[i]);
     }
+    printf("\n");
 }
 
 
