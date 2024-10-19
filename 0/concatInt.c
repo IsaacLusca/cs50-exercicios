@@ -32,12 +32,12 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
 }
 
 int main() {
-    int digits[] = {1, 2, 3};
+    int digits[] = {9,8,7,6,5,4,3,2,1,0};
     int returnSize = 0;
     int* result = plusOne(digits, 3, &returnSize);
     printf("Resultado: ");
     for (int i = 0; i < returnSize; i++) {
-        printf("%d", result[i]);
+        printf("%d ", result[i]);
     }
     printf("\n");
     free(result);
