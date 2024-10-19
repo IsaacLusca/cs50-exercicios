@@ -7,7 +7,7 @@
 int main() {
     const int n = 3;
     int digits[n] = {1, 7, 9};
-    for (int i = n; i > 0; i--)
+    for (int i = n - 1; i > 0; i--)
     {
         if (digits[i] == 9)
         {
