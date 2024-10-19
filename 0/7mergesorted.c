@@ -12,7 +12,7 @@ int main() {
     int m = 3;
     int n = 3;
 
-    
+
 
     merge(nums1, 6, m, nums2, 3, n);
 
@@ -23,4 +23,4 @@ int main() {
     printf("\n");
 
     return 0;
-
+}
