@@ -33,6 +33,12 @@ int main() {
             k++;
         }
     }
+        while (nums1[i] == nums2[j])
+        {
+            j++;
+            k++;
+        }
+
     // merge(nums1, 6, m, nums2, 3, n);
 
     printf("Array mesclado: ");
