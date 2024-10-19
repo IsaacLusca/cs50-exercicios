@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
-    int num = 0;
+    long int num = 0;
 
     for (int i = 0; i < digitsSize; i++)
     {
