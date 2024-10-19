@@ -14,11 +14,10 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
 
     while (num > 0)
     {
-        int *temp = 0;
+        int temp = 0;
         temp = num % 10;
-        result[n] = temp;
         num = num / 10;
-        n++;
+        result[n] = temp;
     }
     return result;
 }
