@@ -16,13 +16,12 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int *result = malloc(count * sizeof(int));
     while (num > 0)
     {
-        int temp = 0;
-        temp = num % 10;
+        int temp = num % 10;
         num = num / 10;
         result[count] = temp;
         count--;
     }
-    
+
     return result;
 }
 
