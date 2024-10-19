@@ -6,12 +6,19 @@
 
 // }
 
-int main()
-{
+int main() {
+    int nums1[6] = {1, 2, 3, 0, 0, 0};
+    int nums2[3] = {2, 5, 6};
     int m = 3;
     int n = 3;
-    int nums1[m] = {1, 2, 3, 0, 0, 0};
-    int nums2[n] = {2, 5, 6};
 
-    int *result = merge(nums1, m, nums2, n)
-}
+    merge(nums1, 6, m, nums2, 3, n);
+
+    printf("Array mesclado: ");
+    for (int i = 0; i < m + n; i++) {
+        printf("%d ", nums1[i]);
+    }
+    printf("\n");
+
+    return 0;
+
