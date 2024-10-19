@@ -4,7 +4,7 @@
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int num = 0;
     int *result = malloc(sizeof(int));
-    int n = 0;
+    int n = re;
 
     for (int i = 0; i < digitsSize; i++)
     {
