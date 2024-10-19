@@ -6,29 +6,30 @@
 // }
 int main() {
     const int n = 6;
-    int digits[n] = {1, 1, 9, 9, 9, 9};
-
+    int digits[n] = {1, 9, 9, 9, 9, 9};
     int z = n - 1;
+    int count = z;
     if (digits[z] == 9)
     {
         while (digits[z] == 9)
         {
             digits[z] = 0;
             z--;
+            count --;
 
-            // if (z < 0 && digits[z] == 9)
-            // {
-            //     int *novo = malloc((n + 1) * sizeof(int));
-            //     digits[0] = 1;
-            //     novo[0] = digits[0];
-            //     digits[1] = 0;
-            //     for (int i = 2; i < n; i++)
-            //     {
-            //         novo[i] = digits[i];
-            //         printf("Novo: %i", novo[i]);
-            //         return *novo;
-            //     }
-            // }
+            if (count == -1)
+            {
+                int *novo = malloc((n + 1) * sizeof(int));
+                digits[0] = 1;
+                novo[0] = digits[0];
+                digits[1] = 0;
+                for (int i = 2; i < n; i++)
+                {
+                    novo[i] = digits[i];
+                    printf("Novo: %i", novo[i]);
+                    return *novo;
+                }
+            }
         }
 
 
@@ -49,7 +50,7 @@ int main() {
     {
         printf("%i", digits[i]);
     }
-    printf("\n%i\n", z);
+    printf("\n%i\n", count);
 }
 
 
