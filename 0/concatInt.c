@@ -4,11 +4,12 @@
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int num = 0;
     int *result = malloc(sizeof(int));
-    int n = re;
+    int count = 0;
 
     for (int i = 0; i < digitsSize; i++)
     {
         num = num * 10 + digits[i];
+        count++;
     }
     num = num + 1;
 
@@ -17,7 +18,8 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
         int temp = 0;
         temp = num % 10;
         num = num / 10;
-        result[n] = temp;
+        result[count] = temp;
+        count--;
     }
     return result;
 }
