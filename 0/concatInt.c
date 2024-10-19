@@ -28,7 +28,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     }
 
     *returnSize = digitCount;
-    return
+    return result;
 }
 
 int main() {
