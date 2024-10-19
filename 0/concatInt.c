@@ -6,7 +6,7 @@
 // }
 int main() {
     const int n = 6;
-    int digits[n] = {1, 9, 9, 9, 9, 9};
+    int digits[n] = {9, 9, 9, 9, 9, 9};
     int z = n - 1;
     int count = z;
     if (digits[z] == 9)
@@ -21,8 +21,6 @@ int main() {
             {
                 int *novo = malloc((n + 1) * sizeof(int));
                 digits[0] = 1;
-                novo[0] = digits[0];
-                digits[1] = 0;
                 for (int i = 2; i < n; i++)
                 {
                     novo[i] = digits[i];
