@@ -8,6 +8,10 @@
 
 int main()
 {
-    int nums1[] = {1, 2, 3, 0, 0, 0};
-    int nums2[] = {2, 5, 6};
+    int m = 3;
+    int n = 3;
+    int nums1[m] = {1, 2, 3, 0, 0, 0};
+    int nums2[n] = {2, 5, 6};
+
+    int *result = merge(nums1, m, nums2, n)
 }
