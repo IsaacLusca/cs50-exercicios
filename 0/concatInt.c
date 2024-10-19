@@ -23,13 +23,15 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     return result;
 }
 
-int main()
-{
-    int n tamanho = 2;
-    int numeros[2] = {1, 2, 3};
-
-    int result = plusOne(numeros);
-
-    printf("")
-
+int main() {
+    int digits[] = {1, 2, 3};
+    int returnSize = 0;
+    int* result = plusOne(digits, 3, &returnSize);
+    printf("Resultado: ");
+    for (int i = 0; i < returnSize; i++) {
+        printf("%d", result[i]);
+    }
+    printf("\n");
+    free(result);
+    return 0;
 }
