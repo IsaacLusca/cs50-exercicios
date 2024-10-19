@@ -11,8 +11,15 @@ int main() {
     {
         if (digits[i] == 9)
         {
-            digits[i] = 0;
-            digits[i - 1] += 1;
+            if (i == n)
+            {
+                digits[i] = 0;
+                digits[i - 1] += 1;
+            }
+            else
+            {
+                continue;
+            }
         }
     }
 
