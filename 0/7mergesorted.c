@@ -13,10 +13,8 @@ int main() {
     int n = 3;
 
     int size = m + n;
-    for (int i = 0; i < size; i++)
-    {
 
-    }
+    while
 
     merge(nums1, 6, m, nums2, 3, n);
 
