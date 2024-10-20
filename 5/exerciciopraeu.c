@@ -14,7 +14,7 @@ int main()
     for (int i = 0; i < 4; i++)
     {
         no *nova = malloc(sizeof(no));
-        if (i < 3)
+        if (i < 4)
         {
             nova->valor = lista[i];
             nova->proximo = atual;
@@ -25,6 +25,12 @@ int main()
             nova->proximo = NULL;
         }
     }
+    while (atual != NULL) {
+        printf("%d -> ", atual->valor);
+        atual = atual->proximo;
+    }
+    printf("NULL\n");
 }
+
 
 
