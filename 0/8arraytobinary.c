@@ -11,8 +11,21 @@ typedef struct no
     struct no *esquerda;
 } noArv;
 
+// Para a inserção, defina uma variavel do tipo nó
+// e passe os valores da raiz e o valor que vai ser inserido
+NoArv *inserir_1(noArv *raiz, int num)
+{
+    if (raiz == NULL)
+    {
+        if (num < raiz)
+        {
+            
+        }
+    }
+}
 
 int main()
 {
+    NoArv *raiz = NULL;
     return 0;
 }
