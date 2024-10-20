@@ -23,10 +23,20 @@ NoArv *inserir_1(noArv *raiz, int num)
         aux->direita = NULL;
         return aux;
     }
+    else
+    {
+        if (num < raiz->valor)
+        {
+            aux-esquerda
+        }
+    }
 }
 
 int main()
 {
     NoArv *raiz = NULL;
+
+    raiz = inserir_1(raiz, 50);
+
     return 0;
 }
