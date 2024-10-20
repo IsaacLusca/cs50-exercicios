@@ -27,7 +27,11 @@ NoArv *inserir_1(noArv *raiz, int num)
     {
         if (num < raiz->valor)
         {
-            aux-esquerda
+            raiz->esquerda = inserir_1(raiz->esquerda, num);
+        }
+        else
+        {
+            raiz->direita = inserir_1(raiz->direita, num);
         }
     }
 }
