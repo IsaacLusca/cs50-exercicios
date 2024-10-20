@@ -10,5 +10,11 @@ typedef struct no
 int main()
 {
     int lista[4] = {1, 2, 3, 4};
-    no *nova = malloc(5 * sizeof(nova));
+    no *nova = malloc(sizeof(no));
+    nova->proximo = NULL;
+    for (int i = 0; i < 3; i++)
+    {
+        no *aux = nova;
+        nova->valor = lista[i];
+    }
 }
