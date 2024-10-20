@@ -16,8 +16,8 @@ int main()
         if (i < 3)
         {
             no *nova = malloc(sizeof(no));
-            nova->valor = lista[i]
-            
+            nova->valor = lista[i];
+
         }
     }
 }
