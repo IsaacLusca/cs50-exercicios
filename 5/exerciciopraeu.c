@@ -9,5 +9,6 @@ typedef struct no
 
 int main()
 {
-    int lista[] = {1, 2, 3, 4};
+    int lista[4] = {1, 2, 3, 4};
+    no *nova = malloc(5 * sizeof(nova));
 }
