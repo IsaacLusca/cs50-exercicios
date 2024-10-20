@@ -17,7 +17,7 @@ int main()
         {
             no *nova = malloc(sizeof(no));
             nova->valor = lista[i];
-
+            nova-proximo = atual;
         }
     }
 }
