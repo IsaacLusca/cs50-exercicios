@@ -13,11 +13,18 @@ int main()
     no *atual = NULL;
     for (int i = 0; i < 4; i++)
     {
+        no *nova = malloc(sizeof(no));
         if (i < 3)
         {
-            no *nova = malloc(sizeof(no));
             nova->valor = lista[i];
-            nova-proximo = atual;
+            nova->proximo = atual;
+            atual = nova;
+        }
+        else
+        {
+            nova->proximo = NULL;
         }
     }
 }
+
+
