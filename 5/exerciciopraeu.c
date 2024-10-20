@@ -16,5 +16,6 @@ int main()
     {
         no *aux = nova;
         nova->valor = lista[i];
+        aux->next = 
     }
 }
