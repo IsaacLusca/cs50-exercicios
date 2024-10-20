@@ -17,10 +17,11 @@ NoArv *inserir_1(noArv *raiz, int num)
 {
     if (raiz == NULL)
     {
-        if (num < raiz)
-        {
-            
-        }
+        noArv *aux = malloc(sizeof(NoArv));
+        aux->valor = num;
+        aux->esquerda = NULL;
+        aux->direita = NULL;
+        return aux;
     }
 }
 
