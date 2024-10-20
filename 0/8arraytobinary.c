@@ -33,6 +33,7 @@ NoArv *inserir_1(noArv *raiz, int num)
         {
             raiz->direita = inserir_1(raiz->direita, num);
         }
+        return raiz;
     }
 }
 
