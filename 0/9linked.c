@@ -16,12 +16,12 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     while (list1 != NULL || list2 != NULL) {
         ListNode* novoNo = malloc(sizeof(ListNode));
         if (list1 != NULL && (list2 == NULL || list1->val <= list2->val)) {
-            novoNo->next = list1;
+            novoNo->val = list1->val;
             list1 = list1->next;
             atual->next = novoNo;
             atual = atual->next;
         } else {
-            novoNo->next = list2;
+            novoNo->val = list2->val;
             list2 = list2->next;
             atual->next = novoNo;
             atual = atual->next;
