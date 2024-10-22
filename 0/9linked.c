@@ -11,17 +11,20 @@ typedef struct ListNode {
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     ListNode* dummy = malloc(sizeof(ListNode));
     dummy->next = NULL;
-    ListNode* merge = dummy;  // Ponteiro para construir a lista mesclada
+    ListNode* atual = dummy;  // Ponteiro para construir a lista mesclada
 
     while (list1 != NULL || list2 != NULL) {
+        ListNode* novoNo = malloc(sizeof(ListNode));
         if (list1 != NULL && (list2 == NULL || list1->val <= list2->val)) {
-            merge->next = list1;
+            novoNo->next = list1;
             list1 = list1->next;
+            atual->next = novoNo;
+            atual = atual->next;
         } else {
-            merge->next = list2;
+            novoNo->next = list2;
             list2 = list2->next;
         }
-        merge = merge->next;  // Avança o ponteiro merge
+        atual = atual->next;  // Avança o ponteiro merge
     }
 
     ListNode* mergedHead = dummy->next;
