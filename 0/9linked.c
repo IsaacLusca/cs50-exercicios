@@ -23,8 +23,9 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         } else {
             novoNo->next = list2;
             list2 = list2->next;
+            atual->next = novoNo;
+            atual = atual->next;
         }
-        atual = atual->next;  // Avança o ponteiro merge
     }
 
     ListNode* mergedHead = dummy->next;
