@@ -6,7 +6,7 @@ fatorial = int(input("fatorial de quanto? "))
 
 inicio = fatorial
 count = 0
-i = 0
-while (i < inicio):
+i = 1
+while i < inicio:
     fatorial = fatorial * (fatorial - 1)
     i += 1
