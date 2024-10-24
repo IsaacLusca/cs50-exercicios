@@ -9,4 +9,4 @@ count = 0
 i = 0
 while (i < inicio):
     fatorial = fatorial * (fatorial - 1)
-    i++
+    i += 1
