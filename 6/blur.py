@@ -17,3 +17,4 @@ after.save("saida.bmp")
 
 # no exemplo tem o elenco de ofice
 # e outra imagem com uma pessoa especifica
+complicado isso ai cara
