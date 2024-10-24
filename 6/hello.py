@@ -5,8 +5,10 @@ from cs50 import get_string
 fatorial = int(input("fatorial de quanto? "))
 
 inicio = fatorial
-count = 0
+
 i = 1
 while i < inicio:
-    fatorial = fatorial * (fatorial - 1)
+    fatorial = fatorial * (fatorial - i)
     i += 1
+
+print(f"Fatorial de {inicio} é {fatorial}")
