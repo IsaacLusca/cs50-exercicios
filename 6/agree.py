@@ -10,7 +10,9 @@ s = s.lower()
 while True:
     if s in ["y", "yes"]:
         print("concordo.")
+        break
     elif s in ["n", "no"]:
         print("nao concordo")
-    elif !s:
         break
+    else:
+        print("resposta invalida")
