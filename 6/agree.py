@@ -12,3 +12,5 @@ while True:
         print("concordo.")
     elif s in ["n", "no"]:
         print("nao concordo")
+    elif !s:
+        break
