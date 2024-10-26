@@ -4,6 +4,7 @@ x = get_int("x: ")
 y = get_int("y ")
 
 
+
 if x < y:
     print("x é menor")
 elif x > y:
