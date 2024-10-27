@@ -18,5 +18,5 @@ def main():
         print(" " * temp + "#" * i)
         i += 1
         temp -= 1
-
+        
 main()
