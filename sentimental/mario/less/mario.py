@@ -6,7 +6,10 @@ def get_int(prompt):
             pass
 
 def main():
-    n = get_int("Height: ")
+    while True:
+        n = get_int("Height: ")
+        if n > 8 and n < 1:
+            break
 
     temp = n - 1
     i = 1
