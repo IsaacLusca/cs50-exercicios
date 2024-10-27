@@ -1,7 +1,12 @@
-
+def get_int(prompt):
+    while True:
+        try:
+            return int(input(prompt))
+        except ValueError:
+            pass
 
 def main():
-    n = int(input("Height: "))
+    n = get_int("Height: "))
 
     temp = n - 1
     i = 1
