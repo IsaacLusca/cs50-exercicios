@@ -14,8 +14,7 @@ def main():
     temp = n
     i = 1
     while i <= n:
-        print(" " * temp)
-        print("#" * i)
+        print(" " * temp + "#" * i)
         i += 1
         temp -= 1
 
