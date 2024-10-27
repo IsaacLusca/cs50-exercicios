@@ -1,11 +1,10 @@
-s = input("Você concorda?")
 
 # Diferente de c que usa ||, em python é or
 
 # if s == "Y" or s == "y":
 #     print("Concordo.")
 
-s = s.lower()
+s = input("Você concorda?").lower()
 
 while True:
     if s in ["y", "yes"]:
