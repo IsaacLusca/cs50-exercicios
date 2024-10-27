@@ -10,6 +10,7 @@ def main():
         n = get_int("Height: ")
         if n > 8 and n < 1:
             break
+        return n
 
     temp = n - 1
     i = 1
