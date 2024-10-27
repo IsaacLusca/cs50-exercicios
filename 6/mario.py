@@ -11,10 +11,10 @@ def main():
         if n > 0:
             break
 
-    i = 1
+    i = 0
     while i != n:
-        print("#" * i)
-        i += 1
+        print("#" * n)
+        n -= 1
 
 main()
 
