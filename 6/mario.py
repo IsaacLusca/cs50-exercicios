@@ -1,11 +1,18 @@
 def get_int(prompt):
-    While True:
+    while True:
         try:
-            return int(intput(prompt))
+            return int(input(prompt))
         except ValueError:
             pass
 
 def main():
-    n = get_int("Digite o tamanho da grade: ")
+    while True:
+        n = get_int("Digite o tamanho da grade: ")
+        if n > 0:
+            break
 
-    for i
+    for i in range(n):
+        print("#")
+
+main()
+
