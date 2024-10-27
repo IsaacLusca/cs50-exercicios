@@ -1,6 +1,8 @@
 def get_int(prompt):
-    
-    return int(input(prompt))
+    try:
+        return int(input(prompt))
+    except ValueError:
+        print("Isso parece um inteiro para você?")
 
 def main():
     x = get_int("X: ")
