@@ -14,15 +14,18 @@ def main():
     temp = n
     i = 1
     while i <= n:
-        print(" " * temp + "#" * i)
+        print(" " * temp + "#" * i + "  " + "#" * i  + " " * temp + "          " + "#" * n )
         i += 1
         temp -= 1
 
+    if i == n:
+        print("###################################################################################")
+
     print()
 
-    for l in range(n):
-        for j in range(n):
-            print("#", end="")
-        print()
+    # for l in range(n):
+    #     for j in range(n):
+    #         print("#", end="")
+    #     print()
 main()
 
