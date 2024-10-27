@@ -8,7 +8,7 @@ def get_int(prompt):
 def main():
     while True:
         n = get_int("Height: ")
-        if n > 8 and n < 1:
+        if n > 8 or n < 1:
             return n
 
     temp = n - 1
