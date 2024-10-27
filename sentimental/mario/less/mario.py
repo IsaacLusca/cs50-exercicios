@@ -17,7 +17,7 @@ def mario(n):
 def main():
     while True:
         num = get_int("Height: ")
-        if num >= 8 or num <= 1:
+        if num <= 8 or num >= 1:
             mario(num)
             break
 
