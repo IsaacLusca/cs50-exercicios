@@ -6,7 +6,7 @@ def get_int(prompt):
             pass
 
 def main():
-    n = get_int("Height: "))
+    n = get_int("Height: ")
 
     temp = n - 1
     i = 1
