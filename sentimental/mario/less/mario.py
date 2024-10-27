@@ -5,6 +5,7 @@ def get_int(prompt):
         except ValueError:
             pass
 
+
 def mario(n):
     temp = n - 1
     i = 1
@@ -20,5 +21,6 @@ def main():
         if 1 <= num <= 8:
             mario(num)
             break
+
 
 main()
