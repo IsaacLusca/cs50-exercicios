@@ -11,13 +11,11 @@ def main():
         if n > 0:
             break
 
-    temp = n
-    i = 0
-    while i != temp:
-        print("#" * temp)
-        temp -= 1
+    i = 1
+    while i <= n:
+        print("#" * i)
+        i += 1
 
-    print()
     print()
 
     for l in range(n):
