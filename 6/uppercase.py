@@ -8,3 +8,4 @@ print("After: ", end="") #para evitar que tenha quebras de linhas para cada pala
 
 for c in before:
     print(c.upper(), end="")
+print()
