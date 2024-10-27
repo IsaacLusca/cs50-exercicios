@@ -5,18 +5,21 @@ def get_int(prompt):
         except ValueError:
             pass
 
-def main():
-    while True:
-        n = get_int("Height: ")
-        if n > 8 or n < 1:
-            continue
-        return n
-
+def mario(n):
     temp = n - 1
     i = 1
     while i <= n:
         print(" " * temp + "#" * i)
         i += 1
         temp -= 1
-        
+
+
+def main():
+    while True:
+        num = get_int("Height: ")
+        if num > 8 or num < 1:
+            continue
+        return num
+
+    mario(num)
 main()
