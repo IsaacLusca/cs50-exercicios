@@ -13,7 +13,6 @@ def main():
             break
 
     moeda = 0
-
     while valor >= D:
         moeda += 1;
         valor -= D
