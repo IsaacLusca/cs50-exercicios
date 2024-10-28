@@ -14,74 +14,40 @@ def cont_sentencas(texto):
 
 
 def grade(indice):
-        if (calculo >= 16)
-        {
-            printf("Grade 16+\n");
-        }
-        else if (calculo < 1)
-        {
-            printf("Before Grade 1\n");
-        }
-        else if (calculo >= 1 && calculo < 2)
-        {
-            printf("Grade 1\n");
-        }
-        else if (calculo >= 2 && calculo < 3)
-        {
-            printf("Grade 2\n");
-        }
-        else if (calculo >= 3 && calculo < 4)
-        {
-            printf("Grade 3\n");
-        }
-        else if (calculo >= 4 && calculo < 5)
-        {
-            printf("Grade 4\n");
-        }
-        else if (calculo >= 5 && calculo < 6)
-        {
-            printf("Grade 5\n");
-        }
-        else if (calculo >= 6 && calculo < 7)
-        {
-            printf("Grade 6\n");
-        }
-        else if (calculo >= 7 && calculo < 8)
-        {
-            printf("Grade 7\n");
-        }
-        else if (calculo >= 8 && calculo < 9)
-        {
-            printf("Grade 8\n");
-        }
-        else if (calculo >= 9 && calculo < 10)
-        {
-            printf("Grade 9\n");
-        }
-        else if (calculo >= 10 && calculo < 11)
-        {
-            printf("Grade 10\n");
-        }
-        else if (calculo >= 11 && calculo < 12)
-        {
-            printf("Grade 11\n");
-        }
-        else if (calculo >= 12 && calculo < 13)
-        {
-            printf("Grade 12\n");
-        }
-        else if (calculo >= 13 && calculo < 14)
-        {
-            printf("Grade 13\n");
-        }
-        else if (calculo >= 14 && calculo < 15)
-        {
-            printf("Grade 14\n");
-        }
-        else if (calculo >= 15 && calculo < 16)
-        {
-            printf("Grade 15\n");
-        }
+    if calculo >= 16:
+        print("Grade 16+")
+    elif calculo < 1:
+        print("Before Grade 1")
+    elif 1 <= calculo < 2:
+        print("Grade 1")
+    elif 2 <= calculo < 3:
+        print("Grade 2")
+    elif 3 <= calculo < 4:
+        print("Grade 3")
+    elif 4 <= calculo < 5:
+        print("Grade 4")
+    elif 5 <= calculo < 6:
+        print("Grade 5")
+    elif 6 <= calculo < 7:
+        print("Grade 6")
+    elif 7 <= calculo < 8:
+        print("Grade 7")
+    elif 8 <= calculo < 9:
+        print("Grade 8")
+    elif 9 <= calculo < 10:
+        print("Grade 9")
+    elif 10 <= calculo < 11:
+        print("Grade 10")
+    elif 11 <= calculo < 12:
+        print("Grade 11")
+    elif 12 <= calculo < 13:
+        print("Grade 12")
+    elif 13 <= calculo < 14:
+        print("Grade 13")
+    elif 14 <= calculo < 15:
+        print("Grade 14")
+    elif 15 <= calculo < 16:
+        print("Grade 15")
 
 def main():
 
@@ -97,6 +63,8 @@ def main():
     indice = 0.0588 * L - 0.296 * S - 15.8
 
     indice = round(indice, 2)
+
+    grade(indice)
 
 
 main()
