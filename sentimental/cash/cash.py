@@ -10,7 +10,7 @@ def main():
     while True:
         valor = get_float("Numero: ")
         if valor > 0:
-            continue
+            break
 
     moeda = 0
 
