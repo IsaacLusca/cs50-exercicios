@@ -17,6 +17,17 @@ def main():
 
     texto = get_string("Text: ")
 
+    letras = cont_letras(texto)
+    palavras = cont_palavras(texto)
+    sentencas = cont_sentencas(texto)
+
+    L = (letras / palavras) * 100
+    S = (sentencas / palavras) * 100
+
+    indice = 0.0588 * L - 0.296 * S - 15.8
+
+    indice = round(indice, 2)
+
     
 main()
 
