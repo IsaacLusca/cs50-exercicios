@@ -2,18 +2,18 @@ from cs50 import get_string
 import re
 
 def cont_letras(texto):
-    letras = len(re.findall(r'[a-zA-Z]', texto))
+    return len(re.findall(r'[a-zA-Z]', texto))
 
 
 def cont_palavras(texto):
-    palavras = len(texto.split())
+    return len(texto.split())
 
 
 def cont_sentencas(texto):
-    sentenca = len(re.split(r'[.!?]+', texto)) - 1
+    return len(re.split(r'[.!?]+', texto)) - 1
 
 
-def grade(indice):
+def grade(calculo):
     if calculo >= 16:
         print("Grade 16+")
     elif calculo < 1:
