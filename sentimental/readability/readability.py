@@ -64,7 +64,7 @@ def main():
 
     indice = 0.0588 * L - 0.296 * S - 15.8
 
-    indice = round(indice, 2)
+    indice = round(round(indice, 2))
 
     grade(indice)
 
