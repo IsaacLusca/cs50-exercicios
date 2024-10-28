@@ -1,28 +1,31 @@
 from cs50 import get_float
 
-A = 0.01, B = 0.05, C = 0.10, D = 0.25
+A = 0.01
+B = 0.05
+C = 0.10
+D = 0.25
 
 def main():
     valor = get_float("Numero: ")
     moeda = 0
 
     while valor >= D:
-        moeda++;
+        moeda += 1;
         valor -= D
 
     while valor >= C:
-        moeda++;
+        moeda += 1;
         valor -= C
 
     while valor >= B:
-        moeda++;
+        moeda += 1;
         valor -= B
 
     while valor >= A:
-        moeda++;
+        moeda += 1;
         valor -= A
 
-    print({moeda})
+    print(f"{moeda}")
 
 main()
 
