@@ -68,5 +68,6 @@ def main():
 
     grade(indice)
 
+    prit(letras, palavras, sentencas, indice)
 
 main()
