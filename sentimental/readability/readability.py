@@ -68,6 +68,6 @@ def main():
 
     grade(indice)
 
-    prit(letras, palavras, sentencas, indice)
+    print(letras, palavras, sentencas, indice)
 
 main()
