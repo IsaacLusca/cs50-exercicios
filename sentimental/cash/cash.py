@@ -14,19 +14,19 @@ def main():
 
     moeda = 0
     while valor >= D:
-        moeda += 1;
+        moeda += 1
         valor -= D
 
     while valor >= C:
-        moeda += 1;
+        moeda += 1
         valor -= C
 
     while valor >= B:
-        moeda += 1;
+        moeda += 1
         valor -= B
 
     while valor >= A:
-        moeda += 1;
+        moeda += 1
         valor -= A
 
     print(f"{moeda}")
