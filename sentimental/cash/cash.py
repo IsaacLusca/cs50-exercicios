@@ -9,6 +9,8 @@ def main():
 
     while True:
         valor = get_float("Numero: ")
+        if valor > 0:
+            continue
 
     moeda = 0
 
