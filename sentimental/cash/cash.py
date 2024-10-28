@@ -7,6 +7,9 @@ D = 0.25
 
 def main():
     valor = get_float("Numero: ")
+    if valor < 0:
+        
+
     moeda = 0
 
     while valor >= D:
