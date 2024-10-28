@@ -1,6 +1,6 @@
 from cs50 import get_float
 
-
+A = 1, B = 5, C = 10, D = 25
 
 def main():
     n = get_float("Numero: ")
