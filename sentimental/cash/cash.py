@@ -5,7 +5,24 @@ A = 0.01, B = 0.05, C = 0.10, D = 0.25
 def main():
     valor = get_float("Numero: ")
     moeda = 0
-    n
+
+    while valor >= D:
+        moeda++;
+        valor -= D
+
+    while valor >= C:
+        moeda++;
+        valor -= C
+
+    while valor >= B:
+        moeda++;
+        valor -= B
+
+    while valor >= A:
+        moeda++;
+        valor -= A
+
+    print({moeda})
 
 main()
 
