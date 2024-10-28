@@ -4,13 +4,11 @@ import re
 def main():
     texto = get_string("Text: ")
 
-    letras = len(texto.replace(" ", ""))
-    print(letras)
+    letras = len(re.findall(r'[a-zA-Z]', texto))
     palavras = len(texto.split())
-    print(palavras)
-    sentenca = len(re.split(r'[.!?]+', texto)) -1
-    print(sentenca)
+    sentenca = len(re.split(r'[.!?]+', texto)) - 1
 
+    cal
 main()
 
 
