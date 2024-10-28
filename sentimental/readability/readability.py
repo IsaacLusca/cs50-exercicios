@@ -1,10 +1,15 @@
 from cs50 import get_string
+import re
 
 def main():
     texto = get_string("Text: ")
 
-    n = len(texto.replace(" ", ""))
-    print(n)
+    letras = len(texto.replace(" ", ""))
+    print(letras)
+    palavras = len(texto.split())
+    print(palavras)
+    sentenca = len(re.split(r'[.!?]+', texto)) -1
+    print(sentenca)
 
 main()
 
