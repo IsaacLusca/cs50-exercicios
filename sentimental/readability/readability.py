@@ -3,7 +3,7 @@ from cs50 import get_string
 def main():
     texto = get_string("Text: ")
 
-    n = len(texto)
+    n = len(texto.replace(" ", ""))
     print(n)
 
 main()
