@@ -1,14 +1,23 @@
 from cs50 import get_string
 import re
 
-def main():
-    texto = get_string("Text: ")
-
+def cont_letras(texto):
     letras = len(re.findall(r'[a-zA-Z]', texto))
+
+
+def cont_palavras(texto):
     palavras = len(texto.split())
+
+
+def cont_sentencas(texto):
     sentenca = len(re.split(r'[.!?]+', texto)) - 1
 
-    cal
+
+def main():
+
+    texto = get_string("Text: ")
+
+    
 main()
 
 
