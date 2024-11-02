@@ -37,16 +37,15 @@ def main():
     for row in rows:
         if sys.argv[1] == "large.csv":
             if (int(row["AGATC"]) == count["AGATC"] and
-            int(row["TTTTTTCT"]) == count["TTTTTTCT"] and
-            int(row["AATG"]) == count["AATG"] and
-            int(row["TCTAG"]) == count["TCTAG"] and
-            int(row["GATA"]) == count["GATA"] and
-            int(row["TATC"]) == count["TATC"] and
-            int(row["GAAA"]) == count["GAAA"] and
-            int(row["TCTG"]) == count["TCTG"]):
+                int(row["TTTTTTCT"]) == count["TTTTTTCT"] and
+                int(row["AATG"]) == count["AATG"] and
+                int(row["TCTAG"]) == count["TCTAG"] and
+                int(row["GATA"]) == count["GATA"] and
+                int(row["TATC"]) == count["TATC"] and
+                int(row["GAAA"]) == count["GAAA"] and
+                int(row["TCTG"]) == count["TCTG"]):
                 print(row["name"])
                 return
-
         elif sys.argv[1] == "small.csv":
             if (int(row["AGATC"]) == count["AGATC"] and int(row["AATG"]) == count["AATG"] and int(row["TATC"]) == count["TATC"]):
                 print(row["name"])
