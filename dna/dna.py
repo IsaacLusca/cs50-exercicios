@@ -41,6 +41,7 @@ def main():
         print(count_small)
 
     for row in rows:
+        print(row)
         if sys.argv[1] == "large.csv":
             if (int(row["AGATC"]) == count_big["AGATC"] and
                 int(row["TTTTTTCT"]) == count_big["TTTTTTCT"] and
