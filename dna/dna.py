@@ -35,9 +35,10 @@ def main():
 
     for seq in sequences_big:
         count_big[seq] = longest_match(sequence, seq)
+        print(count_big)
     for seq in sequences_small:
-
         count_small[seq] = longest_match(sequence, seq)
+        print(count_small)
 
     for row in rows:
         if sys.argv[1] == "large.csv":
