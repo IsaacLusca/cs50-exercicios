@@ -31,7 +31,7 @@ def main():
     # for sequence, occurrences in count.items():
     #     print(f"A sequência '{sequence}' aparece {occurrences} vezes no arquivo.")
 
-     for seq in sequences:
+    for seq in sequences:
         count[seq] = longest_match(sequence, seq)
 
     for row in rows:
@@ -40,9 +40,6 @@ def main():
             return
 
     print("Não há correspondência")
-
-
-
 
 
 def longest_match(sequence, subsequence):
