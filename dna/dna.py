@@ -33,11 +33,10 @@ def main():
 
     # TODO: Check database for matching profiles
     for row in rows:
-        if int(row['AGATC']) == count[row] and int(row['AATG']) == count[row] and int(row['TATC']) == count[row]:
+        if int(row['AGATC']) == count['AGATC'] and int(row['AATG']) == count['AATG'] and int(row['TATC']) == count['TATC']:
             print(row['name'])
         else:
-            print("Não há correspondencia")
-            break
+            print("Não há correspondência")
 
 
 # def ler_arquivo(prompt):
