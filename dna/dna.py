@@ -35,10 +35,10 @@ def main():
         count[seq] = longest_match(sequence, seq)
         # print(count)
 
-    print(row)
-    print(count)
+    # print(row)
+    # print(count)
     for row in rows:
-        if all(int(row[seq]) == count[seq] for seq in sequences):
+        if all(seq in row and int(row[seq]) == count[seq] for seq in sequences if seq in row):
             print(row["name"])
             return
 
