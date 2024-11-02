@@ -35,16 +35,22 @@ def main():
         count[seq] = longest_match(sequence, seq)
 
     for row in rows:
-        if (int(row["AGATC"]) == count["AGATC"] and
-        int(row["TTTTTTCT"]) == count["TTTTTTCT"] and
-        int(row["AATG"]) == count["AATG"] and
-        int(row["TCTAG"]) == count["TCTAG"] and
-        int(row["GATA"]) == count["GATA"] and
-        int(row["TATC"]) == count["TATC"] and
-        int(row["GAAA"]) == count["GAAA"] and
-        int(row["TCTG"]) == count["TCTG"]):
-            print(row["name"])
-            return
+        if sys.argv[1] == "large.csv":
+            if (int(row["AGATC"]) == count["AGATC"] and
+            int(row["TTTTTTCT"]) == count["TTTTTTCT"] and
+            int(row["AATG"]) == count["AATG"] and
+            int(row["TCTAG"]) == count["TCTAG"] and
+            int(row["GATA"]) == count["GATA"] and
+            int(row["TATC"]) == count["TATC"] and
+            int(row["GAAA"]) == count["GAAA"] and
+            int(row["TCTG"]) == count["TCTG"]):
+                print(row["name"])
+                return
+        if sys.argv[1] == "small.csv":
+            if (int(row["AGATC"]) == count["AGATC"] and int(row["AATG"]) == count["AATG"] and int(row["TATC"]) == count["TATC"]):
+                print(row["name"])
+                return
+
 
     print("No match\n")
 
