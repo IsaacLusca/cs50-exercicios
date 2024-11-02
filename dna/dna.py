@@ -18,7 +18,10 @@ def main():
 
 
 def ler_arquivo(prompt):
-    
+    if os.path.isfile(prompt):
+        try:
+            with open
+
 
 
 def longest_match(sequence, subsequence):
