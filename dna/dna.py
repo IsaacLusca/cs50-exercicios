@@ -25,26 +25,26 @@ def main():
 
     sequences = ["AGATC", "AATG", "TATC"]
     count = {}
-    for i in sequences:
-        count[i] = sequence.count(i)
+    # for i in sequences:
+    #     count[i] = sequence.count(i)
 
-    for sequence, occurrences in count.items():
-        print(f"A sequência '{sequence}' aparece {occurrences} vezes no arquivo.")
+    # for sequence, occurrences in count.items():
+    #     print(f"A sequência '{sequence}' aparece {occurrences} vezes no arquivo.")
 
     # TODO: Check database for matching profiles
+     for seq in sequences:
+        count[seq] = longest_match(sequence, seq)
+
     for row in rows:
-        if (int(row["AGATC"]) == count["AGATC"] and int(row["AATG"]) == count["AATG"] and int(row["TATC"]) == count["TATC"]
-        ):
+        if (int(row["AGATC"]) == count["AGATC"] and
+            int(row["AATG"]) == count["AATG"] and
+            int(row["TATC"]) == count["TATC"]):
             print(row["name"])
-        else:
-            print("Não há correspondência")
-            break
+            return
+
+    print("Não há correspondência")
 
 
-# def ler_arquivo(prompt):
-#     if os.path.isfile(prompt):
-#         try:
-#             with open
 
 
 
