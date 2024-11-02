@@ -33,10 +33,16 @@ def main():
 
     for seq in sequences:
         count[seq] = longest_match(sequence, seq)
-        print(count)
 
     for row in rows:
-        if (int(row["AGATC"]) == count["AGATC"] and int(row["AATG"]) == count["AATG"] and int(row["TATC"]) == count["TATC"]):
+        if (int(row["AGATC"]) == count["AGATC"] and
+        int(row["TTTTTTCT"]) == count["TTTTTTCT"] and
+        int(row["AATG"]) == count["AATG"] and
+        int(row["TCTAG"]) == count["TCTAG"] and
+        int(row["GATA"]) == count["GATA"] and
+        int(row["TATC"]) == count["TATC"] and
+        int(row["GAAA"]) == count["GAAA"] and
+        int(row["TCTG"]) == count["TCTG"]):
             print(row["name"])
             return
 
