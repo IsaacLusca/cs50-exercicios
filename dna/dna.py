@@ -23,7 +23,7 @@ def main():
         # print(sequence)
     # TODO: Find longest match of each STR in DNA sequence
 
-    sequences = ["AGATC", "AATG", "TATC"]
+    sequences = ['AGATC', 'TTTTTTCT', 'AATG', 'TCTAG', 'GATA', 'TATC' ,'GAAA' ,'TCTG']
     count = {}
     # for i in sequences:
     #     count[i] = sequence.count(i)
