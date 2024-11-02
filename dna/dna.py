@@ -40,6 +40,7 @@ def main():
             return
         else:
             print("Não há correspondência")
+            break
 
 
 
