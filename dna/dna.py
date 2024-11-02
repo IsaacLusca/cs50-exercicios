@@ -32,7 +32,7 @@ def main():
         print(f"A sequência '{sequence}' aparece {occurrences} vezes no arquivo.")
 
     # TODO: Check database for matching profiles
-
+    for 
 
 # def ler_arquivo(prompt):
 #     if os.path.isfile(prompt):
