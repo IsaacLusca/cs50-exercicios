@@ -46,7 +46,8 @@ def main():
             int(row["TCTG"]) == count["TCTG"]):
                 print(row["name"])
                 return
-        if sys.argv[1] == "small.csv":
+
+        elif sys.argv[1] == "small.csv":
             if (int(row["AGATC"]) == count["AGATC"] and int(row["AATG"]) == count["AATG"] and int(row["TATC"]) == count["TATC"]):
                 print(row["name"])
                 return
