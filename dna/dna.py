@@ -26,7 +26,9 @@ def main():
     for row in rows:
         name = row['name']
         agatc_count = int(row['AGATC'])
-        sequence_str = 'AGATC' * agatc_count
+        aatg_count = int(row['AATG'])
+        tatc_count = int(row['TATC'])
+        sequence_str = 'AGATC' * agatc_count + 'AATG' * aatg_count + 'TATC' * tatc_count
         sequencia.append((name, sequence_str))
 
     for item in sequencia:
