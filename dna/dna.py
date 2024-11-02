@@ -17,7 +17,7 @@ def main():
         for row in reader:
             rows.append(row)
 
-    print(rows[0])
+    print(rows)
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2]) as txt:
         sequence = txt.read().strip()
