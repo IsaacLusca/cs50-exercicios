@@ -42,7 +42,7 @@ def main():
     for row in rows:
         if sys.argv[1] == "large.csv":
             if (int(row["AGATC"]) == count_big["AGATC"] and
-                int(row["TTTTTTCT"]) == count["TTTTTTCT"] and
+                int(row["TTTTTTCT"]) == count_big["TTTTTTCT"] and
                 int(row["AATG"]) == count_big["AATG"] and
                 int(row["TCTAG"]) == count_big["TCTAG"] and
                 int(row["GATA"]) == count_big["GATA"] and
