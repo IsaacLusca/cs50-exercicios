@@ -32,7 +32,13 @@ def main():
         print(f"A sequência '{sequence}' aparece {occurrences} vezes no arquivo.")
 
     # TODO: Check database for matching profiles
-    for 
+    for row in rows:
+        if int(row['AGATC']) == count[row] and int(row['AATG']) == count[row] and int(row['TATC']) == count[row]:
+            print(row['name'])
+        else:
+            print("Não há correspondencia")
+            break
+
 
 # def ler_arquivo(prompt):
 #     if os.path.isfile(prompt):
