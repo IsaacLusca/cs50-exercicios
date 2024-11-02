@@ -33,6 +33,7 @@ def main():
 
     for seq in sequences:
         count[seq] = longest_match(sequence, seq)
+        print(count)
 
     for row in rows:
         if (int(row["AGATC"]) == count["AGATC"] and int(row["AATG"]) == count["AATG"] and int(row["TATC"]) == count["TATC"]):
