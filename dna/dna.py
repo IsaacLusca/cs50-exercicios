@@ -24,8 +24,13 @@ def main():
 
     sequencia = []
     for row in rows:
-        print(row['AGATC'])
+        name = row['name']
+        agatc_count = int(row['AGATC'])
+        sequence_str = 'AGATC' * agatc_count
+        sequencia.append((name, sequence_str))
 
+    for item in sequencia:
+        print(item)
 
     # TODO: Check database for matching profiles
 
