@@ -14,8 +14,8 @@ def main():
         print(reader.fieldnames)
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2]) as txt:
-        leia = txt.DictReader(file)
-        print(leia.fieldnames)
+        sequence = txt.read().strip()
+        print(sequence)
     # TODO: Find longest match of each STR in DNA sequence
 
     # TODO: Check database for matching profiles
