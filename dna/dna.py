@@ -39,7 +39,7 @@ def main():
             print(row["name"])
             return
 
-    print("Não há correspondência")
+    print("No match\n")
 
 
 def longest_match(sequence, subsequence):
