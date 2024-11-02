@@ -36,7 +36,7 @@ def main():
         # print(count)
 
     for row in rows:
-        if (int(row["AGATC"]) == count["AGATC"] and int(row["AATG"]) == count["AATG"] and int(row["TATC"]) == count["TATC"]):
+        if all(int(row[seq]) == count[seq] for seq in sequences):
             print(row["name"])
             return
 
