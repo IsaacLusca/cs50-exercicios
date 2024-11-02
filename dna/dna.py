@@ -21,8 +21,8 @@ def main():
         sequence = txt.read().strip()
         print(sequence)
     # TODO: Find longest match of each STR in DNA sequence
-    for rows in reader:
-        print(rows)
+    for i in rows:
+        print(i)
 
 
     # TODO: Check database for matching profiles
