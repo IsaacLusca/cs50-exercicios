@@ -17,16 +17,19 @@ def main():
         for row in reader:
             rows.append(row)
     # TODO: Read DNA sequence file into a variable
+
     with open(sys.argv[2]) as txt:
         sequence = txt.read().strip()
         # print(sequence)
     # TODO: Find longest match of each STR in DNA sequence
 
-    count_AGATC = 0
-    count_AATG = 0
-    count_TATC = 0
-    for ro
+    sequences = ["AGATC", "AATG", "TATC"]
+    count = {}
+    for i in sequence:
+        count[i] = sequence.count(i)
 
+    for sequence, occurrences in count.items():
+        print(f"A sequência '{sequence}' aparece {occurrences} vezes no arquivo.")
 
     # TODO: Check database for matching profiles
 
