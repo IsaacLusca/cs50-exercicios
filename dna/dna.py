@@ -22,9 +22,9 @@ def main():
         print(sequence)
     # TODO: Find longest match of each STR in DNA sequence
 
-    # sequencia = []
-    # for row in rows:
-    #     print(row['name', ])
+    sequencia = []
+    for row in rows:
+        print(row['name''AGATC'])
 
 
     # TODO: Check database for matching profiles
