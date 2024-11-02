@@ -31,12 +31,18 @@ def main():
         sequence_str = 'AGATC' * agatc_count + 'AATG' * aatg_count + 'TATC' * tatc_count
         sequencia.append((name, sequence_str))
 
-    for item in sequencia:
-        print(item)
+    # for item in sequencia:
+    #     print(item)
 
     # TODO: Check database for matching profiles
-
-    return
+    for name, expected_sequence in sequencia:
+        if expected_sequence == sequence:
+            print(name)
+            break
+        else:
+            # Se nenhuma correspondência for encontrada
+            print("Nenhuma correspondência encontrada.")
+            return
 
 
 # def ler_arquivo(prompt):
