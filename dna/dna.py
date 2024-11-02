@@ -22,27 +22,9 @@ def main():
         # print(sequence)
     # TODO: Find longest match of each STR in DNA sequence
 
-    sequencia = []
-    for row in rows:
-        name = row['name']
-        agatc_count = int(row['AGATC'])
-        aatg_count = int(row['AATG'])
-        tatc_count = int(row['TATC'])
-        sequence_str = 'AGATC' * agatc_count + 'AATG' * aatg_count + 'TATC' * tatc_count
-        sequencia.append((name, sequence_str))
-
-    # for item in sequencia:
-    #     print(item)
+    
 
     # TODO: Check database for matching profiles
-    for name, expected_sequence in sequencia:
-        if expected_sequence == sequence:
-            print(name)
-            break
-        else:
-            # Se nenhuma correspondência for encontrada
-            print("Nenhuma correspondência encontrada.")
-            return
 
 
 # def ler_arquivo(prompt):
