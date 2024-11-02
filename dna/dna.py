@@ -25,7 +25,7 @@ def main():
 
     sequences = ["AGATC", "AATG", "TATC"]
     count = {}
-    for i in sequence:
+    for i in sequences:
         count[i] = sequence.count(i)
 
     for sequence, occurrences in count.items():
