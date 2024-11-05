@@ -91,4 +91,7 @@ Especificar que uma coluna não pode ser NULL: NOT NULL;
 UNIQUE pode evitar que sejam inseridos em tabelas valores repetidos.
 
 - PRIMARY KEY:
-- FOREIGN KEY: 
+- FOREIGN KEY:
+
+Chave primaria é quando há uma tabela que precisa criar um id para os elementos
+Chave estrangeira é quando em uma tabela há referencia do ID de outra tabela.
