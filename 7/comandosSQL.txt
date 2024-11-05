@@ -99,3 +99,6 @@ Chave estrangeira é quando em uma tabela há referencia do ID de outra tabela.
         show_id INTEGER NOT NULL,
         FOREIGN KEY(show_ID) REFERENCES shows(id)
 
+
+CONSULTAS ALINHADAS COM SQL:
+SELECT * FROM shows WHERE id IN (SELECT show_id FROM ratings WHERE rating >= 6.0)
