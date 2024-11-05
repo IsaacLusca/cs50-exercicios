@@ -109,5 +109,5 @@ COMBINAR TABELAS COM SQL COM JOIN, O FAMOSO
 É dado algo semelhante a criar uma tabela temporária que é a junção total
 ou elemento especificos de tabelas diferentes.
 
-Ex: SELECT * FROM shows JOIN ratings 
+Ex: SELECT * FROM shows JOIN ratings ON shows.id = ratings.show_id WHERE rating >= 6.0 LIMIT 10;
 
