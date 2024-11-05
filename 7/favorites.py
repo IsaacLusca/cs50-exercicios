@@ -60,16 +60,16 @@
 #   print(f"{favorite}: {count}")
 
 
-import csv
-from collections import Counter
+# import csv
+# from collections import Counter
 
-with open("favorites.csv", "r") as file:
-  reader = csv.DictReader(file)
-  counts = Counter()
+# with open("favorites.csv", "r") as file:
+#   reader = csv.DictReader(file)
+#   counts = Counter()
 
-for row in reader:
-  favorite = row["problem"]
-  counts[favorite] += 1
+# for row in reader:
+#   favorite = row["problem"]
+#   counts[favorite] += 1
 
-favorite = input("favorite: ")
-print(f"{favorite}: {counts[favorite]}")
+# favorite = input("favorite: ")
+# print(f"{favorite}: {counts[favorite]}")
