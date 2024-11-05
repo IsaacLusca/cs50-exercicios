@@ -1,0 +1,48 @@
+-- Banco de dados trabalha com crud:
+-- CREATE - INSERT
+-- READ - SELECT
+-- UPDATE
+-- DELETE - DROP
+
+-- COMANDO PARA EXECUTAR
+-- sqlite3 favorites.db
+
+-- carregando o arquivo csv
+
+-- .move csv
+
+-- IMPORTAR E CARREGAR EM UMA TABLE CHAMADA FAVORITES
+-- .import favorites.csv favorites
+-- .quit
+
+-- VER O ESQUEMA DO BANCO:
+-- .schema
+
+-- SELECIONAR COLUNAS ESPECIFICAS TEM A SEGUNTE SINTAXE:
+-- SELECT columns FROM table;
+
+-- SELECIONAR TUDO:
+-- SELECT * FROM favorites;
+
+-- SELECIONAR UMA COLUNA COM UM LIMITE DE DADOS:
+-- SELECT language FROM favorites LIMIT 10;
+
+-- HÁ FUNÇÕES PRÓPRIAS DO SQL COMO AVG, COUNT, DISTINCT, LOWER, MAX, MIN, UPPER, ETC...
+
+-- CONTAR TODOS OS ELEM:
+-- SELECT COUNT(*) FROM favorites;
+
+-- SELECIONAR CADA TIPO DE DADO QUE HÁ DIFERENTE, NO CASO APENAS C, SCRATCH E PYTHON:
+-- SELECT DISTINCT(language) FROM favorites;
+
+-- TAMBÉM PODE AGRUPAR FUNÇÕES COMO:
+-- SELECT COUNT(DISTINCT(language)) FROM favorites;
+
+
+
+
+
+-- ALGUMAS FUNÇÕES QUE NOS DÃO UM CONTROLE MAIS ESPECÍFICO SÃO
+WHERE, LIKE, ORDER BY, LIMIT, GROUP BY...
+
+S
