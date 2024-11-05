@@ -85,4 +85,5 @@ NUMERIC;
 REAL;
 TEXT
 
+Especificar que uma coluna não pode ser NULL: NOT NULL;
 
