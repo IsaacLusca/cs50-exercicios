@@ -111,5 +111,8 @@ ou elemento especificos de tabelas diferentes.
 
 Ex: SELECT title, rating FROM shows JOIN ratings ON shows.id = ratings.show_id WHERE rating >= 6.0 LIMIT 10;
 
+----RELAÇAO DE 1 PARA MUITOS
+- No caso do IMDB, um filme pode possuir mais de 1 genero, 1 filme para muitos gêneros.
+
 
 
