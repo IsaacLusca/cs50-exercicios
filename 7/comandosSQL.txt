@@ -87,3 +87,4 @@ TEXT
 
 Especificar que uma coluna não pode ser NULL: NOT NULL;
 
+UNIQUE pode evitar
