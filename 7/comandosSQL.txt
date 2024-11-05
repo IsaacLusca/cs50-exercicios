@@ -71,3 +71,5 @@ Sintaxe: INSERT INTO table (coluna, ...) VALUES(value, ...);
 PARA DELETAR
 DELETE FROM table WHERE condicion;
     ex: DELETE FROM favorites WHERE Timestamp IS NULL;
+
+
