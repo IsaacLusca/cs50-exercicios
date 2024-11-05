@@ -77,4 +77,10 @@ PARA ATUALIZAR:
 UPDATE table SET column = value WHERE condition;
     ex: UPDATE favorites SET problem = 'Nenhum' WHERE problem IS 'Hello, World';
 
-    
+
+PRINCIPAIS TIPOS DE DADOS:
+BLOB - BINARIOS;
+INTEGER;
+NUMERIC;
+REAL;
+TEXT
