@@ -1,3 +1,4 @@
+SQL É RELACIONAL, OU SEJA, HÁ TABELAS QUE RELACIONAM ENTRE SI
 -- Banco de dados trabalha com crud:
 -- CREATE - INSERT
 -- READ - SELECT
@@ -87,4 +88,7 @@ TEXT
 
 Especificar que uma coluna não pode ser NULL: NOT NULL;
 
-UNIQUE pode evitar
+UNIQUE pode evitar que sejam inseridos em tabelas valores repetidos.
+
+- PRIMARY KEY:
+- FOREIGN KEY: 
