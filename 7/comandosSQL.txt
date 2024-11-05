@@ -106,5 +106,5 @@ SELECT * FROM shows WHERE id IN
 
 
 COMBINAR TABELAS COM SQL COM JOIN, O FAMOSO
+É dado algo semelhante a um ID
 
- 
