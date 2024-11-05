@@ -106,5 +106,8 @@ SELECT * FROM shows WHERE id IN
 
 
 COMBINAR TABELAS COM SQL COM JOIN, O FAMOSO
-É dado algo semelhante a um ID
+É dado algo semelhante a criar uma tabela temporária que é a junção total
+ou elemento especificos de tabelas diferentes.
+
+Ex: SELECT * FROM shows JOIN ratings 
 
