@@ -50,5 +50,12 @@ SELECT COUNT(*) FROM favorites WHERE language = 'C';
 -- CONSULTAR BASEADO NOS QUE PREFERIRAM C COMO LINGUAGEM E - AND PROBLEM FAVORITO HELLO, WORLD
 SELECT COUNT(*) FROM favorites WHERE language = 'C' AND problem = 'Hello, World';
 
--- AGRUPAR COM SQL POR UMA ORDEM ESPECIFICA:
+-- AGRUPAR COM SQL:
 SELECT language, COUNT(language ou *) FROM favorites GROUP BY language;
+
+-- AGRUPAR E ORDENAR COM BASE NOS COUNT
+SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*);
+use DESC ou ASC para alterar a ordem, crescente ou decrescente;
+
+
+
