@@ -73,3 +73,6 @@ DELETE FROM table WHERE condicion;
     ex: DELETE FROM favorites WHERE Timestamp IS NULL;
 
 
+PARA ATUALIZAR:
+UPDATE table SET column = value WHERE condition;
+    ex: 
