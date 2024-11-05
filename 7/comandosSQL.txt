@@ -95,5 +95,7 @@ Chave primaria é quando há uma tabela que precisa criar um id para os elemento
 
 - FOREIGN KEY:
 Chave estrangeira é quando em uma tabela há referencia do ID de outra tabela.
-
+    Como foi feito no exemplo:
+        show_id INTEGER NOT NULL,
+        FOREIGN KEY(show_ID) REFERENCES shows(id)
 
