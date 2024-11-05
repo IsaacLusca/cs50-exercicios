@@ -75,4 +75,6 @@ DELETE FROM table WHERE condicion;
 
 PARA ATUALIZAR:
 UPDATE table SET column = value WHERE condition;
-    ex: 
+    ex: UPDATE favorites SET problem = 'Nenhum' WHERE problem IS 'Hello, World';
+
+    
