@@ -58,3 +58,13 @@ SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*);
 use DESC ou ASC para alterar a ordem, crescente ou decrescente;
     se quiser renomear alguma operação faça COUNT(*) AS -nome-
         ex: SELECT language, COUNT(*) AS n FROM favorites GROUP BY language ORDER BY n;
+
+
+
+
+
+
+COMANDOS PARA INSERÇAO DE DADOS:
+Sintaxe: INSERT INTO table (coluna, ...) VALUES(value, ...);
+
+
