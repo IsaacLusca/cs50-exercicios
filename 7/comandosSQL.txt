@@ -56,6 +56,5 @@ SELECT language, COUNT(language ou *) FROM favorites GROUP BY language;
 -- AGRUPAR E ORDENAR COM BASE NOS COUNT
 SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*);
 use DESC ou ASC para alterar a ordem, crescente ou decrescente;
-
-
-
+    se quiser renomear alguma operação faça COUNT(*) AS -nome-
+        ex: SELECT language, COUNT(*) AS n FROM favorites GROUP BY language ORDER BY n;
