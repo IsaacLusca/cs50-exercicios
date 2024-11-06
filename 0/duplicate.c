@@ -3,7 +3,8 @@
 
 bool containsDuplicate(int* nums, int numsSize) {
     int temp = nums[0];
-    for (int i = 1; i < numsSize; i++)
+    int i = 0;
+    for (i = 1; i < numsSize; i++)
     {
         if (temp == nums[i])
         {
