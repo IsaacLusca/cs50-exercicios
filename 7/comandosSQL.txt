@@ -178,3 +178,11 @@ CREATE TABLE authored (
     FOREIGN KEY(book_id) REFERENCES books(id)
 );
 
+ADICIONANDO VALORES:
+
+INSERT INTO books (title, published, rating)
+VALUES('Flights', '2017-05-17', 4);
+
+DELETANDO:
+
+DELETE FROM books WHERE title = 'Flights';
