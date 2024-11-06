@@ -12,3 +12,10 @@ rows = db.execute("SELECT COUNT(*) AS n FROM favorites WHERE problem = ?", favor
 row = rows[0]
 
 print(row["n"])
+
+
+# Como pode ter sido implementado uma curtida no instagram>
+
+# rows = db.execute("SELECT likes FROM posts WHERE id = ?", id);
+# likes = rows[0]["likes"]
+# db.execute("UPDATE posts SET likes = ? WHERE id = ?", likes + 1, id);
