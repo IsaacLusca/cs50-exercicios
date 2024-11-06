@@ -152,3 +152,10 @@ AND name = 'Steve Carell';
 CRIANDO tabela
 sqlite3 reads.db
 
+CREATE TABLE books (
+    id INTEGER,
+    title TEXT,
+    publis NUMERIC,
+    rating INTEGER,
+    PRIMARY KEY(id)
+);
