@@ -128,3 +128,9 @@ Para certas consultas tem uma consulta em cadeia. EX.:
 Agilizar consultas: INDEXES
     Uteis para agilizar consultas que são recorrentes:
     ex.: CREATE INDEX name ON table (column, ...);
+
+
+SELECT title FROM shows, stars, people
+WHERE shows.id = stars.show_id
+AND people.id = stars.person_id
+AND name = 'Steve Carell';
