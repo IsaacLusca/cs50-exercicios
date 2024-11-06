@@ -1,1 +1,3 @@
-O spotify pode utilizar esses dados de diversas formas, como por exemplo uma lista de cantores que possuem uma maior quantidade de músicas "danceability", além de saber quais as 
+O spotify pode utilizar esses dados de diversas formas, como por exemplo uma lista de cantores que possuem uma maior quantidade de músicas "danceability",
+além de saber quais as preferências dos ouvintes, se gostam mais de músicas "energy".
+Acredito que pode até ser um indicador para os artistas na hora de pensar em ritmos que seriam interessantes de acordo com a preferência da maioria. Algo como uma "análise do mercado" de música.
