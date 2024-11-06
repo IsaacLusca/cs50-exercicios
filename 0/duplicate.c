@@ -5,28 +5,23 @@
 bool containsDuplicate(int* nums, int numsSize) {
 
     for (int i = 0; i < numsSize; i++){
-        int prim = nums[i];
-        for(int j = 0; j < numsSize; j++){
+        for (int j = 0; j < numsSize; j++){
             if (i == j){
                 continue;
             }
             else{
-                if (nums[j] == prim)
+                if (nums[i] == nums[j])
                 {
                     return true;
                 }
-                else{
-                    prim = nums[j];
-                }
             }
-            j = 0;
         }
     }
     return false;
 }
 int main()
 {
-    int nums[] = {1,2,3,4};
+    int nums[] = {1,1,3,4};
     int n = 4;
 
     bool check = containsDuplicate(nums, 4);
