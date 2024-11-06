@@ -9,7 +9,6 @@ bool containsDuplicate(int* nums, int numsSize) {
         for(int j = 0; j < numsSize; j++){
             if (i == j){
                 continue;
-                j++;
             }
             else{
                 if (nums[j] == prim)
