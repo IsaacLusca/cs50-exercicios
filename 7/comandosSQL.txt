@@ -115,3 +115,7 @@ Ex: SELECT title, rating FROM shows JOIN ratings ON shows.id = ratings.show_id W
 
 
 
+
+MUITO PARA MUITOS
+
+
