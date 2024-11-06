@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 bool containsDuplicate(int* nums, int numsSize) {
     int temp = nums[0];
@@ -17,10 +18,10 @@ bool containsDuplicate(int* nums, int numsSize) {
 
 int main()
 {
-    int nums[] = [1, 2, 3, 1]
+    int nums[] = {1, 2, 3, 1};
     int n = 4;
 
-    bool check = containsDUplicate(nums, 4);
+    bool check = containsDuplicate(nums, 4);
     if (check == true)
     {
         printf("True\n");
