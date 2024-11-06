@@ -3,19 +3,25 @@
 #include <stdbool.h>
 
 bool containsDuplicate(int* nums, int numsSize) {
-    int temp = nums[0];
-    int i = 0;
-    for (i = 1; i < numsSize; i++)
-    {
-        if (temp == nums[i])
-        {
-            return true;
+
+    for (int i = 0; i < numsSize; i++){
+        int prim = nums[i];
+        for(int j = i + 1; j < numsSize; j++){
+            if (nums[i] == nums[j]){
+                continue;
+            }
+            if (nums[j] == prim)
+            {
+                return true;
+            }
+            else{
+                prim = nums[j];
+            }
+
         }
-        temp = nums[i];
     }
     return false;
 }
-
 int main()
 {
     int nums[] = {1, 2, 3, 1};
