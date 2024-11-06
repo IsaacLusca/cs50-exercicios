@@ -101,8 +101,7 @@ Chave estrangeira é quando em uma tabela há referencia do ID de outra tabela.
 
 
 CONSULTAS ALINHADAS COM SQL:
-SELECT * FROM shows WHERE id IN
-(SELECT show_id FROM ratings WHERE rating >= 6.0)
+SELECT * FROM shows WHERE id IN (SELECT show_id FROM ratings WHERE rating >= 6.0)
 
 
 COMBINAR TABELAS COM SQL COM JOIN, O FAMOSO
