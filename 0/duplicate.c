@@ -6,18 +6,20 @@ bool containsDuplicate(int* nums, int numsSize) {
 
     for (int i = 0; i < numsSize; i++){
         int prim = nums[i];
-        for(int j = i + 1; j < numsSize; j++){
+        for(int j = 0; j < numsSize; j++){
             if (i == j){
                 continue;
             }
-            if (nums[j] == prim)
-            {
-                return true;
-            }
             else{
-                prim = nums[j];
+                if (nums[j] == prim)
+                {
+                    return true;
+                }
+                else{
+                    prim = nums[j];
+                }
             }
-
+            j = 0;
         }
     }
     return false;
