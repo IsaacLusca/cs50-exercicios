@@ -157,5 +157,8 @@ CREATE TABLE books (
     title TEXT,
     publis NUMERIC,
     rating INTEGER,
+    -- na chave primaria deve passar a coluna que representa
     PRIMARY KEY(id)
 );
+
+.tables mostra quantas tabelas tem
