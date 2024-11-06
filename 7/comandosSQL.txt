@@ -162,3 +162,12 @@ CREATE TABLE books (
 );
 
 .tables mostra quantas tabelas tem
+
+CREATE TABLE authors (
+    id INTEGER,
+    author TEXT,
+    author_birth INTEGER,
+    PRIMARY KEY(id)
+);
+
+
