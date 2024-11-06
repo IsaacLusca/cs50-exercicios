@@ -1,1 +1,1 @@
-O spotify pode utilizar esses dados de diversas formas, como por exemplo uma lista
+O spotify pode utilizar esses dados de diversas formas, como por exemplo uma lista de cantores que possuem uma maior quantidade de músicas "danceability", além de saber quais as 
