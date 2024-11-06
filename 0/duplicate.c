@@ -7,7 +7,7 @@ bool containsDuplicate(int* nums, int numsSize) {
     for (int i = 0; i < numsSize; i++){
         int prim = nums[i];
         for(int j = i + 1; j < numsSize; j++){
-            if (nums[i] == nums[j]){
+            if (i == j){
                 continue;
             }
             if (nums[j] == prim)
