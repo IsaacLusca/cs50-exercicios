@@ -11,7 +11,7 @@ rows = db.execute("SELECT COUNT(*) AS n FROM favorites WHERE problem = ?", favor
 
 row = rows[0]
 
-print(row["n"])
+print(rows[0])
 
 
 # Como pode ter sido implementado uma curtida no instagram>
