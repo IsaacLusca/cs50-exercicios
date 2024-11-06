@@ -145,3 +145,10 @@ SELECT title FROM shows, stars, people
 WHERE shows.id = stars.show_id
 AND people.id = stars.person_id
 AND name = 'Steve Carell';
+
+
+
+
+CRIANDO tabela
+sqlite3 reads.db
+
