@@ -2,7 +2,7 @@
 from cs50 import SQL
 
 # abrindo arquivos db:
-db = SQL("sqlite///favorites.db")
+db = SQL("sqlite:///favorites.db")
 
 favorite = input("Favorite: ")
 
