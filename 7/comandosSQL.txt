@@ -155,7 +155,7 @@ sqlite3 reads.db
 CREATE TABLE books (
     id INTEGER,
     title TEXT,
-    publis NUMERIC,
+    published NUMERIC,
     rating INTEGER,
     -- na chave primaria deve passar a coluna que representa
     PRIMARY KEY(id)
