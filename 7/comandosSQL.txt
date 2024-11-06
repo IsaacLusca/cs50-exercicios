@@ -122,3 +122,9 @@ Para certas consultas tem uma consulta em cadeia. EX.:
     SELECT name FROM people WHERE id IN
      (SELECT person_ID FROM stars WHERE show_id =
       (SELECT id FROM shows WHERE title = 'The Office' AND year = 2005));
+
+
+
+Agilizar consultas: INDEXES
+    Uteis para agilizar consultas que são recorrentes:
+    ex.: CREATE INDEX name ON table (column, ...);
