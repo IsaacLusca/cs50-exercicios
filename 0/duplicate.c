@@ -16,7 +16,7 @@ bool containsDuplicate(int* nums, int numsSize) {
 
 int main()
 {
-    int nums = [1, 2, 3, 1]
+    int nums[] = [1, 2, 3, 1]
     int n = 4;
 
     bool check = containsDUplicate(nums, 4);
