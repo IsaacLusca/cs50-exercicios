@@ -1,2 +1,1 @@
-SELECT movies.title from movies
-JOIN 
+SELECT movies.title from movies WHERE name
