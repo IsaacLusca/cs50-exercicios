@@ -18,5 +18,5 @@ WHERE year = 2023
 -- checando testemunhas
 
 SELECT *
-FROM interviews
-WHERE location = 'Humphrey Street bakery';
+FROM atm_transactions
+WHERE atm_location = 'Humphrey bakery';
