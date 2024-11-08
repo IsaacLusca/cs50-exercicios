@@ -15,8 +15,6 @@ WHERE year = 2023
 -- | Littering took place at 16:36. No known witnesses.                                                                                                                                                                       |
 -- +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-SELECT transcript
+SELECT *
 FROM interviews
-WHERE year = 2023
-    AND month = 7
-    AND day = 28;
+WHERE transcript = '';
