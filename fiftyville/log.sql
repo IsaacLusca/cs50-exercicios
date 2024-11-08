@@ -37,6 +37,7 @@ WHERE year = 2023
 -- Ladrão quer fugir de avião.
 
 
-SELECT description
-FROM crime_scene_reports
-WHERE street = 'Leggett';
+SELECT *
+FROM people
+WHERE name = 'Ruth' AND name = 'Eugene' AND name = 'Raymond';
+
