@@ -39,5 +39,12 @@ WHERE year = 2023
 
 SELECT *
 FROM people
-WHERE name = 'Ruth' AND name = 'Eugene' AND name = 'Raymond';
+WHERE name = 'Ruth' OR name = 'Eugene' OR name = 'Raymond';
 
+-- +--------+---------+----------------+-----------------+---------------+
+-- |   id   |  name   |  phone_number  | passport_number | license_plate |
+-- +--------+---------+----------------+-----------------+---------------+
+-- | 280744 | Eugene  | (666) 555-5774 | 9584465633      | 47592FJ       |
+-- | 430845 | Ruth    | (772) 555-5770 | NULL            | HZB4129       |
+-- | 937274 | Raymond | (125) 555-8030 | NULL            | Y18DLY3       |
+-- +--------+---------+----------------+-----------------+---------------+
