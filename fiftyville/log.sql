@@ -19,4 +19,4 @@ WHERE year = 2023
 
 SELECT *
 FROM atm_transactions
-WHERE atm_location = 'Humphrey bakery' ORDER BY;
+WHERE atm_location LIKE '%Bakery%';
