@@ -29,3 +29,9 @@ WHERE year = 2023
 -- | 162 | Eugene  | 2023 | 7     | 28  | Não sei o nome do ladrão, mas era alguém que eu reconheci. Mais cedo nesta manhã, antes de eu chegar à padaria da Emma, ​​eu estava passando pelo caixa eletrônico na Rua Leggett e vi o ladrão lá retirando algum dinheiro.                                                                                                 |
 -- | 163 | Raymond | 2023 | 7     | 28  | Quando o ladrão estava saindo da padaria, ele ligou para alguém e conversou por menos de um minuto. Na ligação, ouvi o ladrão dizer que planejava pegar o voo mais cedo para fora de Fiftyville amanhã. O ladrão então pediu à pessoa do outro lado da linha para comprar a passagem de voo. |
 -- | 191 | Lily    | 2023 | 7     | 28  | Nosso tribunal vizinho tem um galo muito irritante que canta alto às 6h todos os dias. Meus filhos Robert e Patrick levaram o galo para uma cidade muito, muito longe, para que ele nunca mais nos incomode. Meus filhos chegaram com sucesso a Paris.
+
+
+-- Ruth, Eugene, raymond
+-- Imagens de segurança do dia é importante
+-- Nome de uma rua: Rua Leggett
+-- Ladrão quer fugir de avião.
