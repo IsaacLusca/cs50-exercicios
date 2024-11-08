@@ -35,3 +35,8 @@ WHERE year = 2023
 -- Imagens de segurança do dia é importante
 -- Nome de uma rua: Rua Leggett
 -- Ladrão quer fugir de avião.
+
+
+SELECT description
+FROM crime_scene_reports
+WHERE street = 'Leggett';
