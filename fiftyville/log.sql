@@ -327,3 +327,17 @@ SELECT people.name
         AND day = 28
         AND phone_calls.duration <= 60
         ORDER BY phone_calls.duration
+    JOIN passengers
+        ON people.passport_number = passengers.passport_number
+    JOIN flights
+        ON passengers.flight_id = flights.id
+    WHERE flights.year = 2023
+        AND flights.month = 7
+        AND flights.day = 29
+        AND flights.hour = 8
+        AND flights.minute = 20
+    JOIN bakery_security_logs
+        ON bakery_security_logs.license_plate = people.license_plate
+    WHERE bakery_security_logs.hour = 10
+        AND bakery_security_logs.activity = 'exit'
+        AND bakery_security_logs.minute >= 15 AND bakery_security_logs.minute <= 25;
