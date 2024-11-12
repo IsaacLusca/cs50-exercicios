@@ -309,7 +309,7 @@ SELECT people.name, bakery_security_logs.hour, bakery_security_logs.minute
 -- | Alexander | 10   | 25     |
 -- +-----------+------+--------+
 
-SELECT people.name, airports.full_name
+SELECT people.name
 FROM people
     JOIN bank_accounts
         ON bank_accounts.person_id = people.id
@@ -321,13 +321,6 @@ FROM people
         ON people.passport_number = passengers.passport_number
     JOIN flights
         ON passengers.flight_id = flights.id
-    JOIN airports
-        ON airports.id = flights.id
-    WHERE flights.origin_airport_id = (SELECT id FROM airports WHERE city = 'Fiftyville')
-        AND flights.hour <= 13
-        AND flights.year = 2023
-        AND flights.month = 7
-        AND flights.day = 29
     JOIN bakery_security_logs
         ON bakery_security_logs.license_plate = people.license_plate
 WHERE
