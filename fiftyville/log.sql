@@ -260,5 +260,17 @@ SELECT passengers.flight_id, name, passengers.passport_number, passengers.seat
    AND flights.hour = 8
    AND flights.minute = 20;
 
+-- | flight_id |  name  | passport_number | seat |
+-- +-----------+--------+-----------------+------+
+-- | 36        | Doris  | 7214083635      | 2A   |
+-- | 36        | Sofia  | 1695452385      | 3B   |
+-- | 36        | Bruce  | 5773159633      | 4A   |
+-- | 36        | Edward | 1540955065      | 5C   |
+-- | 36        | Kelsey | 8294398571      | 6C   |
+-- | 36        | Taylor | 1988161715      | 6D   |
+-- | 36        | Kenny  | 9878712108      | 7A   |
+-- | 36        | Luca   | 8496433585      | 7B   |
+-- +-----------+--------+-----------------+------+
 
 --    BRUCE É UM NOME QUE MAIS ESTÁ SE REPETINDO
+
