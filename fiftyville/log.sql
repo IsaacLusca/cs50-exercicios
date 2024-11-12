@@ -310,34 +310,49 @@ SELECT people.name, bakery_security_logs.hour, bakery_security_logs.minute
 -- +-----------+------+--------+
 
 SELECT people.name
-    FROM people
+FROM people
     JOIN bank_accounts
         ON bank_accounts.person_id = people.id
     JOIN atm_transactions
         ON atm_transactions.account_number = bank_accounts.account_number
-    WHERE atm_transactions.year = 2023
-        AND atm_transactions.month = 7
-        AND atm_transactions.day = 28
-        AND atm_transactions.atm_location = 'Leggett Street'
-        AND atm_transactions.transaction_type  = 'withdraw'
     JOIN phone_calls
         ON phone_calls.caller = people.phone_number
-    WHERE year = 2023
-        AND month = 7
-        AND day = 28
-        AND phone_calls.duration <= 60
-        ORDER BY phone_calls.duration
     JOIN passengers
         ON people.passport_number = passengers.passport_number
     JOIN flights
         ON passengers.flight_id = flights.id
-    WHERE flights.year = 2023
-        AND flights.month = 7
-        AND flights.day = 29
-        AND flights.hour = 8
-        AND flights.minute = 20
     JOIN bakery_security_logs
         ON bakery_security_logs.license_plate = people.license_plate
-    WHERE bakery_security_logs.hour = 10
-        AND bakery_security_logs.activity = 'exit'
-        AND bakery_security_logs.minute >= 15 AND bakery_security_logs.minute <= 25;
+WHERE
+    -- Condições para as transações no caixa eletrônico
+    atm_transactions.year = 2023
+    AND atm_transactions.month = 7
+    AND atm_transactions.day = 28
+    AND atm_transactions.atm_location = 'Leggett Street'
+    AND atm_transactions.transaction_type = 'withdraw'
+    -- Condições para as chamadas telefônicas
+    AND phone_calls.year = 2023
+    AND phone_calls.month = 7
+    AND phone_calls.day = 28
+    AND phone_calls.duration <= 60
+    -- Condições para as passagens de voo
+    AND flights.year = 2023
+    AND flights.month = 7
+    AND flights.day = 29
+    AND flights.hour = 8
+    AND flights.minute = 20
+    -- Condições para os logs de segurança
+    AND bakery_security_logs.hour = 10
+    AND bakery_security_logs.activity = 'exit'
+    AND bakery_security_logs.minute BETWEEN 15 AND 25
+ORDER BY
+    phone_calls.duration;
+
+
+-- O CULPADO É?.........
+-- +-------+
+-- | name  |
+-- +-------+
+-- | Bruce |
+-- +-------+
+-- BRUCE SAFADO!!!!!!
