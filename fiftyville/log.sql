@@ -175,3 +175,5 @@ WHERE name = 'Bruce'
 
 -- Raymond comentou sobre o aeroporto indo para Fiftyville
 -- Conectar: airports - flights - passangers
+
+SELECT flights.
