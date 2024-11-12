@@ -280,5 +280,11 @@ SELECT *
 LIMIT 5;
 
 -- license_plate
+-- JOIN entre people e bakery
 
-
+SELECT people.name, bakery_security_logs.hour
+    FROM people
+    JOIN bakery_security_logs
+        ON bakery_security_logs.license_plate = people.license_plate
+    WHERE bakery_security_logs.hour = 10
+        AND bakery_security_logs.activity = 'exit';
