@@ -308,3 +308,22 @@ SELECT people.name, bakery_security_logs.hour, bakery_security_logs.minute
 -- | Karen     | 10   | 24     |
 -- | Alexander | 10   | 25     |
 -- +-----------+------+--------+
+
+SELECT people.name
+    FROM people
+    JOIN bank_accounts
+        ON bank_accounts.person_id = people.id
+    JOIN atm_transactions
+        ON atm_transactions.account_number = bank_accounts.account_number
+    WHERE atm_transactions.year = 2023
+        AND atm_transactions.month = 7
+        AND atm_transactions.day = 28
+        AND atm_transactions.atm_location = 'Leggett Street'
+        AND atm_transactions.transaction_type  = 'withdraw'
+    JOIN phone_calls
+        ON phone_calls.caller = people.phone_number
+    WHERE year = 2023
+        AND month = 7
+        AND day = 28
+        AND phone_calls.duration <= 60
+        ORDER BY phone_calls.duration
