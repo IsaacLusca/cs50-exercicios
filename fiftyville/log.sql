@@ -176,4 +176,7 @@ WHERE name = 'Bruce'
 -- Raymond comentou sobre o aeroporto indo para Fiftyville
 -- Conectar: airports - flights - passangers
 
-SELECT flights.
+SELECT flights.id, airports.full_name, airports.city, flights.hour, flights.minute
+    FROM airports
+    JOIN flights
+        ON fligh
