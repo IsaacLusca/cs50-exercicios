@@ -77,10 +77,23 @@ WHERE name = 'Ruth'
 -- | Raymond | As the thief was leaving the bakery, they called someone who talked to them for less than a minute. In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow. The thief then asked the person on the other end of the phone to purchase the flight ticket. |
 -- +---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-SELECT *
+SELECT id, account_number, amount
 FROM atm_transactions
 WHERE year = 2023
     AND month = 7
     AND day = 28
     AND atm_location = 'Leggett Street'
-    AND transaction_typ  = 'withdrawing';
+    AND transaction_type  = 'withdraw';
+
+-- +-----+----------------+--------+
+-- | id  | account_number | amount |
+-- +-----+----------------+--------+
+-- | 246 | 28500762       | 48     |
+-- | 264 | 28296815       | 20     |
+-- | 266 | 76054385       | 60     |
+-- | 267 | 49610011       | 50     |
+-- | 269 | 16153065       | 80     |
+-- | 288 | 25506511       | 20     |
+-- | 313 | 81061156       | 30     |
+-- | 336 | 26013199       | 35     |
+-- +-----+----------------+--------+
