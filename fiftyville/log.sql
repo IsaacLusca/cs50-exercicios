@@ -112,3 +112,16 @@ WHERE atm_transactions.year = 2023
     AND atm_transactions.day = 28
     AND atm_transactions.atm_location = 'Leggett Street'
     AND atm_transactions.transaction_type  = 'withdraw';
+
+-- +---------+----------------+--------+
+-- |  name   | account_number | amount |
+-- +---------+----------------+--------+
+-- | Bruce   | 49610011       | 50     |
+-- | Diana   | 26013199       | 35     |
+-- | Brooke  | 16153065       | 80     |
+-- | Kenny   | 28296815       | 20     |
+-- | Iman    | 25506511       | 20     |
+-- | Luca    | 28500762       | 48     |
+-- | Taylor  | 76054385       | 60     |
+-- | Benista | 81061156       | 30     |
+-- +---------+----------------+--------+
