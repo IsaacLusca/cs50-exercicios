@@ -171,3 +171,6 @@ WHERE name = 'Bruce'
 -- | 514354 | Diana   | (770) 555-1861 | 3592750733      | 322W7JE       |
 -- | 686048 | Bruce   | (367) 555-5533 | 5773159633      | 94KL13X       |
 -- +--------+---------+----------------+-----------------+---------------+
+
+
+-- Raymond comentou sobre o aeroporto indo para Fiftyville
