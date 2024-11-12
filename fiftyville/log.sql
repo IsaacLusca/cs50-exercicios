@@ -97,3 +97,8 @@ WHERE year = 2023
 -- | 313 | 81061156       | 30     |
 -- | 336 | 26013199       | 35     |
 -- +-----+----------------+--------+
+
+
+-- precisarei fazer um join entre people, bank_account e os account_number. Terei a lista de suspeitos.
+
+SELECT na
