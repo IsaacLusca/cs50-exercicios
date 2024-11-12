@@ -181,7 +181,7 @@ SELECT flights.id, airports.full_name, airports.city, flights.hour, flights.minu
     JOIN flights
         ON flights.destination_airport_id = airports.id
     WHERE flights.origin_airport_id = (SELECT id FROM airports WHERE city = 'Fiftyville')
-        AND flights.hour >= 12
+        AND flights.hour <= 12
         AND flights.year = 2023
         AND flights.month = 7
         AND flights.day = 29;
