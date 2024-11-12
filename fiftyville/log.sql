@@ -145,3 +145,16 @@ WHERE name = 'Bruce'
 -- | Diana | “He can’t lie in the street. May we bring him in, marm?”                                                                                                                                                                                                                                                                                                                                                                        |
 -- | Bruce | “We are close there now,” my friend remarked. “This fellow Merryweather is a bank director, and personally interested in the matter. I thought it as well to have Jones with us also. He is not a bad fellow, though an absolute imbecile in his profession. He has one positive virtue. He is as brave as a bulldog and as tenacious as a lobster if he gets his claws upon anyone. Here we are, and they are waiting for us.” |
 -- +-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+-- Quais tem passaport?
+
+SELECT name, transcript
+FROM interviews
+WHERE name = 'Bruce'
+    OR name = 'Diana'
+    OR name = 'Brooke'
+    OR name = 'Kenny'
+    OR name = 'Iman'
+    OR name = 'Luca'
+    OR name = 'Taylor'
+    OR name = 'Benista';
