@@ -321,6 +321,8 @@ FROM people
         ON people.passport_number = passengers.passport_number
     JOIN flights
         ON passengers.flight_id = flights.id
+    JOIN airports
+        ON airports.id = flights.id
     JOIN bakery_security_logs
         ON bakery_security_logs.license_plate = people.license_plate
 WHERE
