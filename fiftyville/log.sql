@@ -309,7 +309,7 @@ SELECT people.name, bakery_security_logs.hour, bakery_security_logs.minute
 -- | Alexander | 10   | 25     |
 -- +-----------+------+--------+
 
-SELECT people.name
+SELECT people.name, airports.full_name
 FROM people
     JOIN bank_accounts
         ON bank_accounts.person_id = people.id
