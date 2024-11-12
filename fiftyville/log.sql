@@ -199,6 +199,11 @@ SELECT people.name, phone_calls.duration
 -- | Benista | 54       |
 -- +---------+----------+
 
+SELECT people.name, phone_calls.duration
+    FROM people
+    JOIN phone_calls
+        ON phone_calls.receiver
+
 -- Raymond comentou sobre o aeroporto indo para Fiftyville
 -- Conectar: airports - flights - passangers
 
