@@ -275,3 +275,10 @@ SELECT passengers.flight_id, name, passengers.passport_number, passengers.seat
 --    BRUCE É UM NOME QUE MAIS ESTÁ SE REPETINDO
 
 
+SELECT *
+    FROM bakery_security_logs
+LIMIT 5;
+
+-- license_plate
+
+
