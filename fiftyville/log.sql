@@ -173,7 +173,9 @@ WHERE name = 'Bruce'
 -- +--------+---------+----------------+-----------------+---------------+
 
 
--- ligação de 60 segundos
+-- ligação de 60 segundos integrar o número com sua respectiva pessoa
+
+SELECT people.name, 
 
 SELECT
 
