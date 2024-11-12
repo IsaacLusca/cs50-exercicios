@@ -247,3 +247,18 @@ SELECT flights.id, airports.full_name, airports.city, flights.hour, flights.minu
 -- | 36 | LaGuardia Airport                   | New York City | 8    | 20     |
 -- | 43 | O'Hare International Airport        | Chicago       | 9    | 30     |
 -- +----+-------------------------------------+---------------+------+--------+
+
+SELECT passengers.flight_id, name, passengers.passport_number, passengers.seat
+  FROM people
+  JOIN passengers
+    ON people.passport_number = passengers.passport_number
+  JOIN flights
+    ON passengers.flight_id = flights.id
+ WHERE flights.year = 2023
+   AND flights.month = 7
+   AND flights.day = 29
+   AND flights.hour = 8
+   AND flights.minute = 20;
+
+
+--    BRUCE É UM NOME QUE MAIS ESTÁ SE REPETINDO
