@@ -323,6 +323,11 @@ FROM people
         ON passengers.flight_id = flights.id
     JOIN airports
         ON airports.id = flights.id
+    WHERE flights.origin_airport_id = (SELECT id FROM airports WHERE city = 'Fiftyville')
+        AND flights.hour <= 13
+        AND flights.year = 2023
+        AND flights.month = 7
+        AND flights.day = 29
     JOIN bakery_security_logs
         ON bakery_security_logs.license_plate = people.license_plate
 WHERE
