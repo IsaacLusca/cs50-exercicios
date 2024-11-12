@@ -125,3 +125,18 @@ WHERE atm_transactions.year = 2023
 -- | Taylor  | 76054385       | 60     |
 -- | Benista | 81061156       | 30     |
 -- +---------+----------------+--------+
+
+-- Checando se testemunharam
+
+SELECT name, transcript
+FROM interviews
+WHERE name = 'Bruce'
+    OR name = 'Diana'
+    OR name = 'Brooke'
+    OR name = 'Kenny'
+    OR name = 'Iman'
+    OR name = 'Luca'
+    OR name = 'Taylor'
+    OR name = 'Benista';
+
+
