@@ -274,3 +274,4 @@ SELECT passengers.flight_id, name, passengers.passport_number, passengers.seat
 
 --    BRUCE É UM NOME QUE MAIS ESTÁ SE REPETINDO
 
+
