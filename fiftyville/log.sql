@@ -101,9 +101,14 @@ WHERE year = 2023
 
 -- precisarei fazer um join entre people, bank_account e os account_number. Terei a lista de suspeitos.
 
-SELECT people.name, atm_transactions.account_number
+SELECT people.name, atm_transactions.account_number, atm_transactions.amount
     FROM people
     JOIN bank_accounts
         ON bank_accounts.person_id = people.id
-        WHERE 
-
+    JOIN atm_transactions
+        ON atm_transactions.account_number = bank_accounts.account_number
+WHERE atm_transactions.year = 2023
+    AND atm_transactions.month = 7
+    AND atm_transactions.day = 28
+    AND atm_transactions.atm_location = 'Leggett Street'
+    AND atm_transactions.transaction_type  = 'withdraw';
