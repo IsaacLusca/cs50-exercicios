@@ -174,3 +174,7 @@ WHERE name = 'Bruce'
 
 
 -- Raymond comentou sobre o aeroporto indo para Fiftyville
+
+SELECT *
+FROM airports
+WHERE city = 'Fiftyville';
