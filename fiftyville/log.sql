@@ -281,6 +281,7 @@ LIMIT 5;
 
 -- license_plate
 -- JOIN entre people e bakery
+-- Theft of the CS50 duck took place at 10:15 - depois de 10 min.
 
 SELECT people.name, bakery_security_logs.hour
     FROM people
@@ -288,3 +289,4 @@ SELECT people.name, bakery_security_logs.hour
         ON bakery_security_logs.license_plate = people.license_plate
     WHERE bakery_security_logs.hour = 10
         AND bakery_security_logs.activity = 'exit';
+        AND bakery_security_logs.minute >= 15 <= 25;
