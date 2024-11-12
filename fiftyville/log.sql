@@ -191,7 +191,7 @@ SELECT people.name, phone_calls.duration
 -- | Kelsey  | 36       |
 -- | Carina  | 38       |
 -- | Taylor  | 43       |
--- | Bruce   | 45       |
+-- | Bruce   | 45       | This is batman from deepweb?
 -- | Diana   | 49       |
 -- | Kelsey  | 50       |
 -- | Sofia   | 51       |
