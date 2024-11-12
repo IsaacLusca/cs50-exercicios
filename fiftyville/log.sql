@@ -288,5 +288,5 @@ SELECT people.name, bakery_security_logs.hour
     JOIN bakery_security_logs
         ON bakery_security_logs.license_plate = people.license_plate
     WHERE bakery_security_logs.hour = 10
-        AND bakery_security_logs.activity = 'exit';
-        AND bakery_security_logs.minute >= 15 <= 25;
+        AND bakery_security_logs.activity = 'exit'
+        AND bakery_security_logs.minute >= 15 AND bakery_security_logs.minute <= 25;
