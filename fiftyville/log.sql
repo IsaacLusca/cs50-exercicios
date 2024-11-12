@@ -175,10 +175,29 @@ WHERE name = 'Bruce'
 
 -- ligação de 60 segundos integrar o número com sua respectiva pessoa
 
-SELECT people.name, 
+SELECT people.name, phone_calls.duration
+    FROM people
+    JOIN phone_calls
+        ON phone_calls.caller = people.phone_number
+    WHERE year = 2023
+        AND month = 7
+        AND day = 28
+        AND phone_calls.duration <= 60;
 
-SELECT
-
+-- +---------+----------+
+-- |  name   | duration |
+-- +---------+----------+
+-- | Sofia   | 51       |
+-- | Kelsey  | 36       |
+-- | Bruce   | 45       |
+-- | Kathryn | 60       |
+-- | Kelsey  | 50       |
+-- | Taylor  | 43       |
+-- | Diana   | 49       |
+-- | Carina  | 38       |
+-- | Kenny   | 55       |
+-- | Benista | 54       |
+-- +---------+----------+
 
 -- Raymond comentou sobre o aeroporto indo para Fiftyville
 -- Conectar: airports - flights - passangers
