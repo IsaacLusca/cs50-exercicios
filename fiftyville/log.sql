@@ -173,6 +173,11 @@ WHERE name = 'Bruce'
 -- +--------+---------+----------------+-----------------+---------------+
 
 
+-- ligação de 60 segundos
+
+SELECT
+
+
 -- Raymond comentou sobre o aeroporto indo para Fiftyville
 -- Conectar: airports - flights - passangers
 
