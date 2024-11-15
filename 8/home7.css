@@ -1,16 +1,18 @@
 .centered
 {
     text-align: center;
-    color: red;
 }
+
 .large
 {
     font-size: large;
 }
+
 .medium
 {
     font-size: medium;
 }
+
 .small
 {
     font-size: small;
