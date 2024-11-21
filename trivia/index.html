@@ -7,11 +7,17 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
-            document.getElementById("errado").onclick = function(){
-                this.style.backgroundColor="red";
+            let certo = document.querySelector('#certo');
+            let errado = document.querySelectorAll('#incorrect');
+            let check = document.querySelector('check')
+
+            certo.onclick = function(){
+                correct.style.backgroundColor = 'green';
+                status.innerHTML = "RESPOSTA CERTA!";
             }
-            document.getElementById("certo").onclick = function(){
-                this.style.backgroundColor="green";
+            errado.onclick = function(){
+                errado.style.backgroundColor = 'red';
+                status.innerHTML = "VOCÊ ERROU!";
             }
 
         </script>
@@ -31,6 +37,7 @@
                 <button id="certo">Brasília</button>
                 <button id="errado">Rio de Janeiro</button>
                 <button id="errado">Bahia</button>
+                <p id="check"></p>
             </div>
 
             <div class="section">
