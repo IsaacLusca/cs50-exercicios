@@ -58,7 +58,7 @@
                 <h2>Part 2: Free Response</h2>
                 <hr>
                 <!-- TODO: Add free response question here -->
-                <h3>Quem representa o maior número de imigrantes?</h3>
+                <h3>Quem representa o maior número de imigrantes no Brasil?</h3>
                 <input type="text" id="userAnswer"></input>
                 <button onclick="checkFreeResponse(event)">Check Answer</button>
                 <p class="feedback"></p>
@@ -66,12 +66,15 @@
             </div>
             <script>
                 function checkFreeResponse() {
-                let userAnswer = document.getElementById('userAnswer').value.toLowerCase(); 
+                let userAnswer = document.getElementById('userAnswer').value.toLowerCase(); // Pegando a resposta do usuário em minúsculas
+                let feedback = document.querySelector('.feedback');
 
                 if (userAnswer === "venezuela") {
                     feedback.innerHTML = "Correto! A Venezuela tem o maior número de imigrantes no Brasil atualmente.";
+                    feedback.style.color = "green";
                 } else {
                     feedback.innerHTML = "Errado!";
+                    feedback.style.color = "red";
                 }
             }
             </script>
