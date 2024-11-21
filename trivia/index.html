@@ -5,25 +5,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
-        <script>
-            // TODO: Add code to check answers to questions
-            let correct = document.querySelector('#correct');
-            let incorrects = document.querySelectorAll('.incorrect');
-            let check = document.querySelector('#check');
-
-            correct.onclick = function() {
-                correct.style.backgroundColor = 'green';
-                check.innerHTML = "RESPOSTA CERTA!";
-            };
-
-            incorrects.forEach(button => {
-                button.onclick = function() {
-                    button.style.backgroundColor = 'red';
-                    check.innerHTML = "VOCÊ ERROU!";
-                };
-            });
-
-        </script>
     </head>
     <body>
         <div class="header">
@@ -42,6 +23,25 @@
                 <button class="incorrect">Bahia</button>
                 <p id="check"></p>
             </div>
+            <script>
+                // TODO: Add code to check answers to questions
+                let correct = document.querySelector('#correct');
+                let incorrects = document.querySelectorAll('.incorrect');
+                let check = document.querySelector('#check');
+
+                correct.onclick = function() {
+                    correct.style.backgroundColor = 'green';
+                    check.innerHTML = "RESPOSTA CERTA!";
+                };
+
+                incorrects.forEach(button => {
+                    button.onclick = function() {
+                        button.style.backgroundColor = 'red';
+                        check.innerHTML = "VOCÊ ERROU!";
+                    };
+                });
+
+            </script>
 
             <div class="section">
                 <h2>Part 2: Free Response</h2>
