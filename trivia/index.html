@@ -8,17 +8,20 @@
         <script>
             // TODO: Add code to check answers to questions
             let correct = document.querySelector('#correct');
-            let incorrect = document.querySelectorAll('#incorrect');
-            let check = document.querySelector('#check')
+            let incorrects = document.querySelectorAll('.incorrect');
+            let check = document.querySelector('#check');
 
-            correct.onclick = function(){
+            correct.onclick = function() {
                 correct.style.backgroundColor = 'green';
                 check.innerHTML = "RESPOSTA CERTA!";
-            }
-            incorrect.onclick = function(){
-                incorrect.style.backgroundColor = 'red';
-                check.innerHTML = "VOCÊ ERROU!";
-            }
+            };
+
+            incorrects.forEach(button => {
+                button.onclick = function() {
+                    button.style.backgroundColor = 'red';
+                    check.innerHTML = "VOCÊ ERROU!";
+                };
+            });
 
         </script>
     </head>
@@ -33,10 +36,10 @@
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
                 <h3>Qual a capital do Brasil?</h3>
-                <button id="incorrect">São Paulo</button>
+                <button class="incorrect">São Paulo</button>
                 <button id="correct">Brasília</button>
-                <button id="incorrect">Rio de Janeiro</button>
-                <button id="incorrect">Bahia</button>
+                <button class="incorrect">Rio de Janeiro</button>
+                <button class="incorrect">Bahia</button>
                 <p id="check"></p>
             </div>
 
