@@ -27,14 +27,25 @@
                 let correct = document.querySelector('#correct');
                 let incorrects = document.querySelectorAll('.incorrect');
                 let check = document.querySelector('#check');
+                let allButtons = document.querySelectorAll('button');
+
+                function resetStyles() {
+                    allButtons.forEach(button => {
+                        button.style.backgroundColor = '';
+                        button.style.color = '';
+                    });
+                    check.innerHTML = '';
+                }
 
                 correct.onclick = function() {
+                    resetStyles();
                     correct.style.backgroundColor = 'green';
                     check.innerHTML = "RESPOSTA CERTA!";
                 };
 
                 incorrects.forEach(button => {
                     button.onclick = function() {
+                        resetStyles();
                         button.style.backgroundColor = 'red';
                         check.innerHTML = "VOCÊ ERROU!";
                     };
