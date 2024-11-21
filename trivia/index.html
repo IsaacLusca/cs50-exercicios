@@ -19,25 +19,12 @@
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
-                <form>
-                    <h3>Qual a capital do Brasil?</h3>
-                    <label>
-                        <input type="radio" name="q1" value="A">
-                        A. São Paulo
-                    </label>
-                    <label>
-                        <input type="radio" name="q2" value="B">
-                        B. Brasília
-                    </label>
-                    <label>
-                        <input type="radio" name="q3" value="C">
-                        C. Rio de Janeiro
-                    </label>
-                    <label>
-                        <input type="radio" name="q4" value="D">
-                        D. Bahia
-                    </label>
-                </form>
+                <h3>Qual a capital do Brasil?</h3>
+                <button class="choice" data-correct="false">A. São Paulo</button>
+                <button class="choice" data-correct="true">B. Brasília</button>
+                <button class="choice" data-correct="false">C. Rio de Janeiro</button>
+                <button class="choice" data-correct="false">D. Bahia</button>
+                <p id="multiple-choice-feedback"></p>
             </div>
 
             <div class="section">
