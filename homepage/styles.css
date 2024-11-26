@@ -1,7 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    justfy-content: 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
