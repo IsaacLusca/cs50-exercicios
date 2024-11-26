@@ -1,0 +1,23 @@
+HTML Tags:
+1. <nav> - Navigation bar for site navigation.
+2. <header> - Introductory content.
+3. <footer> - Footer section.
+4. <main> - Main content of the page.
+5. <h1>, <h2>, <p> - Headings and paragraphs.
+6. <ul>, <li> - List items for navigation.
+7. <link> - Linking CSS.
+8. <script> - Linking JavaScript.
+9. <button> - Responsive navbar button.
+10. <meta> - Metadata for the page.
+
+CSS Properties:
+1. font-family - Set font type.
+2. background - Applied gradients to header.
+3. color - Set text color.
+4. border-top - Add border to footer.
+5. text-decoration - Underline effect on hover.
+
+JavaScript:
+- Used to display a welcome alert on page load.
+Bootstrap:
+- Navbar component for navigation.
