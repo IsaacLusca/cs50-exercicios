@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+main h2 {
+    color: #007bff;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
