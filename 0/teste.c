@@ -1,21 +1,13 @@
 #include <stdio.h>
 
-int fibonacci(int n) {
-    if (n == 0){
-        return 0;
+int mdc(int x, int y) {
+    if (y == 0){
+        return x;
     }
-    if (n == 1){
-        return 1;
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return mdc(y, x % y);
 }
 
 int main() {
-    int num = 10;
-    for (int i = 0; i < num; i++) {
-        printf("%d ", fibonacci(i));
-    }
-    printf("\n");
+    int a = 56, b = 98;
+    printf("%i\n", mdc(a, b));
 }
-
-
