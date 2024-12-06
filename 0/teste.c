@@ -8,6 +8,6 @@ int mdc(int x, int y) {
 }
 
 int main() {
-    int a = 56, b = 98;
+    int a = 20, b = 24;
     printf("%i\n", mdc(a, b));
 }
