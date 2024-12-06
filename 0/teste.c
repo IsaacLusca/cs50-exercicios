@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 void t_mt(int n) {
-    printf("Tabela Z_%d para multiplicação modular:\n", n);
     for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++){
             printf("%d ", (i * j) % n);
