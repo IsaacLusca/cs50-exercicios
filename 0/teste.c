@@ -9,5 +9,5 @@ int fatorial(int n){
 
 int main(){
     int num = 5;
-    printf("%i", fatorial(num));
+    printf("%i\n", fatorial(num));
 }
