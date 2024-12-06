@@ -1,17 +1,16 @@
 #include <stdio.h>
 
-int mdc(int x, int y) {
-    if (y == 0){
-        return x;
+void tabelaAdicao(int n) {
+    printf("Tabela Z_%d para adição modular:\n", n);
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < n; j++){
+            printf("%d ", (i + j) % n);
+        }
+        printf("\n");
     }
-    return mdc(y, x % y);
 }
 
-int mmc(int a, int b) {
-    return (a * b) / mdc(a, b);
-}
-
-int main() {
-    int a = 20, b = 24;
-    printf("%i\n", mmc(a, b));
+int main(){
+    int n = 5;
+    tabelaAdicao(n);
 }
