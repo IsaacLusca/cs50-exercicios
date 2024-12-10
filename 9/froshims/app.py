@@ -11,6 +11,10 @@ def index():
 
 @app.route("/register", methods=["POST"])
 def register():
-    if not request.form.get("name") or request.form.get("sport") not in SPORTS:
+    # caso queira ter apenas as entradaspadrões: if not request.form.get("name") or request.form.get("sport") not in SPORTS:
+    if not request.form.get("name"):
         return render_template("erro.html")
+    for sport in request.form.getall("sport"):
+        if sport not in SPORTS:
+            return render_template("erro.html")
     return render_template("sucesso.html")

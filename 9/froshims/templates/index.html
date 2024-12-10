@@ -6,10 +6,18 @@
     <form action="/register" method="post">
         <input autocomplete="off" autofocus name="name" placeholder="Nome" type="text">
         {% for sport in sports %}
-            <input name="sport" type="radio" value={{sport}}> {{ sport }}
+            <input name="sport" type="checkbox" value={{sport}}> {{ sport }}
 
         {% endfor %}
         <button type="submit">Enviar</button>
     </form>
 
 {% endblock %}
+
+
+<!-- <select name="sport">
+    <option disabled selected value="">Esportes</option>
+    {% for sport in sports %}
+        <option value="{{ sport }}">{{sport}}</option>
+    {% endfor %}
+</select> -->
