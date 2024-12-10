@@ -10,5 +10,5 @@ def index():
 @app.route("/register", methods=["POST"])
 def register():
     if not request.form.get("name") or not request.form.get("esportes"):
-        return "ESTÁ ERRADO!"
-    "Sucesso"
+        return render_template("erro.html")
+    return render_template("sucesso.html")
