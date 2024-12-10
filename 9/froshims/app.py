@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-SPORTS = ["Basquete", "Futebol", "Volei"]
+SPORTS = ["Basquete", "Futebol", "Volei", "Queimada", "Basebol"]
 
 @app.route("/")
 def index():
@@ -11,6 +11,6 @@ def index():
 
 @app.route("/register", methods=["POST"])
 def register():
-    if not request.form.get("name") or not request.form.get("esportes"):
+    if not request.form.get("name") or not request.form.get("sport"):
         return render_template("erro.html")
     return render_template("sucesso.html")
