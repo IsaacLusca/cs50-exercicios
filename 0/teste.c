@@ -12,4 +12,5 @@ void t_mt(int n) {
 int main() {
     int n = 5;
     t_mt(n);
+    
 }
