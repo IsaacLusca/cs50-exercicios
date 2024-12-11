@@ -33,7 +33,7 @@ def index():
     else:
 
         # TODO: Display the entries in the database on index.html
-        birthday = db.execute("SELECT ")
+        birthday = db.execute("SELECT * FROM Birthdays WHERE id IN (?)", session[index])
 
         return render_template("index.html")
 
