@@ -28,8 +28,25 @@ def index():
 
         # TODO: Add the user's entry into the database
         name = request.form.get("name")
-        month = request.form.get("month")
+        if not name:
+            return redirect("/")
+
+       month = request.form.get("month")
+        if not month:
+            return redirect("/")
+        try:
+            month = int(month)
+        except ValueError:
+            return redirect("/")
+
         day = request.form.get("day")
+        if not day:
+            return redirect("/")
+        try:
+            day = int(day)
+        except ValueError:
+            return redirect("/")
+
         db.execute("INSERT INTO birthdays (name, month, day) VALUES (?, ?, ?)", name, month, day)
 
         return redirect("/")
