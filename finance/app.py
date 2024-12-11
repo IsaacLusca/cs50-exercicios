@@ -117,7 +117,7 @@ def register():
     rpassword = request.form.get("rpassword")
 
     db.execute("INSERT INTO users (username, hash) VALUES (rusername, rpassword)", rusername, rpassword)
-    return redirect("/")
+    return apology("TODO")
 
 
 @app.route("/sell", methods=["GET", "POST"])
