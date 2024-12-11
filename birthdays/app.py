@@ -28,7 +28,7 @@ def index():
 
         # TODO: Add the user's entry into the database
         name = request.form.get("name")
-        if not name:
+        if not name or not name.isalpha():
             return redirect("/")
 
         month = request.form.get("month")
