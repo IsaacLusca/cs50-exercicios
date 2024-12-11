@@ -113,8 +113,11 @@ def quote():
 def register():
     """Register user"""
 
-    request.
-    return apology("TODO")
+    rusername = request.form.get("rusername")
+    rpassword = request.form.get("rpassword")
+
+    db.execute("INSERT INTO users (username, hash) VALUES (rusername, rpassword)", rusername, rpassword)
+    return redirect("/")
 
 
 @app.route("/sell", methods=["GET", "POST"])
