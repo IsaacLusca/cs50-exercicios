@@ -7,21 +7,9 @@
 {% block main %}
     <!-- https://memegen.link/ -->
     <!-- https://knowyourmeme.com/memes/grumpy-cat -->
-    <!-- <img alt="{{ top }}" class="border img-fluid" src="https://api.memegen.link/images/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?background=https://i.imgur.com/CsCgN7Ll.png&width=400" title="{{ top }}"> -->
+    <img alt="{{ top }}" class="border img-fluid" src="https://api.memegen.link/images/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?background=https://i.imgur.com/CsCgN7Ll.png&width=400" title="{{ top }}">
 
-    <form action="/register" method="post">
-        <div class="mb-3">
-            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="rusername" placeholder="Username" type="text">
-        </div>
 
-        <div class="mb-3">
-            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="rpassword" placeholder="Password" type="password">
-        </div>
 
-        <div class="mb-3">
-            <button type="submit" class="btn btn-primary">Register</button>
-        </div>
-    </form>
-
-    {% endblock %}
+{% endblock %}
 
