@@ -124,7 +124,7 @@ def register():
         db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", rusername, hash)
         return redirect("/")
 
-    return render_template("TODO")
+    return render_template("layout.html")
 
 
 @app.route("/sell", methods=["GET", "POST"])
