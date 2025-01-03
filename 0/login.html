@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta name="viewport" content="initial-scale=1, width=device-width">
-        <title>Hello</title>
-    </head>
-    <body>
-     <p>Olá.</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f3f4f6, #dfe4ea);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #ff914d;
+        }
+
+        button {
+            background-color: #ff914d;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff7a33;
+        }
+
+        .forgot-password {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .forgot-password a {
+            color: #ff914d;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">SCHPPER</div>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Usuário" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Esqueceu sua senha?</a>
+        </div>
+    </div>
+</body>
 </html>
