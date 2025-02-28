@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    quote
+{% endblock %}
+
+{% block main %}
+
+<h2>Stock Quote</h2>
+<form action = "/quote" method="post">
+    <input name="symbol" type="text" autofocus autocomplete="off" placeholder="Symbol">
+    <button type="submit">Get Quote</button>
+</form>
+
+{% if quote %}
+    <h3>{{ quote['name']  }}({{ quote['symbol'] }})
+        price: {{ quote['price'] }}
+    </h3>
+{% endif %}
+
+{% endblock %}
+<!--
+<form action="/" method="post">
+    <input name="name" type="text" autofocus autocomplete="off" placeholder="nome">
+    <input name="month" type="number" autofocus autocomplete="off" placeholder="Mês" min="1" max="12">
+    <input name="day" type="number" autofocus autocomplete="off" placeholder="Dia" min="1" max="31">
+    <button type="submit">Enviar</button>
+ </form> -->

@@ -35,14 +35,57 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    return apology("TODO")
+    users = db.execute("SELECT * FROM users")
+    return render_template("home.html", users = users)
 
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
 def buy():
     """Buy shares of stock"""
-    return apology("TODO")
+    if request.method == "POST":
+        # Obter dados do formulário
+        symbol = request.form.get("symbol").upper()
+        shares = request.form.get("shares")
+
+        # Verificar se os campos foram preenchidos
+        if not symbol or not shares:
+            return apology("Preencha todos os campos!", 400)
+
+        # Verificar se shares é um número válido
+        try:
+            shares = int(shares)
+            if shares <= 0:
+                return apology("Número de ações inválido!", 400)
+        except ValueError:
+            return apology("Número de ações inválido!", 400)
+
+        # Buscar a cotação da ação
+        quote = lookup(symbol)
+        if not quote:
+            return apology("Símbolo não encontrado!", 400)
+
+        price = quote["price"]
+        total_cost = price * shares
+
+        # Obter saldo do usuário
+        user_id = session["user_id"]
+        user_cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
+
+        # Verificar se o usuário tem saldo suficiente
+        if total_cost > user_cash:
+            return apology("Saldo insuficiente!", 400)
+
+        # Atualizar saldo do usuário
+        db.execute("UPDATE users SET cash = cash - ? WHERE id = ?", total_cost, user_id)
+
+        # Registrar a compra na tabela de transações
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, type) VALUES (?, ?, ?, ?, ?)",
+                   user_id, symbol, shares, price, "buy")
+
+        return redirect("/")
+
+    return render_template("buy.html")
 
 
 @app.route("/history")
@@ -106,13 +149,36 @@ def logout():
 @login_required
 def quote():
     """Get stock quote."""
-    return apology("TODO")
+    if request.method == "POST":
+        symbol = request.form.get("symbol")
+        quote = lookup(symbol)
+        if not quote:
+            return apology("não existe esse simbolo!", 400)
+        return render_template("quote.html", quote=quote)
+    else:
+        return render_template("quote.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    return apology("TODO")
+    if request.method == "POST":
+        rusername = request.form.get("rusername")
+        rpassword = request.form.get("rpassword")
+
+        if not rusername or not rpassword:
+            return apology("must provide username and password")
+
+        existing = db.execute("SELECT * FROM users WHERE username = ?", rusername)
+        if existing:
+            return apology("Usuario ja existe")
+
+        hash = generate_password_hash(rpassword)
+
+        db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", rusername, hash)
+        return redirect("/")
+
+    return render_template("register.html")
 
 
 @app.route("/sell", methods=["GET", "POST"])
