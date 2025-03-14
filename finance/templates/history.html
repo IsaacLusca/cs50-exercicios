@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+<h2>Transaction History</h2>
+
+{% if history %}
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">Type</th>
+                <th scope="col">Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in history %}
+                <tr>
+                    <td>{{ item["symbol"] }}</td>
+                    <td>{{ item["shares"] }}</td>
+                    <td>${{ "%.2f"|format(item["price"]) }}</td>
+                    <td>{{ item["type"] }}</td>
+                    <td>{{ item["timestamp"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No transaction history available.</p>
+{% endif %}
+
+{% endblock %}

@@ -13,9 +13,9 @@
 </form>
 
 {% if quote %}
-    <h3>{{ quote['name']  }}({{ quote['symbol'] }})
-        price: {{ quote['price'] }}
-    </h3>
+    <h3>{{ quote['name'] }} ({{ quote['symbol'] }})</h3>
+    <p>Price: ${{ "%.2f"|format(quote['price']) }}</p>
+
 {% endif %}
 
 {% endblock %}
