@@ -8,6 +8,10 @@ O **GerenTAR** é uma aplicação web de gerenciamento de tarefas (to-do list) c
 
 O projeto foi desenvolvido utilizando **Python** como linguagem principal, com o framework **Flask** para estruturação do backend web. Para a persistência dos dados, foi escolhido o banco de dados **SQLite**, e a manipulação dos modelos é feita via **Flask-SQLAlchemy**. A autenticação é gerenciada pelo **Flask-Login**, garantindo que cada usuário só tenha acesso às próprias tarefas.
 
+### Autor
+
+
+
 ### Funcionalidades principais
 
 - Cadastro e login de usuários com validação de e-mail;
