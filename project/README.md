@@ -1,4 +1,5 @@
 # GerenTAR
 #### Video Demo:  <URL HERE>
 #### Description:
-TODO
+O GerenTAR é um sistema desenvolvido para o gerenciamento simples de tarefa, sendo possível:
+
