@@ -10,7 +10,11 @@ O projeto foi desenvolvido utilizando **Python** como linguagem principal, com o
 
 ### Autor
 
+Desenvolvido completamente e inteiramente por Isaac Lucas Souza Bezerra, feito como parte do curso CS50 – HarvardX.
 
+- GitHub: IsaacLusca
+
+- LinkedIn: IsaacLusca
 
 ### Funcionalidades principais
 
